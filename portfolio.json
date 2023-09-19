@@ -1,0 +1,82 @@
+{
+  "(Development Mode)": "true/false",
+  "(WebUrl)": "https://tejassawant.netlify.app",
+  "About": {
+    "AboutLong": "A **long description** about you.",
+    "AboutShort": "A **short description** about you.",
+    "EmailId": "tejusawant302@gmail.com",
+    "Gender": "male",
+    "Name": {
+      "FirstName": "Tejas",
+      "LastName": "Sawant"
+    },
+    "Profession": "Web developer, Data Analyst , AI enginner",
+    "ProfileImage": "",
+    "ResumeUrl": "",
+    "SocialMedia": {
+      "Github": "https://github.com/Tejaso7",
+      "Instagram": "https://instagram.com/_ts_kingmaker_oo7_?igshid=ZGUzMzM3NWJiOQ%3D%3D",
+      "Linkedin": "https://www.linkedin.com/in/tejas-sawant-3a9b5820b/",
+      "Twitter": "https://www.twitter.com/TejasSawantoo7"
+    }
+  },
+  "Education": {
+    "1 - SSC": {
+      "Completed": "true",
+      "CourseDuration": "2017-2018",
+      "CourseName": "SSC",
+      "Description": "Short description",
+      "ImageUrl": "Image url",
+      "InstituteName": "Mary Matha High School & Jr Collage Mhaswad"
+    },
+    "2 - HSC": {
+      "Completed": "true",
+      "CourseDuration": "2019-2020",
+      "CourseName": "HSC in Science",
+      "Description": "Short description",
+      "ImageUrl": "Image url",
+      "InstituteName": "Mary Matha High School & Jr Collage Mhaswad"
+    },
+    "3 - graduation": {
+      "Completed": "false",
+      "CourseDuration": "2020-2024",
+      "CourseName": "Bachelor of Engineering",
+      "Description": "Degree in Artificial Intelligence and Data Science ",
+      "ImageUrl": "Image url",
+      "InstituteName": "Zeal Collage Of Engineering and Research Pune"
+    }
+  },
+  "EmailJs": {
+    "publicKey": "",
+    "serviceID": "",
+    "templateID": ""
+  },
+  "Experience": {
+    "1 - company name": {
+      "JobDescription": "**Lorem ipsum dolor, sit amet consectetur** adipisicing elit.//Quos, incidunt. Asperiores quisquam voluptas architecto quis unde eius a nemo, natus ex, perspiciatis harum exercitationem deserunt soluta assumenda necessitatibus neque. Quam!",
+      "companyName": "Company name",
+      "period": "From (Month) - to (Month) Year",
+      "title": "Job title"
+    }
+  },
+  "Logo": {
+    "initials": "",
+    "url": ""
+  },
+  "Projects": {
+    "1 - Project": {
+      "Github": "",
+      "ImageUrl": "",
+      "Library": "Library 1, Library 2",
+      "ProjectLink": "",
+      "ProjectScale": "Major",
+      "Techstack": "Techstack 1, Techstack 2",
+      "Title": "Project name"
+    }
+  },
+  "Skills": [
+    "PYTHON, major, skill image url 1",
+    "CSS3, minor, skill image url 2",
+    "HTML5, minor, skill image url 3"
+  ]
+}

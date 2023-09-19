@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <title>CONTACT | TS</title>
+    <style>
+      
+      .c {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      } 
+      .container {
+        height: 100vh;
+      }
+
+      form {
+        min-width: 25rem;
+      }
+      form .title {
+        font-family: "Pacifico", cursive;
+        color: #212529;
+        font-size: 2.5rem;
+      }
+      form .form-control {
+        background-color: #f2f6f8;
+        border-radius: 2rem;
+        border: none;
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+      }
+      form .form-control.thick {
+        height: 3.3rem;
+        padding: 0.5rem 3.5rem;
+      }
+      form .form-control:focus {
+        background-color: #f2f6f8;
+        border: none;
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+      }
+      form .message .form-control {
+        padding: 0.5rem 1.8rem;
+      }
+      form ::placeholder {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #838788;
+        position: relative;
+        left: 0;
+      }
+      form input,
+      form textarea {
+        font-family: "Quicksand", sans-serif;
+        color: #212529;
+        font-size: 1.1rem;
+      }
+      form .icon {
+        color: #57565c;
+        height: 1.3rem;
+        position: absolute;
+        left: 1.5rem;
+        top: 1.1rem;
+      }
+
+      .btn.btn-primary {
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        padding: 0 3rem;
+        border: 0;
+        border-radius: 3rem;
+        background-image: linear-gradient(
+          131deg,
+          #ffd340,
+          #ff923c,
+          #ff923c,
+          #ff923c
+        );
+        background-size: 300% 100%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn.btn-primary:hover:enabled {
+        box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+        background-size: 100% 100%;
+        transform: translateY(-0.15em);}
+
+      @keyframes video-background {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 0.9;
+          }
+        }
+        
+        .video-background {
+          animation: video-background 10s ;
+        }
+        
+      
+    </style>
+  </head>
+  <body>
+    <!-- // FORM--------------------->
+      <video  class="video-background" autoplay loop muted width="auto" height="auto">
+        <source src="./assets/pexels-mikhail-nilov-6962343 (1080p).mp4" type="video/mp4">
+      </video>
+      <div class="c">
+        <form>
+          <h1 class="title text-center mb-4">Talk to Us..</h1>
+          <br />
+
+          <!-- Name -->
+          <div class="form-group position-relative">
+            <label for="formName" class="d-block">
+              <i class="icon" data-feather="user"></i>
+            </label>
+            <input
+              type="text"
+              id="formName"
+              class="form-control form-control-lg thick"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <br />
+          <!-- E-mail -->
+          <div class="form-group position-relative">
+            <label for="formEmail" class="d-block">
+              <i class="icon" data-feather="mail"></i>
+            </label>
+            <input
+              type="email"
+              id="formEmail"
+              class="form-control form-control-lg thick"
+              placeholder="Enter Your E-mail"
+            />
+          </div>
+          <br />
+
+          <!-- Message -->
+          <div class="form-group message">
+            <textarea
+              id="formMessage"
+              class="form-control form-control-lg"
+              rows="7"
+              placeholder="Please Write Your Message"
+            ></textarea>
+          </div>
+          <br />
+          <!-- Submit btn -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary" tabindex="-1">
+              Send message
+            </button>
+          </div>
+          <br />
+        </form>
+      </div>
+   
+  </body>
+</html>

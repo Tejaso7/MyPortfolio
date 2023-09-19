@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="Tejas Sawant, tejas, Tejas, Sawant, tejas Sawant, Tejas Sadashiv Sawant, TS, Tsawant, Tskingmaker, tejusawant, Tskingmaker007, TejasSawant, TejasSadashivSawant, Tejas's Portfolio, Tejas Sawant's portfolio, Tejas portfolio,ts portfolio, TS portfolio, Portfolio, Modern Portfolio, portfolio template, no code portfolio, coder, coding, basic portfolio, professional, professional portfolio, how to make a portfolio , easy to make portfolio, free tmplate, template for portfolio, portfolio website, Tejas Sawant website, portfolio website by tejas, portfolio website by tejas sawant, developers portfolio, frontend, frontend portfolio, backend portfolio, full stack portfolio, DIY portfolio, firebase, full stack portfolio, fulllstack portfolio, portfolio with backend, simple portfolio, free portfolio code, free portfolio, no cost portfolio, portfolio firebase, dynamic portfolio, Saas portfolio, Saas, developers, pune, pune developer, pune's develoer list, pune's top front end developer, backend developer, portfolio design, modern portfolio designs, simple portfolio design, moderate portfolio design, full stack developer pune, freelacer, freelance, freelancer in pune, india, top freelancers in pune, freelance web developer, web dveloper, frontend web developer, backend web developer, undergraduate developer, undergraduate frontedn developer, undergraduate full stack developer, unique site, best website, buildiers of sppu prep, good freelancer, portfolio nocode, projects, contact Tejas Sawant, reachout tejas, reachout tejas sawant, sawant tejas sadashiv, india freelancers, tejas-sawant, frontend-projects, fullstack-rpojects, modern projects, free to use projects, free template, modern template, cool looking portfolio, good ui portfolio, best portfolio, clean portfolio design, HTML, CSS, JavaScript, modern look, modern looking design, modern looking template, modern looking portfolio template" />
+    <meta name="author" content="Tejas Sawant" />
+    <meta property="og:image" content="./assets/project.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <title>Portfolio | Tejas Sawant</title>
+    <link rel="canonical" href="" />
+    <link rel="shortcut icon" href="./assets/logo profile.png" type="image/x-icon" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/loader.css" />
+    <!-- CDN's -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/ani.style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <!-- remember, jQuery is completely optional -->
+    <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
+    <script type="text/javascript" src="scripts/ani_jquery.particleground.js"></script>
+    <script type="text/javascript" src="scripts/ani_demo.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="./scripts/firebaseInit.js"></script>
+  </head>
+  <body>
+    <!--Loader-->
+    <div class="loaderDiv">
+      <div class="loader"></div>
+      <p>Loading Tejas Portfolio Page</p>
+    </div>
+    <!--Toaster-->
+    <div class="toaster"></div>
+    <div> <div id="particles">
+        <!-- <video autoplay loop muted>
+          <source src="./assets/pexels-crazy-motions-12920674 (1080p).mp4" type="video/mp4">
+        </video> -->
+      <div id="intro"><h1 style= >Tejas Sawant &nbsp;</h1> </div>
+       </div>
+    
+        
+          <hr style="width: 100%; background-color: #000000; border-color: #000000;">
+       </div>
+    </div> 
+       <!--Div for background-->
+     <div class="bg-div"></div>
+
+   
+    <!-----------------------
+         HEADER
+         ------------------------->
+    <header class="header" id="header">
+      <div class="logo img">
+        <img
+          class=""
+          src="./assets/My_logo.png"
+          alt="logo"
+        />
+      </div>
+       <p class="logo initials" tabindex="1" href=""></p>
+      <div class="navbar">
+
+        <ul class="navbar-list">
+          <li>
+            <a
+              class="navbar-link active"
+              name="home"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="4"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="about"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="5"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="skills"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="6"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="projects"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="7"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="education"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="8"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar-link"
+              name="experience"
+              onclick="scrollToSection(this),toggleNav()"
+              tabindex="9"
+              >Experience</a
+            >
+          </li>
+        </ul>
+        <a
+          class="contactBtn button"
+          name="getInTouch"
+          tabindex="10"
+          href="form.html"
+          target="_blank"
+          >Contact</a
+        >
+        <ion-icon
+          tabindex="9"
+          name="close-outline"
+          class="mobile-nav-icon"
+          onclick="toggleNav()"
+        ></ion-icon>
+      </div>
+      <ion-icon
+        tabindex="3"
+        name="menu-outline"
+        class="mobile-nav-icon"
+        onclick="toggleNav()"
+      ></ion-icon>
+    </header>
+    <!-----------------------
+         HOME SECTION
+         ------------------------->
+    <section class="section home-section" id="home" tabindex="42">
+      
+
+      <div>
+        <h1>Hey, I'm  <span class="name">Tejas</span></h1>
+        <p class="aboutShort">
+          An India-based freelancer who's into AI Engineering ,front-end Web development , Data Analytics and open to work as a developer.
+        </p>
+        <button
+          class="about-me-btn button"
+          name="about"
+          onclick="scrollToSection(this)"
+          tabindex="2"
+        >
+          About Me
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="">
+        <div class="imgDiv">
+          <img src="./assets/mainpic.png" class="profile-image" />
+        </div>
+      </div>
+    </section>
+    <!-----------------------
+         ABOUT SECTION
+         ------------------------->
+    <section id="about" class="section about-section" tabindex="11">
+      <div class="about-ill"><img src="./assets/about1.jpg" alt="Memoji" /></div>
+      <div
+        class="aboutMe"
+        data-aos="fade-left"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <h2 class="name">Er.Tejas Sawant</h2>
+        <div class="professionContainer">
+          <p class="profession">Data Analytics</p>
+          <p class="profession">AI Engineer</p>
+        </div>
+        <br />
+        <p class="aboutLong">
+          
+          <b>I’m</b> an undergrad, self taught Web developer , <b>Data Analyst</b> from Pune, India. I possess skilled talent and immense. <br>
+             I am passionate about <b>DATA</b>  ,because of which I have chosen data analyst as a career to begain with ,
+              I have gained experience through multiple projects  <br><br> 
+           Overall, 
+        I guarantee the highest level of professionalism, technical proficiency, and client satisfaction
+              in every aspect of development.
+        </p>
+        <br />
+        <a
+          class="button"
+          href="./assets/Tejas's Resume.pdf"
+          target="_blank"
+          tabindex="12"
+        >
+          Resume
+          <ion-icon name="document-outline"></ion-icon>
+        </a>
+      </div>
+      <ul
+        class="social-menu"
+        data-aos="fade-left"
+        data-aos-duration="700"
+        data-aos-delay="500"
+        data-aos-once="true"
+      >
+        <li id="linkedin">
+          <a
+            href="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/"
+            aria-label="linkedin"
+            class="linkedin"
+            tabindex="13"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li id="github">
+          <a
+            href="https://github.com/Tejaso7"
+            aria-label="github"
+            class="github"
+            tabindex="14"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li id="instagram">
+          <a
+            href="https://instagram.com/_ts_kingmaker_oo7_?igshid=ZGUzMzM3NWJiOQ%3D%3D"
+            aria-label="instagram"
+            class="instagram"
+            tabindex="15"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li id="twitter">
+          <a
+            href="https://www.twitter.com/TejasSawantoo7"
+            aria-label="twitter"
+            class="twitter"
+            tabindex="16"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+    <!-----------------------
+         SKILLS SECTION
+         ------------------------->
+    <section class="section skill-section" id="skills" tabindex="17">
+      <div
+        style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+        data-aos="zoom-in-up"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <h1 class="title">
+          My Skills
+          <p>Tiles in <span>blue</span> are some of my major skills.</p>
+        </h1>
+        <div class="skill-container">
+          <div class="major">
+            <img src="./assets/6-2-python-logo-free-png-image.png" alt="Skill image " />
+            <p>PYTHON</p>
+          </div>
+          <div class="major">
+            <img src="./assets/pngimg.com - mysql_PNG37.png" alt="Skill image " />
+            <p>MYSQL</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/html5-logo-31822.png" alt="Skill image " />
+            <p>CSS3</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/pngegg.png" alt="Skill image " />
+            <p>C++</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/pngwing.com (1).png" alt="Skill image " />
+            <p>C</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/icons8-bootstrap-48.png" alt="Skill image " />
+            <p>Bootstrap</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/power-bi-microsoft-seeklogo.com.svg" alt="Skill image " />
+            <p>PowerBI</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/javascript.png" alt="Skill image " />
+            <p>JavaScript</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/mongodb.png" alt="Skill image " />
+            <p>MangoDB</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/amazon-aws.png" alt="Skill image " />
+            <p>AWS</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/excel.png" alt="Skill image " />
+            <p>Excel</p>
+          </div>
+          <div class="minor">
+            <img src="./assets/html5.png" alt="Skill image " />
+            <p>HTML5</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------
+         PROJECT SECTION
+         ------------------------->
+    <section class="section main project-section" id="projects" tabindex="18">
+      <div
+        style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+        data-aos="zoom-in-up"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <div class="section-header">
+          <h1 class="title">
+            Some of My Projects
+            <p class="sectionDesc">
+              Here are a few past projects I've worked on. Want to see more?<a
+                href="projects.html"
+                tabindex="22"
+              >
+                Open All__ ></a
+              >
+            </p>
+          </h1>
+          <img
+            class="ProjectHeaderImage"
+            src="./assets/vecteezy_3d-illustration-skull-symbol_9902231_617.png"
+            alt="Project header image"
+          />
+        </div>
+        <div class="project card-container">
+          <div class="project card 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/campus project.png" alt="Project image" />
+            </div>
+            <br />
+            <h6>Campus Placement Automation System in PHP</h6>
+            <p class="techstack">
+              <span> Front-end </span> - HTML5,CSS3,JS,PHP,MYSQL
+            </p>
+            <p class="library">
+              <span> Project Working </span> -In this project Students list will be displayed to the placement cell dashboard.
+            </p>
+            <div class="options">
+              <a
+                class="viewElem"
+                href="https://youtu.be/k0BjUpJqgxA"
+                target="_blank"
+              >
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+              <!-- <a class="githubElem" href="https://github.com" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a> -->
+              <!-- <button class="share">
+                <ion-icon name="link-outline">Copied text!</ion-icon>
+              </button> -->
+            </div>
+          </div>
+          <div class="project card 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/car rental project.png" alt="Project image" />
+            </div>
+            <br />
+            <h6>Car Rental System Using C++</h6>
+            <p class="techstack">
+              <span> Libraries </span> - C++ 
+            </p>
+            <p class="library">
+              <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+            </p>
+            <div class="options">
+              <a
+                class="viewElem"
+                href="https://youtu.be/Dxfbi9vy_AY"
+                target="_blank"
+              >
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+              <!-- <a class="githubElem" href="https://github.com" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a> -->
+              <!-- <button class="share">
+                <ion-icon name="link-outline">Copied text!</ion-icon>
+              </button> -->
+            </div>
+          </div>
+          <div class="project card 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/virtual assistant using python.jpeg" alt="Project image" />
+            </div>
+            <br />
+            <h6>Virtual Assistant using Python</h6>
+            <p class="techstack">
+              <span> Libraries </span> - Python
+            </p>
+            <p class="library">
+              <span> Project Working </span> - In this project we created a Virtual Assistant by using python.
+            </p>
+            <div class="options">
+              <a
+                class="viewElem"
+                href="https://youtu.be/nA2QXO1yySA"
+                target="_blank"
+              >
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+              <!-- <a class="githubElem" href="https://github.com" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a> -->
+              <!-- <button class="share">
+                <ion-icon name="link-outline">Copied text!</ion-icon>
+              </button>
+              -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------------
+         EDUCATION SECTIONS
+         ------------------------->
+    <section class="section education-section" id="education" tabindex="23">
+      <div
+        style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+        data-aos="zoom-in-up"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <h1 class="title">
+          Education
+          <p>These are some of my Qualifications.</p>
+        </h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="imgDiv">
+              <img src="./assets/zeal.jpg" alt="Institute image" />
+            </div>
+            <br />
+            <h6 class="courseName">Bachelor Of Engineering  </h6>
+            <p class="instituteName">Zeal College Of Engineering And Research PUNE | SPPU</p>
+            <p class="instituteDesc"> <b>Course :-</b>Artifical Intelligence and Data Science </p>
+            <br />
+            <p class="status Pursuing">2020-2024| FE - 8.89 , SE - 8.27 ,TE - 9.00 SGPA | Pursuing</p>
+          </div>
+          <div class="card">
+            <div class="imgDiv">
+              <img src="./assets/MMhs.jpeg" alt="Institute image" />
+            </div>
+            <br />
+            <h6 class="courseName">HSC</h6>
+            <p class="instituteName">Mary Matha High School & jr.Collage Mhaswad</p>
+            <p class="instituteDesc"><b>Course :-</b>Science</p>
+            <br />
+            <p class="status Completed">2019-2020| 68.56% | Completed
+            </p>
+          </div>
+          <div class="card">
+            <div class="imgDiv">
+              <img src="./assets/MMhs.jpeg" alt="Institute image" />
+            </div>
+            <br />
+            <h6 class="courseName">SSC</h6>
+            <p class="instituteName">Mary Matha High School & jr.Collage Mhaswad</p>
+            <p class="instituteDesc"><b>Course :-</b>Science</p>
+            <br />
+            <p class="status Completed">2017-2018| 84.20 % | Completed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------
+         EXPERIENCE SECTION
+         ------------------------->
+    <section class="section experience-section" id="experience" tabindex="24">
+      <div
+        style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+        data-aos="zoom-in-up"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
+        <h1 class="title">
+          Experience
+          <p>These are the compaines where I've previously worked.</p>
+        </h1>
+        <div class="expContainer">
+          <ul class="listOfExp">
+            <li class="companyName active" tabindex="${tabindex}">
+              GENIOBITS PRIVATE LIMITED
+            </li>
+          </ul>
+          <div class="expDesc">
+            <h4 class="expTitle">FRONTEND WEB DEVELOPMENT</h4>
+            <p class="period"> jan - april 2023</p>
+            <br />
+            <p class="desc">
+              This internship at Geniobits Private Limited, has aided me in gaining practical experience. Online internship of this kind helped me to get used to an online project atmosphere and thus prepared me to face the world of engineering in much better and confident way. I’m sure that after completing this internship I will be able to visualize the work situation in a better way. 
+            </p>
+          </div>
+        </div>
+        <div class="expContainer">
+          <ul class="listOfExp">
+            <li class="companyName active" tabindex="${tabindex}">
+              Cognatech PRIVATE LIMITED
+            </li>
+          </ul>
+          <div class="expDesc">
+            <h4 class="expTitle">PYTHON DEVELOPER</h4>
+            <p class="period"> sep - dec 2023</p>
+            <br />
+            <p class="desc">
+              This internship at Cognatech Private Limited, has aided me in gaining practical experience. Online internship of this kind helped me to get used to an online project atmosphere and thus prepared me to face the world of engineering in much better and confident way. I’m sure that after completing this internship I will be able to visualize the work situation in a better way. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+       <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>RN 205,2nd Floor ,Sant Shrusthi Building, Near Garva biryani Narhe , pune, 411041 </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>Tejusawant302@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 7447679060</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 user-box">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 user-box mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="user-box mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="user-box mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="user-box-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+     
+   
+    <!-----------------------
+         CONTACT FORM
+         ------------------------->
+          <!-- <div class="formDiv">
+          <img alt="contact illustration" src="./assets/contact.png" />
+          <form id="myform">
+            <div class="user-box">
+              <input type="text" id="name" required /><label for="Name"
+                >Your Name</label
+              >
+            </div>
+            <div class="user-box">
+              <input type="email" id="email" required /><label for="Email"
+                >Email Address</label
+              >
+            </div>
+            <div class="user-box">
+              <textarea id="message" required></textarea
+              ><label for="Message">Enter your message</label>
+            </div>
+            <button type="submit" class="submit-btn button">Submit</button>
+          </form>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+         </div> -->
+    
+    <!-----------------------
+         FOOTER SECTION
+         ------------------------->
+    <footer class="footer" tabindex="35">
+      <div class="getInTouch">
+        <h3>Get Connected with Me..</h3>
+        <p>
+          Interested in working Together? We should queue up a time to chat.
+        </p>
+        <a
+          class="getInTouchBtn button"
+          target=""
+          href="#myform"
+          tabindex="36"
+          >Get in touch</a
+        >
+      </div>
+      <div class="footerParent">
+        <div class="profInfo">
+          <div class="imgDiv">
+            <img src="./assets/My_logo.png" alt="Profile Image" />
+          </div>
+          <p><pre>Thank you for visiting my personal portfolio Website 
+                          Connect with me over socials.</p>
+          <p>
+            <b>Tejas Sawant 💕_____</b> Mail me at : -
+            <a href="mailto:tejusawant302@gmail.com" tabindex="37">Tejusawant302@gmail.com</a>
+          </p></pre>
+        </div>
+        <div class="reachMeOut">
+          <h3>Reach me out on </h3>
+          <ul class="social-menu">
+            <li id="linkedin">
+              <a
+                href="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/"
+                class="linkedin"
+                tabindex="38"
+                aria-label="linkedin"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li id="github">
+              <a
+                href="https://github.com/Tejaso7"
+                aria-label="github"
+                class="github"
+                tabindex="39"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li id="instagram">
+              <a
+                href="https://instagram.com/_ts_kingmaker_oo7_?igshid=ZGUzMzM3NWJiOQ%3D%3D"
+                aria-label="instagram"
+                class="instagram"
+                tabindex="40"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li id="twitter">
+              <a
+                href="https://www.twitter.com/TejasSawantoo7"
+                aria-label="twitter"
+                class="twitter"
+                tabindex="41"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="developerInfo">
+        Designed With ❤️ by
+        <a href="https://instagram.com/_ts_kingmaker_oo7_?igshid=ZGUzMzM3NWJiOQ%3D%3D" tabindex="50"
+          >Tejas Sawant</a
+        >
+      </p>
+    </footer>
+    <!-- Scripts -->
+    <script src="./scripts/firebase.js"></script>
+    <script src="./scripts/commonScript.js"></script>
+    <script src="./scripts/script.js"></script>
+    <!-- External scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
