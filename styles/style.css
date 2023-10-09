@@ -21,13 +21,28 @@
 }
 
 
+/* Smoothly transition the background color over 0.3 seconds */
 
-
-
+/* Define an animation called 'move' */
+@keyframes move {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(100px);
+  }
+}
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  animation: move 2s smooth infinite;
 }
+
+/* Apply a smooth transition with ease-in-out timing function */
+
+/* Apply a smooth transition when hovering to scale an element */
+
+
 
 body {
   position: relative;

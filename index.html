@@ -13,6 +13,11 @@
     <title>Portfolio | Tejas Sawant</title>
     <link rel="canonical" href="" />
     <link rel="shortcut icon" href="./assets/logo profile.png" type="image/x-icon" />
+    <!-- Include Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Include Tailwind CSS (You can download it and host it locally if needed) -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/loader.css" />
@@ -39,6 +44,8 @@
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="./scripts/firebaseInit.js"></script>
+
+
   </head>
   <body>
     <!--Loader-->
@@ -48,16 +55,14 @@
     </div>
     <!--Toaster-->
     <div class="toaster"></div>
-    <div> <div id="particles">
-        <!-- <video autoplay loop muted>
-          <source src="./assets/pexels-crazy-motions-12920674 (1080p).mp4" type="video/mp4">
-        </video> -->
-      <div id="intro"><h1 style= >Tejas Sawant &nbsp;</h1> </div>
-       </div>
+    <div> 
+      <div id="particles">
+        <div id="intro"><h1 style= >Tejas Sawant &nbsp;</h1> </div>
+        </div>
     
         
           <hr style="width: 100%; background-color: #000000; border-color: #000000;">
-       </div>
+      </div>
     </div> 
        <!--Div for background-->
      <div class="bg-div"></div>
@@ -161,8 +166,8 @@
     <section class="section home-section" id="home" tabindex="42">
       
 
-      <div>
-        <h1>Hey, I'm  <span class="name">Tejas</span></h1>
+      <div><h1>
+        Hey, I'm  <span class="name">Tejas Sawant</span></h1>
         <p class="aboutShort">
           An India-based freelancer who's into AI Engineering ,front-end Web development , Data Analytics and open to work as a developer.
         </p>
@@ -568,7 +573,7 @@
     </section>
        <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div style="width: 300px; height: 200px; border: 1px solid black; padding: 20px; box-sizing: border-box;">
+      <div class="continer" style="width: 300px; height: 200px; border: 1px solid black; padding: 20px; box-sizing: border-box;">
         <h1 style="text-align: center; margin-bottom: 20px;">Contact Information</h1>
         <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
         <span style="font-weight: bold;">Mobile Number:</span>
@@ -578,7 +583,7 @@
         <span style="font-weight: bold;">Email:</span>
         <span>Tejusawant302@gmail.com</span>
         </div>
-        </div>
+      </div>
     </section><!-- End Contact Section -->
 
      
@@ -711,5 +716,87 @@
     <script>
       AOS.init();
     </script>
+      <!-- Include Particle.js JavaScript (You can download it and host it locally if needed) -->
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
+      <script>
+          // Particle.js Configuration
+          particlesJS('particles-js', {
+              "particles": {
+                  "number": {
+                      "value": 80,
+                      "density": {
+                          "enable": true,
+                          "value_area": 800
+                      }
+                  },
+                  "color": {
+                      "value": "#3498db"
+                  },
+                  "shape": {
+                      "type": "circle",
+                      "stroke": {
+                          "width": 0,
+                          "color": "#000000"
+                      },
+                      "polygon": {
+                          "nb_sides": 5
+                      },
+                  },
+                  "opacity": {
+                      "value": 0.5,
+                      "random": false,
+                      "anim": {
+                          "enable": false,
+                          "speed": 1,
+                          "opacity_min": 0.1,
+                          "sync": false
+                      }
+                  },
+                  "size": {
+                      "value": 3,
+                      "random": true,
+                      "anim": {
+                          "enable": false,
+                          "speed": 40,
+                          "size_min": 0.1,
+                          "sync": false
+                      }
+                  },
+                  "line_linked": {
+                      "enable": true,
+                      "distance": 150,
+                      "color": "#3498db",
+                      "opacity": 0.4,
+                      "width": 1
+                  }
+              },
+              "interactivity": {
+                  "detect_on": "canvas",
+                  "events": {
+                      "onhover": {
+                          "enable": true,
+                          "mode": "grab"
+                      },
+                      "onclick": {
+                          "enable": true,
+                          "mode": "push"
+                      },
+                      "resize": true
+                  },
+                  "modes": {
+                      "grab": {
+                          "distance": 140,
+                          "line_linked": {
+                              "opacity": 1
+                          }
+                      },
+                      "push": {
+                          "particles_nb": 4
+                      },
+                  }
+              }
+          });
+      </script>
   </body>
 </html>

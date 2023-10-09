@@ -103,10 +103,12 @@
     </style>
   </head>
   <body>
+    <div id="particles-js"></div>
+
     <!-- // FORM--------------------->
-      <video  class="video-background" autoplay loop muted width="auto" height="auto">
-        <source src="./assets/pexels-mikhail-nilov-6962343 (1080p).mp4" type="video/mp4">
-      </video>
+      <!-- <video  class="video-background" autoplay loop muted width="auto" height="auto"> -->
+        <!-- <source src="./assets/pexels-mikhail-nilov-6962343 (1080p).mp4" type="video/mp4"> -->
+      <!-- </video> -->
       <div class="c">
         <form>
           <h1 class="title text-center mb-4">Talk to Us..</h1>
@@ -158,6 +160,90 @@
           <br />
         </form>
       </div>
-   
+
+     
+  
+      <!-- Include Particle.js JavaScript (You can download it and host it locally if needed) -->
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
+      <script>
+          // Particle.js Configuration
+          particlesJS('particles-js', {
+              "particles": {
+                  "number": {
+                      "value": 80,
+                      "density": {
+                          "enable": true,
+                          "value_area": 800
+                      }
+                  },
+                  "color": {
+                      "value": "#3498db"
+                  },
+                  "shape": {
+                      "type": "circle",
+                      "stroke": {
+                          "width": 0,
+                          "color": "#000000"
+                      },
+                      "polygon": {
+                          "nb_sides": 5
+                      },
+                  },
+                  "opacity": {
+                      "value": 0.5,
+                      "random": false,
+                      "anim": {
+                          "enable": false,
+                          "speed": 1,
+                          "opacity_min": 0.1,
+                          "sync": false
+                      }
+                  },
+                  "size": {
+                      "value": 3,
+                      "random": true,
+                      "anim": {
+                          "enable": false,
+                          "speed": 40,
+                          "size_min": 0.1,
+                          "sync": false
+                      }
+                  },
+                  "line_linked": {
+                      "enable": true,
+                      "distance": 150,
+                      "color": "#3498db",
+                      "opacity": 0.4,
+                      "width": 1
+                  }
+              },
+              "interactivity": {
+                  "detect_on": "canvas",
+                  "events": {
+                      "onhover": {
+                          "enable": true,
+                          "mode": "grab"
+                      },
+                      "onclick": {
+                          "enable": true,
+                          "mode": "push"
+                      },
+                      "resize": true
+                  },
+                  "modes": {
+                      "grab": {
+                          "distance": 140,
+                          "line_linked": {
+                              "opacity": 1
+                          }
+                      },
+                      "push": {
+                          "particles_nb": 4
+                      },
+                  }
+              }
+          });
+      </script>
   </body>
 </html>
