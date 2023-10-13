@@ -55,6 +55,81 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="firebaseInit.js"></script>
+    <style>
+  .wrapper{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+  .box div{
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-color: transparent;
+      border: 6px solid rgba(4, 4, 4, 0.8);
+  }
+  .box div:nth-child(1){
+      top: 12%;
+      left: 42%;
+      animation:animate 10s linear infinite ;
+  }
+  .box div:nth-child(2){
+      top: 70%;
+      left: 50%;
+      animation:animate 7s linear infinite ;
+  }
+  .box div:nth-child(3){
+      top: 17%;
+      left: 6%;
+      animation:animate 9s linear infinite ;
+  }
+  .box div:nth-child(4){
+      top: 20%;
+      left: 60%;
+      animation:animate 10s linear infinite ;
+  }
+  .box div:nth-child(5){
+      top: 67%;
+      left: 10%;
+      animation:animate 6s linear infinite ;
+  }
+  .box div:nth-child(6){
+      top: 80%;
+      left: 70%;
+      animation:animate 12s linear infinite ;
+  }
+  .box div:nth-child(7){
+      top: 60%;
+      left: 80%;
+      animation:animate 15s linear infinite ;
+  }
+  .box div:nth-child(8){
+      top: 32%;
+      left: 25%;
+      animation:animate 16s linear infinite ;
+  }
+  .box div:nth-child(9){
+      top: 90%;
+      left: 25%;
+      animation:animate 9s linear infinite ;
+  }
+  .box div:nth-child(10){
+      top: 20%;
+      left: 80%;
+      animation:animate 5s linear infinite ;
+  }
+  @keyframes animate{
+      0%{
+          transform: scale(0) translateY(0) rotate(0);
+          opacity: 1;
+      }
+      100%{
+          transform: scale(1.3) translateY(-90px) rotate(360deg);
+          opacity: 0;
+      }
+      
+  }</style>
   </head>
 
   <body>
@@ -66,11 +141,12 @@
     <header class="header" id="header">
       <a class="logo initials" tabindex="1"></a>
       <div class="logo img">
+        <a href="https://github.com/Tejaso7">
         <img
           class="logo"
-          src="https://res.cloudinary.com/dkezwrb3a/image/upload/v1678016307/Portfolio/Untitled_design_2_-PhotoRoom.png-PhotoRoom_atrult.png"
-          alt="logo img"
-        />
+          src="./assets/My_logo.png"
+          alt="logo"
+        /></a>
       </div>
       <div class="navbar">
         <ul class="navbar-list">
@@ -78,7 +154,7 @@
             <button class="goBack button" onclick="history.back()" tabindex="5">
               Go back
             </button></li>
-        <li><a
+          <li><a
             class="contactBtn button"
             name="getInTouch"
             href="form.html"
@@ -109,10 +185,23 @@
       <div class="sectionDesc">
         <h1>Welcome to my <span>project library</span></h1>
         <p>
+          <br>
           This library includes my major as well as minor projects. Tiles in
-          <span style="color:green;">green</span> are some of the major projects while rest of them
+          <span style="color:green;"><b>Green</b></span> are some of the major projects while rest of them
           are minor projects.
         </p>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+     </div>
       </div>
      </section>
 
@@ -160,7 +249,7 @@
                 <img src="./assets/campus project.png" alt="Project image" />
               </div>
               <br />
-              <h6>Campus Placement Automation System in PHP</h6>
+              <h2>Campus Placement Automation System in PHP</h2>
               <p class="techstack">
                 <span> Front-end </span> - HTML5,CSS3,JS,PHP,MYSQL
               </p>
@@ -188,7 +277,7 @@
                 <img src="./assets/car rental project.png" alt="Project image" />
               </div>
               <br />
-              <h6>Car Rental System Using C++</h6>
+              <h2>Car Rental System Using C++</h2>
               <p class="techstack">
                 <span> Libraries </span> - C++ 
               </p>
@@ -213,12 +302,12 @@
             </div>
             <div class="project card 1" tabindex="">
               <div class="imgDiv">
-                <img src="./assets/virtual assistant using python.jpeg" alt="Project image" />
+                <img src="./assets/virtualassistant.jpg" alt="Project image" />
               </div>
               <br />
-              <h6>Virtual Assistant using Python</h6>
+              <h2>Virtual Assistant using Python</h2>
               <p class="techstack">
-                <span> Libraries </span> - Python
+                <span> Libraries </span> - Python, NLP
               </p>
               <p class="library">
                 <span> Project Working </span> - In this project we created a Virtual Assistant by using python.
@@ -247,15 +336,15 @@
 
               <div class="project card 1" tabindex="">
                 <div class="imgDiv">
-                  <img src="./assets/car rental project.png" alt="Project image" />
+                  <img src="./assets/Steganography.png" alt="Project image" />
                 </div>
                 <br />
-                <h6>Image Stegnography using Python</h6>
+                <h2>Image Stegnography using Python</h2>
                 <p class="techstack">
-                  <span> Libraries </span> - C++ 
+                  <span> Libraries </span> - Python 
                 </p>
                 <p class="library">
-                  <span> Project Working</span> -  We have created this project in our Engineering 2nd year which is use to hide the secrete msg in the image this tech was used by many security people in old days or years
+                  <span> Project Working</span> -  We have use to hide the secrete msg in the image this tech was used by many security people in old days or years
                 </p>
                 <div class="options">
                   <a
@@ -275,24 +364,18 @@
               </div>
               <div class="project card 1" tabindex="">
                 <div class="imgDiv">
-                  <img src="./assets/car rental project.png" alt="Project image" />
+                  <img src="./assets/attendence.png" alt="Project image" />
                 </div>
                 <br />
-                <h6>Face Recognition Attendance System</h6>
+                <h2>Face Recognition Attendance System</h2>
                 <p class="techstack">
-                  <span> Libraries </span> -Python 
+                  <span> Libraries </span> -Python,Opencv,face-recognition,scikitlearn
                 </p>
                 <p class="library">
-                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                  <span> Project Working</span> - In this Project we build an system which can take attendence with help of face-recognition ,opencv .
                 </p>
                 <div class="options">
-                  <a
-                    class="viewElem"
-                    href="https://youtu.be/Dxfbi9vy_AY"
-                    target="_blank"
-                  >
-                    <ion-icon name="open-outline"></ion-icon>
-                  </a>
+                 
                   <a class="githubElem" href="https://github.com/Tejaso7/Face_Recognition_Attendance_System" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                   </a>
@@ -303,15 +386,15 @@
               </div>
               <div class="project card 1" tabindex="">
                 <div class="imgDiv">
-                  <img src="./assets/car rental project.png" alt="Project image" />
+                  <img src="./assets/portfolio.png" alt="Project image" />
                 </div>
                 <br />
-                <h6>Tejas Sawant Portfolio</h6>
+                <h2 style="color:green;" >Tejas Sawant Portfolio</h2>
                 <p class="techstack">
-                  <span> Libraries </span> - C++ 
+                  <span> Libraries </span> - HTML,SCSS,JavaScript,Firebase
                 </p>
                 <p class="library">
-                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                  <span> Project Working</span> - In this project I build my own Portfolio Website .
                 </p>
                 <div class="options">
                   <a
@@ -321,7 +404,7 @@
                   >
                     <ion-icon name="open-outline"></ion-icon>
                   </a>
-                  <a class="githubElem" href="https://github.com" target="_blank">
+                  <a class="githubElem" href="https://github.com/Tejaso7/MyPortfolio" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                   </a>
                   <button class="share">
@@ -331,24 +414,18 @@
               </div>
               <div class="project card 1" tabindex="">
                 <div class="imgDiv">
-                  <img src="./assets/car rental project.png" alt="Project image" />
+                  <img src="./assets/pustakam.png" alt="Project image" />
                 </div>
                 <br />
-                <h6>Pustakam Book Selling Website</h6>
+                <h2 style="color:green;">Pustakam Book Selling Website</h2>
                 <p class="techstack">
-                  <span> Libraries </span> - C++ 
+                  <span> Libraries </span> - Django,Html,CSS,JavaScript 
                 </p>
                 <p class="library">
-                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                  <span> Project Working</span> - In this project we are trying to make an own website second hand book selling with Aniket,Suraj,Prathmesh .
                 </p>
                 <div class="options">
-                  <a
-                    class="viewElem"
-                    href="https://youtu.be/Dxfbi9vy_AY"
-                    target="_blank"
-                  >
-                    <ion-icon name="open-outline"></ion-icon>
-                  </a>
+                  
                   <a class="githubElem" href= "https://github.com/Tejaso7/Pustakam_Book_selling_website " target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                   </a>
@@ -359,24 +436,18 @@
               </div>
               <div class="project card 1" tabindex="">
                 <div class="imgDiv">
-                  <img src="./assets/car rental project.png" alt="Project image" />
+                  <img src="./assets/pythonminiproject.png" alt="Project image" />
                 </div>
                 <br />
-                <h6>Python Mini Projects</h6>
+                <h2>Python Mini Projects</h2>
                 <p class="techstack">
-                  <span> Libraries </span> - C++ 
+                  <span> Libraries </span> - Python
                 </p>
                 <p class="library">
-                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                  <span> Project Working</span> - In this I had Created multiple Python Projects you can see in github.
                 </p>
                 <div class="options">
-                  <a
-                    class="viewElem"
-                    href="https://youtu.be/Dxfbi9vy_AY"
-                    target="_blank"
-                  >
-                    <ion-icon name="open-outline"></ion-icon>
-                  </a>
+                  
                   <a class="githubElem" href="https://github.com/Tejaso7/Python_Mini_Project " target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                   </a>
@@ -387,24 +458,17 @@
               </div>
               <div class="project card 1" tabindex="">
                 <div class="imgDiv">
-                  <img src="./assets/car rental project.png" alt="Project image" />
+                  <img src="./assets/cardjango.png" alt="Project image" />
                 </div>
                 <br />
-                <h6>Car Rental System Using Django</h6>
+                <h2>Car Rental System Using Django</h2>
                 <p class="techstack">
                   <span> Libraries </span> -Python ,Django, POSTGRESQL
                 </p>
                 <p class="library">
-                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car in Django .
                 </p>
                 <div class="options">
-                  <a
-                    class="viewElem"
-                    href="https://youtu.be/Dxfbi9vy_AY"
-                    target="_blank"
-                  >
-                    <ion-icon name="open-outline"></ion-icon>
-                  </a>
                   <a class="githubElem" href="https://github.com" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                   </a>
@@ -415,24 +479,18 @@
               </div>
               <div class="project card 1" tabindex="">
                 <div class="imgDiv">
-                  <img src="./assets/car rental project.png" alt="Project image" />
+                  <img src="./assets/amazon.png" alt="Project image" />
                 </div>
                 <br />
-                <h6>Amazon Clone</h6>
+                <h2>Amazon Clone</h2>
                 <p class="techstack">
-                  <span> Libraries </span> - C++ 
+                  <span> Libraries </span> - Html,css,js
                 </p>
                 <p class="library">
-                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                  <span> Project Working</span> - In this project I had made Amazon Front-end and doing more things .
                 </p>
                 <div class="options">
-                  <a
-                    class="viewElem"
-                    href="https://youtu.be/Dxfbi9vy_AY"
-                    target="_blank"
-                  >
-                    <ion-icon name="open-outline"></ion-icon>
-                  </a>
+                  
                   <a class="githubElem" href="https://github.com" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                   </a>
@@ -463,11 +521,12 @@
           Interested in working together? We should queue up a time to chat.
         </p>
       </div>
+      <br>
       <div class="footerParent">
         <div class="profInfo">
           <p>
             Tejas Sawant<br />Mail me at
-            <a href="https://tejusawant302.gmail.com" tabindex="37">Tejusawant302@gmail.com</a>
+            <a href="https://tejusawant302@gmail.com" tabindex="37">Tejusawant302@gmail.com</a>
           </p>
         </div>
         <div class="reachMeOut">
