@@ -10,42 +10,60 @@
     <meta property="og:image" content="./assets/project.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
-    <title>Project Library</title>
+    <title>Please Comeback To Portfolio🙏</title>
     <link rel="canonical" href="https://tejassawant.netlify.app" />
     <link rel="stylesheet" href="loader.css" />
     <link rel="stylesheet" href="projects.css" />
     <link rel="icon" href="favicon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous"referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Include Tailwind CSS (You can download it and host it locally if needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/loader.css" />
+        <!-- CDN's -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="./styles/ani.style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+        <!-- remember, jQuery is completely optional -->
+        <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
+        <script type="text/javascript" src="scripts/ani_jquery.particleground.js"></script>
+        <script type="text/javascript" src="scripts/ani_demo.js"></script>
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+        <script src="./scripts/firebaseInit.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="firebaseInit.js"></script>
   </head>
 
   <body>
-    <!--Loader-->
-    <div class="loaderDiv">
-      <div class="loader"></div>
-     
-    </div>
-    <!--Toaster-->
-    <div class="toaster"></div>
-
-    <!-------------------------
+  
+    <!-- -----------------------
                HEADER
      ------------------------->
 
-    <!-- <header class="header" id="header">
+    <header class="header" id="header">
       <a class="logo initials" tabindex="1"></a>
       <div class="logo img">
         <img
@@ -56,20 +74,24 @@
       </div>
       <div class="navbar">
         <ul class="navbar-list">
-          <li><a class="navbar-link" name="home" tabindex="3">Go Home</a></li>
+          <li>
+            <button class="goBack button" onclick="history.back()" tabindex="5">
+              Go back
+            </button></li>
+        <li><a
+            class="contactBtn button"
+            name="getInTouch"
+            href="form.html"
+            target="_blank"
+            tabindex="4"
+            >Contact</a>
+           </li>
+          ><ion-icon
+            name="close-outline"
+            class="mobile-nav-icon"
+            onclick="toggleNav()"
+          ></ion-icon>
         </ul>
-        <a
-          class="contactBtn button"
-          name="getInTouch"
-          href="mailto:tejusawant302@gmail.com"
-          target="_blank"
-          tabindex="4"
-          >Contact</a
-        ><ion-icon
-          name="close-outline"
-          class="mobile-nav-icon"
-          onclick="toggleNav()"
-        ></ion-icon>
       </div>
       <ion-icon
         name="menu-outline"
@@ -77,31 +99,28 @@
         onclick="toggleNav()"
         tabindex="2"
       ></ion-icon>
-    </header> -->
+    </header>
 
     <!-------------------------
            HOME SECTION
     ------------------------->
 
-    <!-- <section class="home-section" tabindex="1006">
+    <section class="home-section" tabindex="1006">
       <div class="sectionDesc">
         <h1>Welcome to my <span>project library</span></h1>
         <p>
           This library includes my major as well as minor projects. Tiles in
-          <span>green</span> are some of the major projects while rest of them
+          <span style="color:green;">green</span> are some of the major projects while rest of them
           are minor projects.
         </p>
       </div>
-      <div class="imgDiv">
-        <img src="./assets/project-head.png" alt="Project library image" />
-      </div>
-    </section> -->
+     </section>
 
     <!-------------------------
          PROJECT SECTION
     ------------------------->
 
-    <section
+    <!-- <section
       class="section project-section"
       id="projects"
       tabindex="5"
@@ -114,74 +133,341 @@
           class="fa fa-search"
         ></i>
       </div>
-      <div class="project card-container"></div>
-    </section>
+      </section> -->
+      <section class="section main project-section" id="projects" tabindex="18">
+        <div
+          style="
+            width: 100%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+          "
+          data-aos="zoom-in-up"
+          data-aos-duration="700"
+          data-aos-once="true">
+          <div class="section-header">
+            
+            </h1>
+            <img
+              class="ProjectHeaderImage"
+              src="./assets/vecteezy_3d-illustration-skull-symbol_9902231_617.png"
+              alt="Project header image"
+            />
+          </div>
+          <div class="project card-container">
+            <div class="project card 1" tabindex="">
+              <div class="imgDiv">
+                <img src="./assets/campus project.png" alt="Project image" />
+              </div>
+              <br />
+              <h6>Campus Placement Automation System in PHP</h6>
+              <p class="techstack">
+                <span> Front-end </span> - HTML5,CSS3,JS,PHP,MYSQL
+              </p>
+              <p class="library">
+                <span> Project Working </span> -In this project Students list will be displayed to the placement cell dashboard.
+              </p>
+              <div class="options">
+                <a
+                  class="viewElem"
+                  href="https://youtu.be/k0BjUpJqgxA"
+                  target="_blank"
+                >
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+                <a class="githubElem" href="https://github.com" target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <button class="share">
+                  <ion-icon name="link-outline">Copied text!</ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="project card 1" tabindex="">
+              <div class="imgDiv">
+                <img src="./assets/car rental project.png" alt="Project image" />
+              </div>
+              <br />
+              <h6>Car Rental System Using C++</h6>
+              <p class="techstack">
+                <span> Libraries </span> - C++ 
+              </p>
+              <p class="library">
+                <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+              </p>
+              <div class="options">
+                <a
+                  class="viewElem"
+                  href="https://youtu.be/Dxfbi9vy_AY"
+                  target="_blank"
+                >
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+                <a class="githubElem" href="https://github.com/Tejaso7/Car_Rental_System_in_cpp"  target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <button class="share">
+                  <ion-icon name="link-outline">Copied text!</ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="project card 1" tabindex="">
+              <div class="imgDiv">
+                <img src="./assets/virtual assistant using python.jpeg" alt="Project image" />
+              </div>
+              <br />
+              <h6>Virtual Assistant using Python</h6>
+              <p class="techstack">
+                <span> Libraries </span> - Python
+              </p>
+              <p class="library">
+                <span> Project Working </span> - In this project we created a Virtual Assistant by using python.
+              </p>
+              <div class="options">
+                <a
+                  class="viewElem"
+                  href="https://youtu.be/nA2QXO1yySA"
+                  target="_blank"
+                >
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+                <a class="githubElem" href="https://github.com" target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <button class="share">
+                  <ion-icon name="link-outline">Copied text!</ion-icon>
+                </button>
+               
+                </div>
+              </div>
 
-    <!-------------------------
-          CONTACT SECTION
-     ------------------------->
 
-    <!-- <div class="formDiv">
-      <img alt="contact illustration" src="./assets/" />
-      <form id="myform">
-        <div class="user-box">
-          <input type="text" id="name" required /><label for="Name"
-            >Your Name</label
-          >
+
+
+
+              <div class="project card 1" tabindex="">
+                <div class="imgDiv">
+                  <img src="./assets/car rental project.png" alt="Project image" />
+                </div>
+                <br />
+                <h6>Image Stegnography using Python</h6>
+                <p class="techstack">
+                  <span> Libraries </span> - C++ 
+                </p>
+                <p class="library">
+                  <span> Project Working</span> -  We have created this project in our Engineering 2nd year which is use to hide the secrete msg in the image this tech was used by many security people in old days or years
+                </p>
+                <div class="options">
+                  <a
+                    class="viewElem"
+                    href="https://youtu.be/Dxfbi9vy_AY"
+                    target="_blank"
+                  >
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                  <a class="githubElem" href="https://github.com/Tejaso7/Image_Steganography" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <button class="share">
+                    <ion-icon name="link-outline">Copied text!</ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="project card 1" tabindex="">
+                <div class="imgDiv">
+                  <img src="./assets/car rental project.png" alt="Project image" />
+                </div>
+                <br />
+                <h6>Face Recognition Attendance System</h6>
+                <p class="techstack">
+                  <span> Libraries </span> -Python 
+                </p>
+                <p class="library">
+                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                </p>
+                <div class="options">
+                  <a
+                    class="viewElem"
+                    href="https://youtu.be/Dxfbi9vy_AY"
+                    target="_blank"
+                  >
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                  <a class="githubElem" href="https://github.com/Tejaso7/Face_Recognition_Attendance_System" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <button class="share">
+                    <ion-icon name="link-outline">Copied text!</ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="project card 1" tabindex="">
+                <div class="imgDiv">
+                  <img src="./assets/car rental project.png" alt="Project image" />
+                </div>
+                <br />
+                <h6>Tejas Sawant Portfolio</h6>
+                <p class="techstack">
+                  <span> Libraries </span> - C++ 
+                </p>
+                <p class="library">
+                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                </p>
+                <div class="options">
+                  <a
+                    class="viewElem"
+                    href="tejassawant.netlify.app"
+                    target="_blank"
+                  >
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                  <a class="githubElem" href="https://github.com" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <button class="share">
+                    <ion-icon name="link-outline">Copied text!</ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="project card 1" tabindex="">
+                <div class="imgDiv">
+                  <img src="./assets/car rental project.png" alt="Project image" />
+                </div>
+                <br />
+                <h6>Pustakam Book Selling Website</h6>
+                <p class="techstack">
+                  <span> Libraries </span> - C++ 
+                </p>
+                <p class="library">
+                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                </p>
+                <div class="options">
+                  <a
+                    class="viewElem"
+                    href="https://youtu.be/Dxfbi9vy_AY"
+                    target="_blank"
+                  >
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                  <a class="githubElem" href= "https://github.com/Tejaso7/Pustakam_Book_selling_website " target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <button class="share">
+                    <ion-icon name="link-outline">Copied text!</ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="project card 1" tabindex="">
+                <div class="imgDiv">
+                  <img src="./assets/car rental project.png" alt="Project image" />
+                </div>
+                <br />
+                <h6>Python Mini Projects</h6>
+                <p class="techstack">
+                  <span> Libraries </span> - C++ 
+                </p>
+                <p class="library">
+                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                </p>
+                <div class="options">
+                  <a
+                    class="viewElem"
+                    href="https://youtu.be/Dxfbi9vy_AY"
+                    target="_blank"
+                  >
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                  <a class="githubElem" href="https://github.com/Tejaso7/Python_Mini_Project " target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <button class="share">
+                    <ion-icon name="link-outline">Copied text!</ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="project card 1" tabindex="">
+                <div class="imgDiv">
+                  <img src="./assets/car rental project.png" alt="Project image" />
+                </div>
+                <br />
+                <h6>Car Rental System Using Django</h6>
+                <p class="techstack">
+                  <span> Libraries </span> -Python ,Django, POSTGRESQL
+                </p>
+                <p class="library">
+                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                </p>
+                <div class="options">
+                  <a
+                    class="viewElem"
+                    href="https://youtu.be/Dxfbi9vy_AY"
+                    target="_blank"
+                  >
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                  <a class="githubElem" href="https://github.com" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <button class="share">
+                    <ion-icon name="link-outline">Copied text!</ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="project card 1" tabindex="">
+                <div class="imgDiv">
+                  <img src="./assets/car rental project.png" alt="Project image" />
+                </div>
+                <br />
+                <h6>Amazon Clone</h6>
+                <p class="techstack">
+                  <span> Libraries </span> - C++ 
+                </p>
+                <p class="library">
+                  <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+                </p>
+                <div class="options">
+                  <a
+                    class="viewElem"
+                    href="https://youtu.be/Dxfbi9vy_AY"
+                    target="_blank"
+                  >
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                  <a class="githubElem" href="https://github.com" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <button class="share">
+                    <ion-icon name="link-outline">Copied text!</ion-icon>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
-        <div class="user-box">
-          <input type="email" id="email" required /><label for="Email"
-            >Email Address</label
-          >
-        </div>
-        <div class="user-box">
-          <textarea id="message" required></textarea
-          ><label for="Message">Enter your message</label>
-        </div>
-        <button type="submit" class="submit-btn button">Submit</button>
-      </form>
-      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
-    </div> -->
+      </section>
+   
+ 
 
-    <!-------------------------
-           ERROR SECTION
-     ------------------------->
-
-    <section class="errorSection darkBg" tabindex="1006">
-      <div>
-        <img
-          class="errorImg"
-          src="./assets/401-Error Unauthorized-pana.svg"
-          alt="error"
-        />
-      </div>
-      <div>
-        <button class="goBack button" onclick="history.back()" tabindex="5">
-          Go back
-        </button>
-      </div>
-    </section>
+    
+     
+   
 
     <!-------------------------
           FOOTER SECTION
     ------------------------->
     <footer class="footer" tabindex="35">
       <div class="getInTouch">
-        <h3>Start a project?</h3>
+        <h3>Start a project ?</h3>
         <p>
           Interested in working together? We should queue up a time to chat.
         </p>
-        <a class="getInTouchBtn button" tabindex="36">Get in touch</a>
       </div>
       <div class="footerParent">
         <div class="profInfo">
-          <div class="imgDiv">
-            <img src="./assets//bgproj.png" alt="Profile Image" />
-          </div>
-
           <p>
             Tejas Sawant<br />Mail me at
-            <a href="https://www.gmail.com" tabindex="37">Tejusawant302@gmail.com</a>
+            <a href="https://tejusawant302.gmail.com" tabindex="37">Tejusawant302@gmail.com</a>
           </p>
         </div>
         <div class="reachMeOut">

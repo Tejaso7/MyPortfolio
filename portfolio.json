@@ -72,8 +72,18 @@
       "ProjectScale": "Major",
       "Techstack": "Techstack 1, Techstack 2",
       "Title": "Project name"
-    }
-  },
+    },
+    
+      "2 - Project": {
+        "Github": "",
+        "ImageUrl": "",
+        "Library": "Library , Library ",
+        "ProjectLink": "",
+        "ProjectScale": "Major",
+        "Techstack": "Techstack , Techstack ",
+        "Title": "Project name"
+      }
+    },
   "Skills": [
     "PYTHON, major, skill image url 1",
     "CSS3, minor, skill image url 2",
