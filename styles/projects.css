@@ -19,6 +19,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   cursor: var(--arrow-pointer);
+  border: none !important;
 }
 
 html {
@@ -40,7 +41,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 8rem 7rem;
+  padding: 0px !important;
   width: 100vw;
   height: -moz-max-content;
   height: max-content;
@@ -1175,3 +1176,9 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #daa520;
 } /*# sourceMappingURL=projects.css.map */
+
+section .contact #contact {
+  width: 100%;
+  /* padding: 0px !important; */
+  height: 100px !important;
+}

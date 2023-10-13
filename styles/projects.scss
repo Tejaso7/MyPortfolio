@@ -163,7 +163,6 @@ p {
 .button:focus {
   background-color: #22c55e;
   color: white;
-   
 }
 
 .button:focus {
@@ -178,7 +177,6 @@ a {
 
 @media (hover: hover) {
   a:hover {
-     
   }
 }
 
@@ -260,13 +258,11 @@ a {
   a:focus {
     transform: scale(1.1);
     border-radius: 50%;
-     
   }
 
   a:hover i,
   a:focus i {
     color: #fff;
-     
   }
   .linkedin:hover,
   .linkedin:focus {
@@ -383,7 +379,6 @@ a {
         text-underline-offset: 0.7rem;
         transform: scale(1.1);
         cursor: var(--hand-pointer);
-         
       }
     }
 
@@ -477,7 +472,7 @@ a {
     .about-me-btn:focus {
       gap: 1rem;
       color: var(--light-blue);
-       
+
       border: none;
     }
   }
@@ -624,7 +619,6 @@ a {
       ion-icon:focus {
         color: var(--light-gray);
         background-color: var(--light-blue);
-         
       }
     }
 
@@ -663,7 +657,6 @@ a {
       ion-icon:hover {
         color: var(--light-gray);
         background-color: var(--light-blue);
-         
       }
     }
   }
@@ -931,7 +924,6 @@ a {
       a {
         color: var(--light-blue);
         text-decoration: none;
-         
       }
       a:hover {
         text-decoration: underline;

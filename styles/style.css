@@ -20,16 +20,15 @@
   cursor: var(--arrow-pointer);
 }
 
-
 /* Smoothly transition the background color over 0.3 seconds */
 
 /* Define an animation called 'move' */
 @keyframes move {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(100px);
+    transform: translateX(100px);
   }
 }
 html {
@@ -41,8 +40,6 @@ html {
 /* Apply a smooth transition with ease-in-out timing function */
 
 /* Apply a smooth transition when hovering to scale an element */
-
-
 
 body {
   position: relative;
@@ -510,6 +507,7 @@ a {
     #f9f9f9,
     #f7f7f7
   );
+  padding: 0px 2%;
 }
 .about-section .about-ill {
   width: 30%;
@@ -543,7 +541,7 @@ a {
 .skill-section {
   height: -moz-max-content;
   height: max-content;
-  padding: 0 5rem;
+  padding: 0 2%;
 }
 .skill-section .title p span {
   color: #22d3ee;
