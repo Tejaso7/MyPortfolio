@@ -21,6 +21,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/loader.css" />
+    <link rel="stylesheet" href="./styles/expre.css" />
+
     <!-- CDN's -->
     <link
       rel="stylesheet"
@@ -57,7 +59,6 @@
     <div class="toaster"></div>
      <div> 
        <div id="particles">
-         <div id="intro"><h1 style= >&nbsp;</h1> </div>
         </div>
     
         
@@ -71,6 +72,7 @@
     <!-----------------------
          HEADER
          ------------------------->
+         
     <header class="header" id="header">
       <div class="logo img">
         <a href="https://github.com/Tejaso7">
@@ -181,6 +183,7 @@
         <button
           class="about-me-btn button"
           name="about"
+          href="#about"
           onclick="scrollToSection(this)"
           tabindex="2"
         >
@@ -293,7 +296,7 @@
         data-aos-duration="700"
         data-aos-once="true"
       >
-        <h1 class="title">
+        <h1 class="display-3 fw-bold text-capitalize">
           My Skills
           <p>Tiles in <span>blue</span> are some of my major skills.</p>
         </h1>
@@ -391,6 +394,16 @@
             <img src="./assets/ps.png" alt="Skill image " />
             <p>PhotoStudio</p>
           </div>
+          <div class="minor">
+            <img src="./assets/pythonanywhere.png" alt="Skill image " />
+            <p>PythonAnyWhere</p>
+          </div><div class="minor">
+            <img src="./assets/arduino.png" alt="Skill image " />
+            <p>Arduino</p>
+          </div>
+          <!-- add new files  -->
+
+
         </div>
       </div>
     </section>
@@ -409,14 +422,14 @@
         data-aos-duration="700"
         data-aos-once="true">
         <div class="section-header">
-          <h1 class="title">
+          <h1 class="display-3 fw-bold text-capitalize">
             Some of My Projects
             <p class="sectionDesc">
               Here are a few past projects I've worked on. Want to see more?<a
                 href="projects.html"
                 tabindex="22"
               >
-                Open All__ ></a
+                Open All__ </a
               >
             </p>
           </h1>
@@ -424,7 +437,7 @@
             class="ProjectHeaderImage"
             src="./assets/vecteezy_3d-illustration-skull-symbol_9902231_617.png"
             alt="Project header image"
-          />
+          />              
         </div>
         <div class="project card-container">
           <div class="project card 1" tabindex="">
@@ -432,7 +445,7 @@
               <img src="./assets/campus project.png" alt="Project image" />
             </div>
             <br />
-            <h6>Campus Placement Automation System in PHP</h6>
+            <h6>Campus Placement Automation </h6>
             <p class="techstack">
               <span> Front-end </span> - HTML5,CSS3,JS,PHP,MYSQL
             </p>
@@ -447,12 +460,12 @@
               >
                 <ion-icon name="open-outline"></ion-icon>
               </a>
-              <!-- <a class="githubElem" href="https://github.com" target="_blank">
+              <a class="githubElem" href="https://github.com" target="_blank">
                 <ion-icon name="logo-github"></ion-icon>
-              </a> -->
-              <!-- <button class="share">
+              </a>
+              <button class="share">
                 <ion-icon name="link-outline">Copied text!</ion-icon>
-              </button> -->
+              </button>
             </div>
           </div>
           <div class="project card 1" tabindex="">
@@ -471,12 +484,12 @@
               <a class="viewElem" href="https://youtu.be/Dxfbi9vy_AY" target="_blank">
                 <ion-icon name="open-outline"></ion-icon>
               </a>
-              <!-- <a class="githubElem" href="https://github.com" target="_blank">
+              <a class="githubElem" href="https://github.com/Tejaso7/Car_Rental_System_in_cpp" target="_blank">
                 <ion-icon name="logo-github"></ion-icon>
-              </a> -->
-              <!-- <button class="share">
+              </a>
+              <button class="share">
                 <ion-icon name="link-outline">Copied text!</ion-icon>
-              </button> -->
+              </button>
             </div>
           </div>
           <div class="project card 1" tabindex="">
@@ -499,13 +512,13 @@
               >
                 <ion-icon name="open-outline"></ion-icon>
               </a>
-              <!-- <a class="githubElem" href="https://github.com" target="_blank">
+              <a class="githubElem" href="https://github.com" target="_blank">
                 <ion-icon name="logo-github"></ion-icon>
-              </a> -->
-              <!-- <button class="share">
+              </a>
+              <button class="share">
                 <ion-icon name="link-outline">Copied text!</ion-icon>
               </button>
-              -->
+             
               </div>
             </div>
           </div>
@@ -526,12 +539,12 @@
         data-aos-duration="700"
         data-aos-once="true"
       >
-        <h1 class="title">
+        <h1 class="display-3 fw-bold text-capitalize">
           Education
-          <p>These are some of my Qualifications.</p>
+          <p >These are some of my Qualifications.</p>
         </h1>
         <div class="card-container">
-          <div class="card">
+          <div class="card">  
             <div class="imgDiv">
               <img src="./assets/zeal.jpg" alt="Institute image" />
             </div>
@@ -568,65 +581,80 @@
         </div>
       </div>
     </section>
-    <!-------------------------
+       <!-------------------------
          EXPERIENCE SECTION
          ------------------------->
-    <section class="section experience-section" id="experience" tabindex="24">
-      <div
-        style="
-          width: 100%;
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-        "
-        data-aos="zoom-in-up"
-        data-aos-duration="700"
-        data-aos-once="true"
-      >
-        <h1 class="title">
-          Experiences
-          <p>These are the compaines where I've previously worked.</p>
-        </h1>
-        <div class="expContainer">
-          <ul class="listOfExp">
-            <li class="companyName active" tabindex="${tabindex}">
-              GENIOBITS PRIVATE LIMITED
-            </li>
-          </ul>
-          <div class="expDesc">
-            <h4 class="expTitle">FRONTEND WEB DEVELOPMENT</h4>
-            <p class="period"> jan - april 2023</p>
-            <br />
-            <p class="desc">
-              This internship at Geniobits Private Limited, has aided me in gaining practical experience. Online internship of this kind helped me to get used to an online project atmosphere and thus prepared me to face the world of engineering in much better and confident way. I’m sure that after completing this internship I will be able to visualize the work situation in a better way. 
-            </p>
-          </div>
+         <section class="section experience-section" id="experience" class="experience" tabindex="24">
+          <div
+            style="
+              width: 100%;
+              align-items: center;
+              display: flex;
+              flex-direction: column;
+            "
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
+            <h1 class="title" >
+              Experiences</h1>
+              <p style="color: red;">These are the compaines where I've previously worked.</p>
+            
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+                  START SECTION 8 - EXPERIENCE
+                 /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <section id="experience" class="experience">
+      <div class="container">
+        <br><br>
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-capitalize">My Journey</h1>
+          <div class="heading-line"></div>
         </div>
-        <div class="expContainer">
-          <ul class="listOfExp">
-            <li class="companyName active" tabindex="${tabindex}">
-              Cognatech PRIVATE LIMITED
-            </li>
-          </ul>
-          <div class="expDesc">
-            <h4 class="expTitle">PYTHON DEVELOPER</h4>
-            <p class="period"> sep - dec 2023</p>
-            <br />
-            <p class="desc">
-              This internship at Cognatech Private Limited, has aided me in gaining practical experience. Online internship of this kind helped me to get used to an online project atmosphere and thus prepared me to face the world of engineering in much better and confident way. I’m sure that after completing this internship I will be able to visualize the work situation in a better way. 
-            </p>
+    
+        <div class="timeline">
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+              <div class="timeline-text">
+                  <div class="timeline-date">Sep 2023 - Present</div>
+                  <h2>COGNATECH PRIVATE LIMITED</h2>
+                  <h4>Python Full Stack Developer</h4>
+                  <p>
+                    I am improving my coding skills & developing applications & websites with help of DJANGO.
+                    <br>Working for myself to improve my skills. Love to build Full-Stack clones.
+                  </p>
+              </div>
           </div>
-        </div>
+          <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+              <div class="timeline-text">
+                  <div class="timeline-date">Apr 2023- May 2023</div>
+                  <h2>Technical Coding and Research Innovation</h2>
+                  <h4>Frontend Web Developement Intern</h4>
+                  <p>
+                      Learned more about Frontend development and build one major and one minor project.
+                  </p>
+              </div>
+          </div>
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+              <div class="timeline-text">
+                  <div class="timeline-date">Feb 2022 - Mar 2023</div>
+                  <h2>GENIOBITS PRIVATE LIMITED</h2>
+                  <h4>Web Developement Intern</h4>
+                  <p>
+                      As a fresher, I got idea how web development works and hence I build Multiple websites.
+                  </p>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+    </div>
+    <!-- Job Experience End -->
       </div>
     </section>
+        </section>
        <!-- ======= Contact Section ======= -->
-<<<<<<< HEAD
-    <section>
-      <div class="continer" style="width: 300px; height: 200px; border: 1px solid black; padding: 20px; box-sizing: border-box;">
-=======
     <section id="contact" class="contact" style="height: 100px;">
       <div class="continer" style="width: 500px; height: 200px; border: 1px solid black; padding: 20px; box-sizing: border-box;">
->>>>>>> 4hund3rbird-master
         <h1 style="text-align: center; margin-bottom: 20px;">Contact Information</h1>
         <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
           <span style="font-weight: bold;">Mobile Number:</span>
@@ -637,41 +665,10 @@
           <span>Tejusawant302@gmail.com</span>
         </div>
       </div>
-<<<<<<< HEAD
     </section>
         <!-- End Contact Section -->
-    
-=======
+  
     </section><!-- End Contact Section -->
-
-     
-   
-    <!-----------------------
-         CONTACT FORM
-         ------------------------->
-          <!-- <div class="formDiv">
-          <img alt="contact illustration" src="./assets/contact.png" />
-          <form id="myform">
-            <div class="user-box">
-              <input type="text" id="name" required /><label for="Name"
-                >Your Name</label
-              >
-            </div>
-            <div class="user-box">
-              <input type="email" id="email" required /><label for="Email"
-                >Email Address</label
-              >
-            </div>
-            <div class="user-box">
-              <textarea id="message" required></textarea
-              ><label for="Message">Enter your message</label>
-            </div>
-            <button type="submit" class="submit-btn button">Submit</button>
-          </form>
-          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
-         </div>
-     -->
->>>>>>> 4hund3rbird-master
     <!-----------------------
          FOOTER SECTION
          ------------------------->
@@ -679,15 +676,9 @@
       <div class="getInTouch">
         <h3>Get Connected with Me..</h3>
         <p>
-          Interested in working Together? We should queue up a time to chat.
+          Interested in working Together? We should queue up a time to Message.
         </p>
-        <a
-          class="getInTouchBtn button"
-          target=""
-          href="#myform"
-          tabindex="36"
-          >Get in touch</a
-        >
+        <a class="getInTouchBtn button" href="https://api.whatsapp.com/send?phone=+917447679060&text=Hi,%20I%20want%20to%20connect%20with%20you"  tabindex="36" target="_blank" >Connect on WhatsApp</a>
       </div>
       <div class="footerParent">
         <div class="profInfo">
@@ -724,7 +715,7 @@
             </li>
             <li id="instagram">
               <a
-                href="https://instagram.com/_ts_oo7_
+                href="https://instagram.com/_ts_oo7_"
                 aria-label="instagram"
                 class="instagram"
                 tabindex="40"
@@ -745,7 +736,7 @@
       </div>
       <p class="developerInfo">
         Designed With ❤️ by
-        <a href="https://instagram.com/_ts_kingmaker_oo7_?igshid=ZGUzMzM3NWJiOQ%3D%3D" tabindex="50"
+        <a href="https://instagram.com/_ts_oo7_" tabindex="50"
           >Tejas Sawant</a
         >
       </p>
@@ -775,87 +766,49 @@
     <script>
       AOS.init();
     </script>
-      <!-- Include Particle.js JavaScript (You can download it and host it locally if needed) -->
-      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  
-      <script>
-          // Particle.js Configuration
-          particlesJS('particles-js', {
-              "particles": {
-                  "number": {
-                      "value": 80,
-                      "density": {
-                          "enable": true,
-                          "value_area": 800
-                      }
-                  },
-                  "color": {
-                      "value": "#3498db"
-                  },
-                  "shape": {
-                      "type": "circle",
-                      "stroke": {
-                          "width": 0,
-                          "color": "#000000"
-                      },
-                      "polygon": {
-                          "nb_sides": 5
-                      },
-                  },
-                  "opacity": {
-                      "value": 0.5,
-                      "random": false,
-                      "anim": {
-                          "enable": false,
-                          "speed": 1,
-                          "opacity_min": 0.1,
-                          "sync": false
-                      }
-                  },
-                  "size": {
-                      "value": 3,
-                      "random": true,
-                      "anim": {
-                          "enable": false,
-                          "speed": 40,
-                          "size_min": 0.1,
-                          "sync": false
-                      }
-                  },
-                  "line_linked": {
-                      "enable": true,
-                      "distance": 150,
-                      "color": "#3498db",
-                      "opacity": 0.4,
-                      "width": 1
-                  }
-              },
-              "interactivity": {
-                  "detect_on": "canvas",
-                  "events": {
-                      "onhover": {
-                          "enable": true,
-                          "mode": "grab"
-                      },
-                      "onclick": {
-                          "enable": true,
-                          "mode": "push"
-                      },
-                      "resize": true
-                  },
-                  "modes": {
-                      "grab": {
-                          "distance": 140,
-                          "line_linked": {
-                              "opacity": 1
-                          }
-                      },
-                      "push": {
-                          "particles_nb": 4
-                      },
-                  }
-              }
-          });
-      </script>
+           <!-- JavaScript for particles -->
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     <script>
+         particlesJS("ts", {
+             particles: {
+                 number: {
+                     value: 80, // Adjust the number of particles
+                     density: {
+                         enable: true,
+                         value_area: 800,
+                     },
+                 },
+                 color: {
+                     value: ["#FF5733", "#33FF6A", "#3333FF", "#FF33EC"], // Specify the colors
+                 },
+                 shape: {
+                     type: "circle",
+                 },
+                 opacity: {
+                     value: 0.9,
+                     random: false,
+                     anim: {
+                         enable: false,
+                     },
+                 },
+                 size: {
+                     value: 3,
+                     random: true,
+                 },
+                 move: {
+                     enable: true,
+                     speed: 2,
+                 },
+             },
+             interactivity: {
+                 events: {
+                     onhover: {
+                         enable: true,
+                         mode: "repulse",
+                     },
+                 },
+             },
+         });
+     </script>
   </body>
 </html>
