@@ -12,7 +12,21 @@
   --fade-black: #000000d7;
   --arrow-pointer: url("/assets/arrowr.png"), auto;
 }
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
 
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 
 * {
   margin: 0;
