@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------------
     Function for Hilighting navlinks on scroll to particular section
 ----------------------------------------------------------------------*/
+const modeToggle = document.getElementById('mode-toggle');
+const body = document.body;
+
+modeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
 
 // Add an event listener listening for scroll
 
