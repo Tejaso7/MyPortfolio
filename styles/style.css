@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.cdnfonts.com/css/classical-romance");
 :root {
   font-size: 62.5%;
   --primary-yellow: #efcf5e;
@@ -28,8 +30,7 @@ button {
     cursor: pointer;
 }
 
-   @import url(https://fonts.googleapis.com/css?family=Ubuntu);
-      @import url("https://fonts.cdnfonts.com/css/classical-romance");
+
  
       
       svg {
@@ -86,7 +87,7 @@ button {
   border: none;
   outline: none;
   color: #fff;
-  background: #B2FFFF;
+  background: #fff;
   cursor: pointer;
   position: relative;
   z-index: 0;
