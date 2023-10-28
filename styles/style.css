@@ -10,7 +10,7 @@
   --text-gray: #3f3f46;
   --dark-gray: #18181b;
   --fade-black: #000000d7;
-  --arrow-pointer: url("/assets/arrowr.png"), auto;
+  --arrow-pointer: url("/assets/arrow.png"), auto;
 }
 body {
     font-family: Arial, sans-serif;
