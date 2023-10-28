@@ -200,6 +200,12 @@ body {
   animation: MOVE-BG 900s infinite linear;
 }
 
+..name {
+  background: linear-gradient(to right, #FF5733, #FFBD33);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 36px;
+}
 @keyframes MOVE-BG {
   0% {
     transform: translateY(0);
