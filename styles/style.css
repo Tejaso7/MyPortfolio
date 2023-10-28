@@ -196,11 +196,11 @@ body {
   left: 0;
   right: 0;
   z-index: -1;
-  background-image: url(./assets/);
+  background-image: url(./assets/bgproj.png);
   animation: MOVE-BG 900s infinite linear;
 }
 
-..name {
+.name {
   background: linear-gradient(to right, #FF5733, #FFBD33);
   -webkit-background-clip: text;
   color: transparent;
