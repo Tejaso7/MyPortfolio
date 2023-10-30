@@ -178,7 +178,7 @@ slowInternet = setTimeout(() => {
 }, 3000);
 
 almostReady = setTimeout(() => {
-  document.querySelector(".loaderDiv p").innerHTML = "Tejas Portfolio";
+  document.querySelector(".loaderDiv p").innerHTML = "Thanks For Visiting..";
 }, 7000);
 
 document.onreadystatechange = () => {
