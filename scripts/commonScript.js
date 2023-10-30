@@ -178,7 +178,7 @@ slowInternet = setTimeout(() => {
 }, 3000);
 
 almostReady = setTimeout(() => {
-  document.querySelector(".loaderDiv p").innerHTML = "";
+  document.querySelector(".loaderDiv p").innerHTML = "Tejas Portfolio";
 }, 7000);
 
 document.onreadystatechange = () => {
@@ -187,10 +187,10 @@ document.onreadystatechange = () => {
     clearTimeout(slowInternet);
     clearTimeout(almostReady);
 
-    document.querySelector(".loaderDiv p").innerHTML = "";
+    document.querySelector(".loaderDiv p").innerHTML = "Welcome to my Portfolio";
 
     setTimeout(() => {
-      document.querySelector(".loaderDiv p").innerHTML = "";
+      document.querySelector(".loaderDiv p").innerHTML = "Connect with Us"
     }, 1000);
     setTimeout(() => {
       document.querySelector(".loaderDiv").classList.add("removeLoader");
