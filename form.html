@@ -15,15 +15,6 @@
   <body>
     <div id="particles-js"></div>
       <div class="c">
-        <div class="navbar">
-        <ul class="navbar-list">
-          <li>
-            <button class="goBack button" onclick="history.back()" tabindex="5">
-              Go back
-            </button>
-          </li>
-        </ul>
-        </div>
         <form name="contact" netlify>
           <h1 class="title text-center mb-4">Talk to Us..</h1>
           <br />
@@ -35,7 +26,7 @@
             </label>
             <input
               type="text"
-              id="formName"
+              id="formName" name="name"
               class="form-control form-control-lg thick"
               placeholder="Enter Your Name" required
             />
@@ -48,7 +39,7 @@
             </label>
             <input
               type="email"
-              id="formEmail"
+              id="formEmail" name="Email"
               class="form-control form-control-lg thick"
               placeholder="Enter Your E-mail" required
             />
@@ -59,7 +50,7 @@
           <div class="form-group message">
 
             <textarea
-              id="formMessage"
+              id="formMessage" name="message"
               class="form-control form-control-lg"
               rows="7"
               placeholder="Please Write Your Message" required
