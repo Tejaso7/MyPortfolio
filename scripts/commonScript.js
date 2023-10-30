@@ -178,7 +178,7 @@ slowInternet = setTimeout(() => {
 }, 3000);
 
 almostReady = setTimeout(() => {
-  document.querySelector(".loaderDiv p").innerHTML = "Page is almost ready...";
+  document.querySelector(".loaderDiv p").innerHTML = "";
 }, 7000);
 
 document.onreadystatechange = () => {
@@ -187,10 +187,10 @@ document.onreadystatechange = () => {
     clearTimeout(slowInternet);
     clearTimeout(almostReady);
 
-    document.querySelector(".loaderDiv p").innerHTML = "Page is almost ready!";
+    document.querySelector(".loaderDiv p").innerHTML = "";
 
     setTimeout(() => {
-      document.querySelector(".loaderDiv p").innerHTML = "Page is ready!";
+      document.querySelector(".loaderDiv p").innerHTML = "";
     }, 1000);
     setTimeout(() => {
       document.querySelector(".loaderDiv").classList.add("removeLoader");
