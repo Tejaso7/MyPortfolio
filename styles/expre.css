@@ -11,6 +11,7 @@
     width: 100%;
   }
   
+  
   .experience .timeline::after {
     content: "";
     position: absolute;
