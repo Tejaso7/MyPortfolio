@@ -578,7 +578,7 @@ a {
   justify-content: space-between;
   padding-left: 12rem;
   padding-right: 12rem;
-  background-color: rgb(255, 212, 178, 0.96);
+  background-color: rgba(236, 224, 214, 0.96);
 }
 .home-section div {
   width: 50%;
@@ -648,11 +648,9 @@ a {
   background-color: transparent;
   background-image: linear-gradient(
     to bottom,
-    rgb(255, 246, 189, 0.95),
-    rgb(157, 230, 211),
-    rgb(157, 210, 225),
-    #de9090,
-    #f7f7f7
+    rgb(157, 210, 225,0.95),
+    rgb(157, 230, 211,0.95),
+    rgb(157, 210, 225,0.95),
   );
   padding: 0px 2%;
 }
@@ -905,7 +903,8 @@ a {
 ---------------------------------*/
 .experience-section {
   background-image: none;
-  background-color: var(--light-gray);
+  background-color: rgb(157, 210, 225,0.95),
+
 }
 .experience-section .expContainer {
   display: flex;
