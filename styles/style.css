@@ -573,7 +573,7 @@ a {
   justify-content: space-between;
   padding-left: 12rem;
   padding-right: 12rem;
-  background-color: rgba(236, 224, 214, 0.96);
+  background-color: rgba(255, 255, 255, 0.96);
 }
 .home-section div {
   width: 50%;
@@ -643,9 +643,9 @@ a {
   background-color: transparent;
   background-image: linear-gradient(
     to bottom,
-    rgba(157, 210, 225, 0.95),
-    rgba(157, 230, 211, 0.95),
-    rgba(157, 210, 225, 0.95)
+    rgba(199, 232, 241, 0.95),
+    rgba(200, 243, 231, 0.95),
+    rgba(207, 245, 255, 0.95)
   );
   padding: 0px 2%;
 }
@@ -672,7 +672,7 @@ a {
   padding: 0.1rem 0.5rem;
   border-radius: 0.5rem;
   color: var(--dark-gray);
-  background-color: #96c3fe;
+  background-color: #b9d2f2;
 }
 
 /*-------------------------------
@@ -734,7 +734,7 @@ a {
   height: max-content;
   padding-left: 0;
   padding-right: 0;
-  background-color: rgba(210, 224, 251, 0.96);
+  background-color: rgba(209, 220, 241, 0.96);
 
 }
 .project-section .section-header {
@@ -866,7 +866,7 @@ a {
 .education-section {
   padding-left: 0;
   padding-right: 0;
-  background-color: rgba(255, 212, 212, 0.96);
+  background-color: rgba(233, 214, 245, 0.96);
 
 }
 .education-section .card-container .card {
