@@ -672,7 +672,7 @@ a {
   padding: 0.1rem 0.5rem;
   border-radius: 0.5rem;
   color: var(--dark-gray);
-  background-color: #b9d2f2;
+  background-color: #ffffff;
 }
 
 /*-------------------------------
@@ -682,7 +682,7 @@ a {
   height: -moz-max-content;
   height: max-content;
   padding: 0 2%;
-  background-color: rgba(243, 253, 232, 0.96);
+  background-color: rgba(255, 255, 255, 0.96);
 
 }
 .skill-section .title p span {
@@ -697,7 +697,7 @@ a {
 }
 .skill-section .skill-container div {
   display: flex;
-  background-color: #e2e8f0;
+  background-color: #ffffff;
   border-radius: 1rem;
   align-items: center;
   flex-direction: column;
@@ -723,7 +723,7 @@ a {
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s;
-  background-color: #d6dae1;
+  background-color: #ffffff;
 }
 
 /*-------------------------------
@@ -734,7 +734,7 @@ a {
   height: max-content;
   padding-left: 0;
   padding-right: 0;
-  background-color: rgba(209, 220, 241, 0.96);
+  background-color: rgba(255, 255, 255, 0.96);
 
 }
 .project-section .section-header {
@@ -866,7 +866,7 @@ a {
 .education-section {
   padding-left: 0;
   padding-right: 0;
-  background-color: rgba(233, 214, 245, 0.96);
+  background-color: rgba(255, 255, 255, 0.96);
 
 }
 .education-section .card-container .card {
@@ -886,11 +886,11 @@ a {
 }
 .education-section .card-container .card .Pursuing {
   color: #dc2626;
-  background-color: #fee2e2;
+  background-color: #ffffff;
 }
 .education-section .card-container .card .Completed {
   color: #14532d;
-  background-color: #bbf7d0;
+  background-color: #ffffff;
 }
 
 /*-------------------------------
@@ -898,7 +898,7 @@ a {
 ---------------------------------*/
 .experience-section {
   background-image: none;
-  background-color: rgb(157, 210, 225,0.95),
+  background-color: rgba(255, 255, 255, 0.95),
 
 }
 .experience-section .expContainer {
@@ -1219,7 +1219,7 @@ a {
   /* HEADER AND OTHER BASIC PAGE STYLING */
   .header .navbar {
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.518);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     flex-direction: column;
@@ -1378,7 +1378,7 @@ a {
   .about-section .social-menu a {
     display: flex;
     flex-direction: row;
-    background-color: #e5e5e5;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 50%;
   }
@@ -1446,7 +1446,7 @@ a {
   }
   .experience-section .expContainer .expDesc {
     background-color: var(--fade-black);
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
     border-radius: 0 0 0.5rem 0.5rem;
     padding: 1rem;
     height: 50vh;
@@ -1549,7 +1549,7 @@ a {
     font-size: 1.4rem;
   }
   .project-section {
-    background-color: #f3a5a5;
+    background-color: #fcfcfc;
   }
   .footer .profInfo {
     display: flex;
