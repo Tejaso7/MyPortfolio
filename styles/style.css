@@ -8,7 +8,7 @@
   --primary-yellow: #efcf5e;
   --parrot-green: #16a34a;
   --light-blue: #0090dd;
-  --light-gray: #f7f7f7;
+  --light-gray: #ffffff;
   --text-gray: #3f3f46;
   --dark-gray: #18181b;
   --fade-black: #000000d7;
@@ -17,11 +17,6 @@
 body {
     font-family: Arial, sans-serif;
     transition: background-color 0.5s, color 0.5s;
-}
-
-.dark-mode {
-    background-color: #333;
-    color: #fff;
 }
 
 button {
