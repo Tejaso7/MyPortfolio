@@ -15,8 +15,10 @@
   --arrow-pointer: url("/assets/arrow.png"), auto;
 }
 body {
-    font-family: Arial, sans-serif;
-    transition: background-color 0.5s, color 0.5s;
+   font-family: 'Roboto Mono', monospace;
+   margin: 20px;
+   text-align: center;
+   transition: background-color 0.5s, color 0.5s;
 }
 
 button {
