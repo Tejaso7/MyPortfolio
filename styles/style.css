@@ -16,7 +16,6 @@
 }
 body {
    font-family: 'Roboto Mono', monospace;
-   text-align: center;
    transition: background-color 0.5s, color 0.5s;
 }
 
@@ -69,7 +68,6 @@ button {
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   cursor: var(--arrow-pointer);
 }
 
