@@ -14,6 +14,59 @@
   --fade-black: #000000d7;
   --arrow-pointer: url("/assets/arrow.png"), auto;
 }
+
+
+
+
+
+
+
+.image-container {
+  position: relative;
+  width: 300px; /* Adjust the width as needed */
+  perspective: 800px; /* Adjust the perspective value for more or less depth */
+}
+
+.image-3d {
+  width: 100%;
+  max-width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.image-3d:hover {
+  transform: rotateY(20deg); /* Adjust the rotation angle as needed */
+}
+
+.image-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s;
+}
+
+.image-3d:hover .image-shadow {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4); /* Adjust the box shadow on hover as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
    font-family: 'Roboto Mono', monospace;
    transition: background-color 0.5s, color 0.5s;
