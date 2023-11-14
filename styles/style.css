@@ -28,7 +28,7 @@ button {
 
  
       
-      svg {
+svg {
         font: 15em "Classical Romance", "Ubuntu";
         /* letter-spacing: 0.15em; */
         width: 50%;
@@ -36,7 +36,7 @@ button {
         text-transform: uppercase;
       }
       
-      svg text {
+svg text {
         fill: #111;
         stroke: #111;
         fill-opacity: 1;
@@ -45,7 +45,7 @@ button {
         animation: stroke-offset 3s ease-out;
       }
       
-      @keyframes stroke-offset {
+@keyframes stroke-offset {
         0% {
           fill-opacity: 0;
           stroke-width: 0;
@@ -278,14 +278,12 @@ section {
 
 h1 {
   font-size: 4rem;
-  font-family: "Catamaran", sans-serif;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 h2 {
   font-size: 3.2rem;
-  font-family: "Catamaran", sans-serif;
   font-weight: 800;
 }
 
@@ -666,7 +664,7 @@ a {
   padding: 0.1rem 0.5rem;
   border-radius: 0.5rem;
   color: var(--dark-gray);
-  background-color: #ffffff;
+  background-color: #9fcee3;
 }
 
 /*-------------------------------
@@ -691,7 +689,7 @@ a {
 }
 .skill-section .skill-container div {
   display: flex;
-  background-color: #ffffff;
+  background-color: #f0f5f7;
   border-radius: 1rem;
   align-items: center;
   flex-direction: column;
@@ -717,7 +715,7 @@ a {
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s;
-  background-color: #ffffff;
+  background-color: #d0cdcd;
 }
 
 /*-------------------------------
