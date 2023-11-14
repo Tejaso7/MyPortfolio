@@ -21,11 +21,13 @@
   border-radius: 10px; /* Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   transition: transform 0.3s ease-in-out;
+  filter: grayscale(75%);
 }
 
 /* Hover effect - scale up the image on hover */
 .styled-image:hover {
   transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 
