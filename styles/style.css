@@ -8,7 +8,7 @@
   --primary-yellow: #efcf5e;
   --parrot-green: #16a34a;
   --light-blue: #0090dd;
-  --light-gray: #F5F5F5;
+  --light-gray: #ffffff;
   --text-gray: #3f3f46;
   --dark-gray: #18181b;
   --fade-black: #000000d7;
@@ -21,13 +21,19 @@
   border-radius: 20px; /* Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   transition: transform 0.3s ease-in-out;
-  filter: grayscale(75%);
+  filter: grayscale(50%);
 }
 
 /* Hover effect - scale up the image on hover */
 .styled-image:hover {
   transform: scale(1.1);
-  filter: grayscale(50%);
+  filter: grayscale(0%);
+}
+
+.projecthead { 
+  display: flex;
+  justify-content:center;
+
 }
 
 body {
