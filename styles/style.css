@@ -12,7 +12,7 @@
   --text-gray: #3f3f46;
   --dark-gray: #18181b;
   --fade-black: #000000d7;
-  --arrow-pointer: url("/assets/arrow.png"), auto;
+  /* --arrow-pointer: url("/assets/arrow.png"), auto; */
 }
  /* Style for the image */
  .styled-image {
@@ -21,7 +21,7 @@
   border-radius: 20px; /* Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   transition: transform 0.3s ease-in-out;
-  filter: grayscale(50%);
+  filter: grayscale(10%);
 }
 
 /* Hover effect - scale up the image on hover */
@@ -36,10 +36,6 @@
 
 }
 
-body {
-   font-family: 'Roboto Mono', monospace;
-   transition: background-color 0.5s, color 0.5s;
-}
 
 button {
     padding: 10px;
@@ -90,7 +86,7 @@ svg text {
 * {
   margin: 0;
   box-sizing: border-box;
-  cursor: var(--arrow-pointer);
+  /* cursor: var(--arrow-pointer); */
 }
 
 
@@ -199,6 +195,9 @@ html {
 /* Apply a smooth transition when hovering to scale an element */
 
 body {
+  
+  font-family: 'Roboto Mono', monospace;
+  transition: background-color 0.5s, color 0.5s;
   position: relative;
   background-color: var(--light-gray);
   font-size: 1.6rem;
