@@ -648,11 +648,13 @@ a {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  transition: all 0.3s; /* Add a transition for a smooth effect */
 }
 
-.profile-image:hover{
-  background-image: url(./assets/mainpic1.png);
+.home-section .imgDiv .profile-image:hover {
+  content: url(./assets/mainpic1.png);
 }
+
 
 /*  -------------------------------
           ABOUT SECTION STYLING
