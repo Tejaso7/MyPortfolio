@@ -650,6 +650,10 @@ a {
   object-fit: cover;
 }
 
+.profile-image:hover{
+  background-image: url(./assets/mainpic1.png);
+}
+
 /*  -------------------------------
           ABOUT SECTION STYLING
     ------------------------------- */
