@@ -192,7 +192,7 @@ body {
 }
 
 .name {
-  background: linear-gradient(to right, #FF5733, #FFBD33);
+  background: linear-gradient(to right, #3a3838, #000000);
   -webkit-background-clip: text;
   color: transparent;
   font-size: 36px;

@@ -64,8 +64,8 @@
 <!-- Toaster -->
 <div class="toaster"></div>
 <div>
-  <div id="particles"></div>
-  <hr style="width: 100%; background-color: #000000; border-color: #000000;">
+  <div id="particles" style="padding:10px;border-radius: 1px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"></div>
+  <hr style="width: 100%; background-color: #000000; border-color: #000000; border-radius: 1px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-width: 5px;">
 </div>
 <!-- Div for background -->
 
@@ -100,17 +100,21 @@
               <a class="navbar-link" name="experience" href="#experience" onclick="scrollToSection(this),toggleNav()" tabindex="9">Experience</a>
           </li>
       </ul>
-      <a class="contactBtn button" name="getInTouch" tabindex="10" href="form.html" target="_blank">Contact</a>
+      <a class="contactBtn button" name="getInTouch" tabindex="10" href="form.html" target="_self">
+      <img style="width: 40px;" src="./assets/ts.gif" alt="Image">
+      Contact</a>
       <ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
   </div>
   <ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+  <br>
+  <br>
 </header>
 <!-- HOME SECTION -->
-<div class="container d-flex  home-section" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;"  id="home" tabindex="42">
+<div class="container d-flex  home-section" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; margin-top: 50px;"  id="home" tabindex="42">
   <div   id="intro-words" class="d-flex flex-column justify-content-evenly text-center mb-3">
     <p class="name" style="color: black;">Hey, I'm Tejx</p>
     <div>
-      <img style="width: 200px;" src="./assets/ufo4.gif" alt="Image">
+      <img style="width: 200px;" src="./assets/about2.gif" alt="Image">
     </div>
     <p class="aboutShort" >
       <span  style="color: rgb(5, 193, 5);">Print <p style="color: rgb(184, 28, 28); ">(" _Tejas_Sawant_ ")</p></span>
@@ -133,23 +137,25 @@
       <img class="styled-image" src="./assets/about1.jpg" alt="Memoji" />
   </div>
   <div  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;" class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
-      <h2 class="name">Er.Tejas Sawant</h2>
-      <br>
-      <br>
-      <div class="professionContainer">
-          <p class="profession">Full Stack Web Development</p>
-          <p class="profession">AI Engineer</p>
-          <p class="profession">Django Developer</p>
-      </div>
-      <br />
-      <p class="aboutLong">
-          <b>I’m</b> an undergrad, self-taught Data Analyst, <b>Web developer</b> from Pune, India. I have valuable skills and a lot of ability. <br>
-          I love working with data, and that's why I decided to start my career as a <b>Django developer</b>. I've gained experience by working on various projects. <br><br>
-          Overall, I promise the best professionalism, technical skills, and customer happiness in all parts of development.
-      </p>
-      <br/>
-      <a class="button" href="./assets/Tejas's Resume.pdf" target="_blank" tabindex="12">
-          Resume
+    <h2 class="name title" >Er.Tejas Sawant</h2>
+    
+    <br>
+    <div class="professionContainer">
+      <p class="profession" style="text-align: center;" >Full Stack Web Development</p>
+      <p class="profession">AI Engineer</p>
+      <p class="profession">Django Developer</p>
+      <img style="width: 100px;" src="./assets/robo.gif" alt="Image">
+    </div>
+    <br />
+    <p class="aboutLong">
+      <b>I’m</b> an undergrad, self-taught Data Analyst, <b>Web developer</b> from Pune, India. I have valuable skills and a lot of ability. <br>
+      I love working with data, and that's why I decided to start my career as a <b>Django developer</b>. I've gained experience by working on various projects. <br><br>
+      Overall, I promise the best professionalism, technical skills, and customer happiness in all parts of development.
+    </p>
+    <br/>
+    <a class="button" href="./assets/Tejas's Resume.pdf" target="_blank" tabindex="12">
+      <img style="width: 50px;" src="./assets/ts.gif" alt="Image">
+      Resume
           <ion-icon name="document-outline"></ion-icon>
       </a>
   </div>
@@ -186,11 +192,11 @@
             data-aos-duration="700"
             data-aos-once="true"
           >
-          <img src="./assets/skills.gif" alt="skills">
-            <h1 class="display-3 fw-bold text-capitalize">My Skills </h1>
-            <br>
-            <p  style="border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Tiles in <span style="color: aqua;">blue</span> are some of my major skills.</p>
-            <br>
+          <h1 class="display-3  text-capitalize">My Skills </h1>
+          <br>
+          <p  style="border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Tiles in <span style="color: aqua;">blue</span> are some of my major skills.</p>
+          <br>
+          <img style="width:300px" src="./assets/skill.gif" alt="skills">
         
         <div class="skill-container">
           <div class="major">
@@ -327,21 +333,19 @@
         data-aos-duration="700"
         data-aos-once="true"
         >
-        <img style="width: 200px;" src="./assets/proo.gif" alt="Image">
         <div class="section-header">
           <div class="projecthead">
-            <h1 class="display-3 fw-bold text-capitalize">Some of My Projects </h1>
+            <h1 class="display-3 text-capitalize">Some of My Projects </h1>
             <br>
-
             <p class="sectionDesc"  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
               Here are a few past projects I've worked on. Want to see more?
               <a href="projects.html" class="bn5"  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">See All</a>
-              <br>
             </p>
+            <br>
           </div>
           <img
-            class="ProjectHeaderImage"
-            src="./assets/vecteezy_3d-illustration-skull-symbol_9902231_617.png"
+            style="width: 300px;"
+            src="./assets/work.gif"
             alt="Project header image"
           />
         </div>
@@ -436,11 +440,11 @@
         data-aos-once="true"
       >
       
-      <h1 class="display-3 fw-bold text-capitalize">Education </h1>
+      <h1 class="display-3 text-capitalize title"">Education </h1>
       <br>
-      <img style="width: 200px;" src="./assets/edu.gif" alt="Image">
-        <p  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">These are some of my Qualifications.</p>
-        <br>
+      <p  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">These are some of my Qualifications.</p>
+      <br>
+      <img style="width: 350px;" src="./assets/edu.gif" alt="Image">
     
         <div class="card-container">
           <div class="card">
@@ -501,7 +505,7 @@
     <br>
     <p  style="color: red;border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">These are the companies where I've previously worked.</p>
     <br>
-    <img style="width: 200px;" src="./assets/ufo.gif" alt="Image">
+    <img style="width: 300px;" src="./assets/ufo4.gif" alt="Image">
 
     <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
           START SECTION 8 - EXPERIENCE
@@ -549,7 +553,7 @@
           </div>
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
             <div class="timeline-text">
-              <div class="timeline-date">Feb 2022 - Mar 2023</div>
+              <div class="timeline-date">Feb 2023 - Mar 2023</div>
               <h2>GENIOBITS PRIVATE LIMITED</h2>
               <br>
               <img style="width: 200px;" src="./assets/geno.jpg" alt="Image">
@@ -581,13 +585,15 @@
         <p>
           Interested in working Together? We should queue up a time to Message.
         </p>
-        <a class="getInTouchBtn button" href="https://api.whatsapp.com/send?phone=+917447679060&text=Hi,%20I%20want%20to%20connect%20with%20you" tabindex="36" target="_blank">Connect on WhatsApp</a>
+        <a class="getInTouchBtn button" href="https://api.whatsapp.com/send?phone=+917447679060&text=Hi,%20I%20want%20to%20connect%20with%20you" tabindex="36" target="_blank">
+      <img style="width: 50px;" src="./assets/ts.gif" alt="Image">
+      Connect on WhatsApp</a>
       </div>
       <br>
       <div class="footerParent">
         <div class="profInfo">
           <div class="imgDiv">
-            <img src="./assets/My_logo.png" alt="Profile Image" />
+            <img style="width: 50px;" src="./assets/ts.gif" alt="Image">
           </div>
           <div>
             <p  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Connect with me over Socials.</p>
