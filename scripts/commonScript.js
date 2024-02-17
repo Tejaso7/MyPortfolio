@@ -116,7 +116,7 @@ const submitForm = (e) => {
 
           setTimeout(() => {
             Toastify({
-              text: "Mail me at sushain.work@gmail.com",
+              text: "Mail me at tejusawant302@gmail.com",
               duration: 5000,
               gravity: "top", // `top` or `bottom`
               position: "left", // `left`, `center` or `right`

@@ -1,10 +1,10 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="This is a portfolio website showcasing the work and projects of Tejas Sawant, a professional developer based in Pune, India. Explore my web development skills, projects, and contact information." /> 
+    <meta name="description" content="This is a portfolio website showcasing the work and projects of Tejas Sawant, a professional developer based in Pune, India. Explore my web development skills, projects, and contact information." />
     <meta name="keywords" content="Tejas Sawant portfolio, tejas sawant portfolio ,Tejas, Tejas Sawant, Tejas Sadashiv Sawant, TS, Tsawant, Tskingmaker, tejusawant, Tskingmaker007, TejasSawant, TejasSadashivSawant, Tejas's Portfolio, Tejas Sawant's portfolio, Tejas portfolio, TS portfolio, Portfolio, Modern Portfolio, portfolio template, no code portfolio, coder, coding, basic portfolio, professional, professional portfolio, how to make a portfolio, easy to make portfolio, free template, template for portfolio, portfolio website, Tejas Sawant website, portfolio website by Tejas, portfolio website by Tejas Sawant, developers portfolio, frontend, frontend portfolio, backend portfolio, full stack portfolio, DIY portfolio, Firebase, full stack portfolio, simple portfolio, free portfolio code, free portfolio, no-cost portfolio, portfolio Firebase, dynamic portfolio, SaaS portfolio, SaaS, Pune developer, Pune's top front-end developer, backend developer, portfolio design, modern portfolio designs, simple portfolio design, full stack developer Pune, freelancer, freelance, freelancer in Pune, India, top freelancers in Pune, freelance web developer, web developer, frontend web developer, backend web developer, undergraduate developer, undergraduate frontend developer, undergraduate full stack developer, unique site, best website, builders of SPPU prep, good freelancer, portfolio no-code, projects, contact Tejas Sawant, reachout Tejas, reachout Tejas Sawant, Sawant Tejas Sadashiv, India freelancers, Tejas-Sawant, frontend-projects, full-stack-projects, modern projects, free to use projects, free template, modern template, cool-looking portfolio, good UI portfolio, best portfolio, clean portfolio design, HTML, CSS, JavaScript, modern look, modern-looking design, modern-looking template, modern-looking portfolio template" />
     <meta name="author" content="Tejas Sawant" />
     <meta property="og:image" content="./assets/fav.png" />
@@ -13,315 +13,184 @@
     <title>Portfolio | Tejas Sawant </title>
     <link rel="canonical" href="https://tejassawant.netlify.app/" />
     <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon" />
-    
+
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
 
-
-<!-- Include Tailwind CSS (You can download it and host it locally if needed) -->
-    
+    <!-- Include Tailwind CSS (You can download it and host it locally if needed) -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
+
     <!-- Stylesheets -->
-    
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/loader.css" />
     <link rel="stylesheet" href="./styles/expre.css" />
 
     <!-- CDN's -->
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/ani.style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
     <!-- remember, jQuery is completely optional -->
 
-    
     <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
     <script type="text/javascript" src="scripts/ani_jquery.particleground.js"></script>
     <script type="text/javascript" src="scripts/ani_demo.js"></script>
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="./scripts/firebaseInit.js"></script>
-   </head>
-  <body>
-    <!--Loader-->
-    <div class="loaderDiv">
-     <div class="loader"></div>
-      <p>Loading Tejas Portfolio </p>
-      <svg viewBox="0 0 1280 720">
-        <text text-anchor="middle" x="50%" y="50%" style="fill: url(#text-gradient)">
-         Tejx
-        </text>
-        <defs>
+</head>
+
+<body>
+  <!-- Loader -->
+<div class="loaderDiv">
+  <div class="loader"></div>
+  <p>Loading Tejas Portfolio </p>
+  <svg viewBox="0 0 1280 720">
+      <text text-anchor="middle" x="50%" y="50%" style="fill: url(#text-gradient)">
+          Tejx
+      </text>
+      <defs>
           <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color: rgb(219,245,104)"></stop>
-            <stop offset="35%" style="stop-color: rgb(255,217,102)"></stop>
-            <stop offset="100%" style="stop-color: rgba(0, 212, 255, 1)"></stop>
+              <stop offset="0%" style="stop-color: rgb(219, 245, 104)"></stop>
+              <stop offset="35%" style="stop-color: rgb(255, 217, 102)"></stop>
+              <stop offset="100%" style="stop-color: rgba(0, 212, 255, 1)"></stop>
           </linearGradient>
-        </defs>
-      </svg>
-   </div>
-<!--Toaster-->
-    <div class="toaster"></div>
-     <div> 
-       <div id="particles">
-        </div>  
-          <hr style="width: 100%; background-color: #000000; border-color: #000000;">
-     </div>
-    </div> 
-       <!--Div for background-->
-    
-<!--        <button id="mode-toggle">Dark/Light</button> -->
-<!--      <div class="bg-div"></div> -->
+      </defs>
+  </svg>
+</div>
 
-   
-    <!-----------------------
-         HEADER
-         ------------------------->
-         
-    <header class="header" id="header">
-      <div class="logo img">
-        <a href="https://github.com/Tejaso7">
-        <img
-          class="logo"
-          src="./assets/My_logo.png"
-          alt="logo"
-        /></a>
-      </div>
-       <p class="logo initials" tabindex="1" href=""></p>
-      <div class="navbar">
+<!-- Toaster -->
+<div class="toaster"></div>
+<div>
+  <div id="particles"></div>
+  <hr style="width: 100%; background-color: #000000; border-color: #000000;">
+</div>
+<!-- Div for background -->
 
-        <ul class="navbar-list">
-          <li>
-            <a
-              class="navbar-link"
-              name="home"
-              href="#home"
-              onclick="scrollToSection(this),toggleNav()"
-              tabindex="4"
-              >Home</a>
-          </li>
-          <li>
-            <a
-              class="navbar-link"
-              name="about"
-              href="#about"
-              onclick="scrollToSection(this),toggleNav()"
-              tabindex="5"
-              >About</a
-            >
-          </li> 
-          <li>
-            <a
-              class="navbar-link"
-              name="skills"
-              href="#skills"
-              onclick="scrollToSection(this),toggleNav()"
-              tabindex="6"
-              >Skills</a
-            >
-          </li>
-          
-          <li>
-            <a
-              class="navbar-link"
-              name="projects"
-              href="#projects"
-              onclick="scrollToSection(this),toggleNav()"
-              tabindex="7"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a
-              class="navbar-link"
-              name="education"
-              href="#education"
-              onclick="scrollToSection(this),toggleNav()"
-              tabindex="8"
-              >Education</a
-            >
-          </li>
-          <li>
-            <a
-              class="navbar-link"
-              name="experience"
-              href="#experience"
-              onclick="scrollToSection(this),toggleNav()"
-              tabindex="9"
-              >Experience</a
-            >
-          </li>
-        </ul>
-        <a
-          class="contactBtn button"
-          name="getInTouch"
-          tabindex="10"
-          href="form.html"
-          target="_blank"
-          >Contact</a
-        >
-        <ion-icon
-          tabindex="9"
-          name="close-outline"
-          class="mobile-nav-icon"
-          onclick="toggleNav()"
-        ></ion-icon>
-      </div>
-      <ion-icon
-        tabindex="3"
-        name="menu-outline"
-        class="mobile-nav-icon"
-        onclick="toggleNav()"
-      ></ion-icon>
-    </header>
-    <!-----------------------
-         HOME SECTION
-         ------------------------->
-    <div class="continer d-flex home-section" id="home" tabindex="42">
-
-      <div id="intro-words"class="d-flex flex-column justify-content-evenly"> <span class="name" style="color:black;">Hey, I'm </span> 
-        <pre><span class="name" style="color:rgb(5, 193, 5);">Print</span><span class="name" style="color:black;">("</span><span class="name" style="color:orange;">_Tejas_Sawant_</span><span class="name" style="color:black;">")</span> </pre> 
-        <p class="aboutShort">
-          An India-based freelancer who's into AI&DS Engineering ,Full Stack Web Development , Data Analytics and open to work as a developer.
-        </p>
-
-        <a
-          class="about-me-btn button"
-          name="about"
-          href="#about"
-          onclick="scrollToSection(this),toggleNav()"
-          tabindex="2" style="color: red;"
-        >
-          About Me
-          <ion-icon name="chevron-forward-outline"></ion-icon>
+<!-- <button id="mode-toggle">Dark/Light</button> -->
+<!-- <div class="bg-div"></div> -->
+ <!-- HEADER -->
+<header class="header" id="header">
+  <div class="logo img">
+      <a href="https://github.com/Tejaso7">
+          <img class="logo" src="./assets/My_logo.png" alt="logo" />
       </a>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div class="imgDiv">
-          <img src="./assets/mainpi.png" class="profile-image" />
-        </div>
-      </div>
+  </div>
+  <p class="logo initials" tabindex="1" href=""></p>
+  <div class="navbar">
+      <ul class="navbar-list">
+          <li>
+              <a class="navbar-link" name="home" href="#home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a>
+          </li>
+          <li>
+              <a class="navbar-link" name="about" href="#about" onclick="scrollToSection(this),toggleNav()" tabindex="5">About</a>
+          </li>
+          <li>
+              <a class="navbar-link" name="skills" href="#skills" onclick="scrollToSection(this),toggleNav()" tabindex="6">Skills</a>
+          </li>
+          <li>
+              <a class="navbar-link" name="projects" href="#projects" onclick="scrollToSection(this),toggleNav()" tabindex="7">Projects</a>
+          </li>
+          <li>
+              <a class="navbar-link" name="education" href="#education" onclick="scrollToSection(this),toggleNav()" tabindex="8">Education</a>
+          </li>
+          <li>
+              <a class="navbar-link" name="experience" href="#experience" onclick="scrollToSection(this),toggleNav()" tabindex="9">Experience</a>
+          </li>
+      </ul>
+      <a class="contactBtn button" name="getInTouch" tabindex="10" href="form.html" target="_blank">Contact</a>
+      <ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+  </div>
+  <ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+</header>
+<!-- HOME SECTION -->
+<div class="container d-flex  home-section" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;"  id="home" tabindex="42">
+  <div   id="intro-words" class="d-flex flex-column justify-content-evenly text-center mb-3">
+    <p class="name" style="color: black;">Hey, I'm Tejx</p>
+    <div>
+      <img style="width: 200px;" src="./assets/ufo4.gif" alt="Image">
     </div>
-    
-    <!-----------------------
-         ABOUT SECTION
-         ------------------------->
-    
-    <section id="about" class="section about-section" tabindex="11">
-      <div class="about-ill"><img class="styled-image" src="./assets/about1.jpg" alt="Memoji" /> </div>
-      <div
-        class="aboutMe"
-        data-aos="fade-left"
-        data-aos-duration="700"
-        data-aos-once="true"
-      >
-        <h2 class="name">Er.Tejas Sawant</h2>
-        <br>
-        <div class="professionContainer">
+    <p class="aboutShort" >
+      <span  style="color: rgb(5, 193, 5);">Print <p style="color: rgb(184, 28, 28); ">(" _Tejas_Sawant_ ")</p></span>
+      An India-based freelancer who's into AI & DS Engineering, Full Stack Web Development, Data Analytics, and open to work as a developer.
+    </p>
+    <a class="about-me-btn button" name="about" href="#about" onclick="scrollToSection(this),toggleNav()" tabindex="2" style="color: red;">
+      About Me
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </a>
+  </div>
+  <div class="d-flex justify-content-center">
+      <div class="imgDiv">
+          <img src="./assets/mainpi.png" class="profile-image" alt="Profile Image" />
+      </div>
+  </div>
+</div>
+<!-- ABOUT SECTION -->
+<section id="about" class="section about-section" tabindex="11">
+  <div class="about-ill">
+      <img class="styled-image" src="./assets/about1.jpg" alt="Memoji" />
+  </div>
+  <div  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;" class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+      <h2 class="name">Er.Tejas Sawant</h2>
+      <br>
+      <br>
+      <div class="professionContainer">
           <p class="profession">Full Stack Web Development</p>
           <p class="profession">AI Engineer</p>
           <p class="profession">Django Developer</p>
-
-        </div>
-        <br />
-        <p class="aboutLong">
-          
-          <b>I’m</b> an undergrad, self taught Data Analyst ,<b>Web developer</b> from Pune, India. I have valuable skills and a lot of ability .<br>
-            I love working with data, and that's why I decided to start my career as a<b> Django developer </b>. I've gained experience by working on various projects.<br><br> 
-           Overall, 
-            I promise the best professionalism, technical skills, and customer happiness in all parts of development.
-        </p>
-        <br/>
-        <a
-          class="button"
-          href="./assets/Tejas's Resume.pdf"
-          target="_blank"
-          tabindex="12"
-        >
+      </div>
+      <br />
+      <p class="aboutLong">
+          <b>I’m</b> an undergrad, self-taught Data Analyst, <b>Web developer</b> from Pune, India. I have valuable skills and a lot of ability. <br>
+          I love working with data, and that's why I decided to start my career as a <b>Django developer</b>. I've gained experience by working on various projects. <br><br>
+          Overall, I promise the best professionalism, technical skills, and customer happiness in all parts of development.
+      </p>
+      <br/>
+      <a class="button" href="./assets/Tejas's Resume.pdf" target="_blank" tabindex="12">
           Resume
           <ion-icon name="document-outline"></ion-icon>
-        </a>
-      </div>
-      <ul
-        class="social-menu"
-        data-aos="fade-left"
-        data-aos-duration="700"
-        data-aos-delay="500"
-        data-aos-once="true"
-      >
-        <li id="linkedin">
-          <a
-            href="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/"
-            aria-label="linkedin"
-            class="linkedin"
-            tabindex="13"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li id="github">
-          <a
-            href="https://github.com/Tejaso7"
-            aria-label="github"
-            class="github"
-            tabindex="14"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-        <li id="instagram">
-          <a
-            href="https://instagram.com/_ts_oo7_"
-            aria-label="instagram"
-            class="instagram"
-            tabindex="15"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li id="twitter">
-          <a
-            href="https://www.twitter.com/TejasSawantoo7"
-            aria-label="twitter"
-            class="twitter"
-            tabindex="16"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-      </ul>
-    </section>
+      </a>
+  </div>
+  <ul  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;" class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+      <li id="linkedin">
+          <a href="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/" aria-label="linkedin" class="linkedin" tabindex="13">
+              <i class="fab fa-linkedin-in"></i>
+          </a>
+      </li>
+      <li id="github">
+          <a href="https://github.com/Tejaso7" aria-label="github" class="github" tabindex="14">
+              <i class="fab fa-github"></i>
+          </a>
+      </li>
+      <li id="instagram">
+          <a href="https://instagram.com/_ts_oo7_" aria-label="instagram" class="instagram" tabindex="15">
+              <i class="fab fa-instagram"></i>
+          </a>
+      </li>
+      <li id="twitter">
+          <a href="https://www.twitter.com/TejasSawantoo7" aria-label="twitter" class="twitter" tabindex="16">
+              <i class="fab fa-twitter"></i>
+          </a>
+      </li>
+  </ul>
+</section>
+
     <!-----------------------
          SKILLS SECTION
          ------------------------->
-    <section class="section skill-section" id="skills" tabindex="17">
-      <div
-        style="
-          width: 100%;
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-        "
-        data-aos="zoom-in-up"
-        data-aos-duration="700"
-        data-aos-once="true"
-      >
-        <h1 class="display-3 fw-bold text-capitalize">
-          My Skills </h1>
-          <br>
-          
-          <p>Tiles in <span>blue</span> are some of my major skills.</p>
-          <br>
+      <section class="section skill-section" id="skills" tabindex="17">
+          <div style="width: 100%; align-items: center; display: flex; flex-direction: column;"
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
+          <img src="./assets/skills.gif" alt="skills">
+            <h1 class="display-3 fw-bold text-capitalize">My Skills </h1>
+            <br>
+            <p  style="border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Tiles in <span style="color: aqua;">blue</span> are some of my major skills.</p>
+            <br>
         
         <div class="skill-container">
           <div class="major">
@@ -360,7 +229,6 @@
             <img src="./assets/tensorflow.png" alt="Skill image " />
             <p>Tensor Flow</p>
           </div>
-
           <div class="minor">
             <img src="./assets/css.png" alt="Skill image " />
             <p>CSS3</p>
@@ -450,36 +318,32 @@
         </div>
       </div>
     </section>
-    <!-------------------------
-         PROJECT SECTION
-         ------------------------->
-    <section class="section main project-section" id="projects" tabindex="18">
-      <div
-        style="
-          width: 100%;
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-        "
+<!-----------------------
+     PROJECTS SECTION
+     ------------------------->
+     <section class="section main project-section" id="projects" tabindex="18">
+      <div style="width: 100%; align-items: center; display: flex; flex-direction: column;"
         data-aos="zoom-in-up"
         data-aos-duration="700"
-        data-aos-once="true">
+        data-aos-once="true"
+        >
+        <img style="width: 200px;" src="./assets/proo.gif" alt="Image">
         <div class="section-header">
           <div class="projecthead">
-          <h1 class="display-3 fw-bold text-capitalize">
-            Some of My Projects </h1>
+            <h1 class="display-3 fw-bold text-capitalize">Some of My Projects </h1>
             <br>
-            <p class="sectionDesc">
-              Here are a few past projects I've worked on. Want to see more ? 
-              <a href="projects.html"  class="bn5">See All</a>
-          <br>
-        </p>
+
+            <p class="sectionDesc"  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+              Here are a few past projects I've worked on. Want to see more?
+              <a href="projects.html" class="bn5"  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">See All</a>
+              <br>
+            </p>
           </div>
           <img
             class="ProjectHeaderImage"
             src="./assets/vecteezy_3d-illustration-skull-symbol_9902231_617.png"
             alt="Project header image"
-          />              
+          />
         </div>
         <div class="project card-container">
           <div class="project card 1" tabindex="">
@@ -489,11 +353,8 @@
             <br />
             <h6>Campus Placement Automation </h6>
             <br>
-            <!-- <p class="techstack">
-              <span> Front-end </span> - HTML5,CSS3,JS,PHP,MYSQL
-            </p> <br> -->
             <p class="library">
-              <span> Project Working </span> -In this project Students list will be displayed to the placement cell dashboard.
+              <span> Project Working </span> - In this project, the Students' list will be displayed on the placement cell dashboard.
             </p>
             <div class="options">
               <a
@@ -505,7 +366,7 @@
               </a>
               <a class="githubElem" href="https://github.com" target="_blank">
                 <ion-icon name="logo-github"></ion-icon>
-              </a>  
+              </a>
               <button class="share">
                 <ion-icon name="link-outline">Copied text!</ion-icon>
               </button>
@@ -517,11 +378,8 @@
             </div>
             <br />
             <h6>Car Rental System Using C++</h6> <br>
-            <!-- <p class="techstack">
-              <span> Libraries </span> - C++ 
-            </p> <br> -->
             <p class="library">
-              <span> Project Working</span> - In this project we build an system which you Rent a car and calculate rent of car .
+              <span> Project Working</span> - In this project, we build a system where you can rent a car and calculate the rent of the car.
             </p>
             <div class="options">
               <a class="viewElem" href="https://youtu.be/Dxfbi9vy_AY" target="_blank">
@@ -538,17 +396,11 @@
           <div class="project card 1" tabindex="">
             <div class="imgDiv">
               <img src="./assets/virtual assistant using python.jpeg" alt="Project image" />
-          <br>
-        </div>
-        <br>
-
-            <br />
+            </div>
+            <br>
             <h6>Virtual Assistant using Python</h6> <br>
-            <!-- <p class="techstack">
-              <span> Libraries </span> - Python
-            </p> <br> -->
             <p class="library">
-              <span> Project Working </span> - In this project we created a Virtual Assistant by using python.
+              <span> Project Working </span> - In this project, we created a Virtual Assistant using Python.
             </p>
             <div class="options">
               <a
@@ -564,18 +416,15 @@
               <button class="share">
                 <ion-icon name="link-outline">Copied text!</ion-icon>
               </button>
-             
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    
-<!-----------------------  
-          EDUCATION SECTIONS  
-           ------------------------->
-    <section class="section education-section" id="education" tabindex="23">
+    </section>    
+<!-----------------------
+     EDUCATION SECTION
+     ------------------------->
+     <section class="section education-section" id="education" tabindex="23">
       <div style="
           width: 100%;
           align-items: center;
@@ -586,22 +435,22 @@
         data-aos-duration="700"
         data-aos-once="true"
       >
-        <h1 class="display-3 fw-bold text-capitalize">
-          Education </h1> 
-          <br>
-
-          <p>These are some of my Qualifications.</p>
-          <br>
-        
+      
+      <h1 class="display-3 fw-bold text-capitalize">Education </h1>
+      <br>
+      <img style="width: 200px;" src="./assets/edu.gif" alt="Image">
+        <p  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">These are some of my Qualifications.</p>
+        <br>
+    
         <div class="card-container">
-          <div class="card">  
+          <div class="card">
             <div class="imgDiv">
               <img src="./assets/zeal.jpg" alt="Institute image" />
             </div>
             <br />
             <h6 class="courseName">Bachelor Of Engineering  </h6> <br>
             <p class="instituteName">Zeal College Of Engineering And Research Pune | SPPU</p>  <br>
-            <p class="instituteDesc"> <b>Course :-</b>Artifical Intelligence and Data Science </p>
+            <p class="instituteDesc"> <b>Course :-</b>Artificial Intelligence and Data Science </p>
             <br />
             <p class="status Pursuing">2020-2024| FE - 8.89 , SE - 8.27 ,TE - 9.00 SGPA | Pursuing</p>
           </div>
@@ -631,34 +480,33 @@
         </div>
       </div>
     </section>
-       <!-------------------------
-         EXPERIENCE SECTION
-         ------------------------->
-         <section class="section experience-section" id="experience" class="experience" tabindex="24">
-          <div
-            style="
-              width: 100%;
-              align-items: center;
-              display: flex;
-              flex-direction: column;
-            "
-            data-aos="zoom-in-up"
-            data-aos-duration="700"
-            data-aos-once="true"
-          >
-            <h1 class="title" >
-              Experiences</h1>
-          <br>
+ <!-------------------------
+ EXPERIENCE SECTION
+ ------------------------->
+<section class="section experience-section" id="experience" class="experience" tabindex="24">
+  <div
+    style="
+      width: 100%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    "
+    data-aos="zoom-in-up"
+    data-aos-duration="700"
+    data-aos-once="true"
+  >
+    <h1 class="title">
+      Experiences
+    </h1>
+    <br>
+    <p  style="color: red;border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">These are the companies where I've previously worked.</p>
+    <br>
+    <img style="width: 200px;" src="./assets/ufo.gif" alt="Image">
 
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+          START SECTION 8 - EXPERIENCE
+         /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
          
-              <p style="color: red;">These are the compaines where I've previously worked.</p>
-          <br>
-
-            
-            <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
-                  START SECTION 8 - EXPERIENCE
-                 /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-    
     <section id="experience" class="experience">
       <div class="container">
         <br><br>
@@ -666,76 +514,74 @@
           <h1 class="display-3 fw-bold text-capitalize">My Journey</h1>
           <div class="heading-line"></div>
         </div>
-    
+
         <div class="timeline">
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-              <div class="timeline-text">
-                  <div class="timeline-date">Sep 2023 - <span style="color:green;">Present</span></div>
-                  <h2>COGNATECH PRIVATE LIMITED</h2>
-                  <br>
+            <div class="timeline-text">
+              <div class="timeline-date">Sep 2023 - <span style="color:green;">Present</span></div>
+              <h2>COGNATECH PRIVATE LIMITED</h2>
+              <br>
+              <img style="width: 200px;" src="./assets/cognatech.png" alt="Image">
 
-                  <h4>Python Full Stack Developer</h4>
-          
-                  <br>
-                  <p>
-                    I am improving my coding skills & developing applications & websites with help of DJANGO.
-                     Working for myself to improve my skills. Love to build Full-Stack clones.
-                  </p>
-              </div>
+              <h4>Python Full Stack Developer</h4>
+
+              <br>
+              <p>
+                I am improving my coding skills & developing applications & websites with the help of DJANGO.
+                Working for myself to improve my skills. Love to build Full-Stack clones.
+              </p>
+            </div>
           </div>
           <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-              <div class="timeline-text">
-                  <div class="timeline-date">Apr 2023- May 2023</div>
-                  <h2>Technical Coding and Research Innovation</h2>
-          <br>
+            <div class="timeline-text">
+              <div class="timeline-date">Apr 2023- May 2023</div>
+              <h2>Technical Coding and Research Innovation</h2>
+              <br>
+              <img style="width: 200px;" src="./assets/tcr.jpg" alt="Image">
 
-                  <h4>Frontend Web Developement Intern</h4>
-                  <br>
- 
-                  <p>
-                      Learned more about Frontend development and build one major and one minor project.
-                  </p>
-              </div>
+              <h4>Frontend Web Development Intern</h4>
+              <br>
+
+              <p>
+                Learned more about Frontend development and built one major and one minor project.
+              </p>
+            </div>
           </div>
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-              <div class="timeline-text">
-                  <div class="timeline-date">Feb 2022 - Mar 2023</div>
-                  <h2>GENIOBITS PRIVATE LIMITED</h2>
-                  <br>
- 
-                  <h4>Web Developement Intern</h4>
-                  <br>
-                  <p>
-                      As a fresher, I got idea how web development works and hence I build Multiple websites.
-                  </p>
-              </div>
+            <div class="timeline-text">
+              <div class="timeline-date">Feb 2022 - Mar 2023</div>
+              <h2>GENIOBITS PRIVATE LIMITED</h2>
+              <br>
+              <img style="width: 200px;" src="./assets/geno.jpg" alt="Image">
+
+              <h4>Web Development Intern</h4>
+              <br>
+              <p>
+                As a fresher, I got an idea of how web development works and hence I built multiple websites.
+              </p>
+            </div>
           </div>
-          
+        </div>
       </div>
-    </div>
     </div>
     <!-- Job Experience End -->
-      </div>
-    </section>
-  </section>
+  </div>
+</section>
+</section>
+<!-----------------------
+     CONTACT FORM
+     ------------------------->
      
-         
-     
-   
-    <!-----------------------
-         CONTACT FORM
-         ------------------------->
-       
-    <!-----------------------
-         FOOTER SECTION
-         ------------------------->
-    <footer class="footer" tabindex="35">
+<!-----------------------
+     FOOTER SECTION
+     ------------------------->
+     <footer class="footer" tabindex="35">
       <div class="getInTouch">
         <h3>Get Connected with Me..</h3>
         <p>
           Interested in working Together? We should queue up a time to Message.
         </p>
-        <a class="getInTouchBtn button" href="https://api.whatsapp.com/send?phone=+917447679060&text=Hi,%20I%20want%20to%20connect%20with%20you"  tabindex="36" target="_blank" >Connect on WhatsApp</a>
+        <a class="getInTouchBtn button" href="https://api.whatsapp.com/send?phone=+917447679060&text=Hi,%20I%20want%20to%20connect%20with%20you" tabindex="36" target="_blank">Connect on WhatsApp</a>
       </div>
       <br>
       <div class="footerParent">
@@ -744,125 +590,104 @@
             <img src="./assets/My_logo.png" alt="Profile Image" />
           </div>
           <div>
-          <p>Connect with me over Socials.</p>
-          <p>Mail me at :- <a href="mailto:tejusawant302@gmail.com" tabindex="37">Tejusawant302@gmail.com</a>
-          </p></div>
+            <p  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Connect with me over Socials.</p>
+            <p  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Mail me at: <a href="mailto:tejusawant302@gmail.com" tabindex="37">Tejusawant302@gmail.com</a></p>
           </div>
+        </div>
         <div class="reachMeOut">
-          <h3>Reach me out on </h3>
+          <h3  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;" >Reach me out on</h3>
           <ul class="social-menu">
             <li id="linkedin">
-              <a
-                href="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/"
-                class="linkedin"
-                tabindex="38"
-                aria-label="linkedin"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+              <a href="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/" class="linkedin" tabindex="38" aria-label="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </li>
             <li id="github">
-              <a
-                href="https://github.com/Tejaso7"
-                aria-label="github"
-                class="github"
-                tabindex="39"
-                ><i class="fab fa-github"></i
-              ></a>
+              <a href="https://github.com/Tejaso7" aria-label="github" class="github" tabindex="39">
+                <i class="fab fa-github"></i>
+              </a>
             </li>
             <li id="instagram">
-              <a
-                href="https://instagram.com/_ts_oo7_"
-                aria-label="instagram"
-                class="instagram"
-                tabindex="40"
-                ><i class="fab fa-instagram"></i
-              ></a>
+              <a href="https://instagram.com/_ts_oo7_" aria-label="instagram" class="instagram" tabindex="40">
+                <i class="fab fa-instagram"></i>
+              </a>
             </li>
             <li id="twitter">
-              <a
-                href="https://www.twitter.com/TejasSawantoo7"
-                aria-label="twitter"
-                class="twitter"
-                tabindex="41"
-                ><i class="fab fa-twitter"></i
-              ></a>
+              <a href="https://www.twitter.com/TejasSawantoo7" aria-label="twitter" class="twitter" tabindex="41">
+                <i class="fab fa-twitter"></i>
+              </a>
             </li>
           </ul>
         </div>
       </div>
+      <div>
+        <img style="width: 200px;" src="./assets/codeing.gif" alt="Image">
+      </div>
+
       <p class="developerInfo">
         Designed With ❤️ by
-        
-        <a href="https://instagram.com/_ts_oo7_" tabindex="50"
-          >Tejas Sawant</a
-        >
+        <a href="https://instagram.com/_ts_oo7_" tabindex="50">Tejas Sawant</a>
       </p>
     </footer>
     <!-- Scripts -->
-    <script src="./scripts/firebase.js"></script>
-    <script src="./scripts/commonScript.js"></script>
-    <script src="./scripts/script.js"></script>
-    <!-- External scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-           <!-- JavaScript for particles -->
-     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-     <script>
-         particlesJS("ts", {
-             particles: {
-                 number: {
-                     value: 80, // Adjust the number of particles
-                     density: {
-                         enable: true,
-                         value_area: 800,
-                     },
-                 },
-                 color: {
-                     value: ["#FF5733", "#33FF6A", "#3333FF", "#FF33EC"], // Specify the colors
-                 },
-                 shape: {
-                     type: "circle",
-                 },
-                 opacity: {
-                     value: 0.9,
-                     random: false,
-                     anim: {
-                         enable: false,
-                     },
-                 },
-                 size: {
-                     value: 3,
-                     random: true,
-                 },
-                 move: {
-                     enable: true,
-                     speed: 2,
-                 },
-             },
-             interactivity: {
-                 events: {
-                     onhover: {
-                         enable: true,
-                         mode: "repulse",
-                     },
-                 },
-             },
-         });
-     </script>
-  </body>
+<script src="./scripts/firebase.js"></script>
+<script src="./scripts/commonScript.js"></script>
+<script src="./scripts/script.js"></script>
+
+<!-- External scripts -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- JavaScript for particles -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("ts", {
+      particles: {
+          number: {
+              value: 80, // Adjust the number of particles
+              density: {
+                  enable: true,
+                  value_area: 800,
+              },
+          },
+          color: {
+              value: ["#FF5733", "#33FF6A", "#3333FF", "#FF33EC"], // Specify the colors
+          },
+          shape: {
+              type: "circle",
+          },
+          opacity: {
+              value: 0.9,
+              random: false,
+              anim: {
+                  enable: false,
+              },
+          },
+          size: {
+              value: 3,
+              random: true,
+          },
+          move: {
+              enable: true,
+              speed: 2,
+          },
+      },
+      interactivity: {
+          events: {
+              onhover: {
+                  enable: true,
+                  mode: "repulse",
+              },
+          },
+      },
+  });
+</script>
+</body>
 </html>

@@ -2,15 +2,15 @@
   "(Development Mode)": "true/false",
   "(WebUrl)": "https://tejassawant.netlify.app",
   "About": {
-    "AboutLong": "A **long description** about you.",
-    "AboutShort": "A **short description** about you.",
+    "AboutLong": "I am a passionate web developer and data analyst with a keen interest in artificial intelligence. I love building innovative solutions and exploring new technologies. Currently pursuing a Bachelor's degree in Artificial Intelligence and Data Science.",
+    "AboutShort": "Web Developer | Data Analyst | AI Enthusiast",
     "EmailId": "tejusawant302@gmail.com",
     "Gender": "male",
     "Name": {
       "FirstName": "Tejas",
       "LastName": "Sawant"
     },
-    "Profession": "Web developer, Data Analyst , AI enginner",
+    "Profession": "Web developer, Data Analyst, AI engineer",
     "ProfileImage": "",
     "ResumeUrl": "",
     "SocialMedia": {
@@ -52,11 +52,23 @@
     "templateID": ""
   },
   "Experience": {
-    "1 - company name": {
-      "JobDescription": "**Lorem ipsum dolor, sit amet consectetur** adipisicing elit.//Quos, incidunt. Asperiores quisquam voluptas architecto quis unde eius a nemo, natus ex, perspiciatis harum exercitationem deserunt soluta assumenda necessitatibus neque. Quam!",
-      "companyName": "Company name",
-      "period": "From (Month) - to (Month) Year",
-      "title": "Job title"
+    "1 - COGNATECH PRIVATE LIMITED": {
+      "JobDescription": "I am improving my coding skills & developing applications & websites with the help of DJANGO. Working for myself to improve my skills. Love to build Full-Stack clones.",
+      "companyName": "COGNATECH PRIVATE LIMITED",
+      "period": "Sep 2023 - Present",
+      "title": "Python Full Stack Developer"
+    },
+    "2 - Technical Coding and Research Innovation": {
+      "JobDescription": "Learned more about Frontend development and built one major and one minor project.",
+      "companyName": "Technical Coding and Research Innovation",
+      "period": "Apr 2023 - May 2023",
+      "title": "Frontend Web Development Intern"
+    },
+    "3 - GENIOBITS PRIVATE LIMITED": {
+      "JobDescription": "As a fresher, I got an idea of how web development works and hence I built multiple websites.",
+      "companyName": "GENIOBITS PRIVATE LIMITED",
+      "period": "Feb 2022 - Mar 2023",
+      "title": "Web Development Intern"
     }
   },
   "Logo": {
@@ -64,31 +76,53 @@
     "url": ""
   },
   "Projects": {
-    "1 - Project": {
+    "1 - Campus Placement Automation": {
       "Github": "",
       "ImageUrl": "",
-      "Library": "Library 1, Library 2",
-      "ProjectLink": "",
+      "Library": "HTML5, CSS3, JS, PHP, MYSQL",
+      "ProjectLink": "https://youtu.be/k0BjUpJqgxA",
       "ProjectScale": "Major",
-      "Techstack": "Techstack 1, Techstack 2",
-      "Title": "Project name"
+      "Techstack": "Front-end",
+      "Title": "Campus Placement Automation"
     },
-    
-      "2 - Project": {
-        "Github": "",
-        "ImageUrl": "",
-        "Library": "Library , Library ",
-        "ProjectLink": "",
-        "ProjectScale": "Major",
-        "Techstack": "Techstack , Techstack ",
-        "Title": "Project name"
-      }
+    "2 - Car Rental System Using C++": {
+      "Github": "https://github.com/Tejaso7/Car_Rental_System_in_cpp",
+      "ImageUrl": "",
+      "Library": "C++",
+      "ProjectLink": "https://youtu.be/Dxfbi9vy_AY",
+      "ProjectScale": "Major",
+      "Techstack": "Libraries",
+      "Title": "Car Rental System Using C++"
     },
+    "3 - Virtual Assistant using Python": {
+      "Github": "https://github.com/Tejaso7/virtual-assistant-in-Python",
+      "ImageUrl": "./assets/virtual_assistant_using_python.jpeg",
+      "Library": "Python",
+      "ProjectLink": "https://youtu.be/nA2QXO1yySA",
+      "ProjectScale": "Major",
+      "Techstack": "Libraries",
+      "Title": "Virtual Assistant using Python"
+    }
+  },
   "Skills": [
-    "PYTHON, major, skill image url 1",
-    "CSS3, minor, skill image url 2",
-    "HTML5, minor, skill image url 3"
-
-
+    "PYTHON, major, ./assets/python.png",
+    "DJANGO, major, ./assets/django.png",
+    "POSTGRESQL, major, ./assets/postgresql.png",
+    "MYSQL, minor, ./assets/mysql.png",
+    "Numpy, minor, ./assets/numpy.png",
+    "Pandas, minor, ./assets/pandas.jpg",
+    "Scikit Learn, minor, ./assets/scikitlearn.png",
+    "Opencv, minor, ./assets/opencv.png",
+    "Tensor Flow, minor, ./assets/tensorflow.png",
+    "CSS3, minor, ./assets/css.png",
+    "C++, minor, ./assets/cpp.png",
+    "C, minor, ./assets/c.png",
+    "Bootstrap, minor, ./assets/bootstrap.png",
+    "PowerBI, minor, ./assets/power-bi-microsoft-seeklogo.com.svg",
+    "JavaScript, minor, ./assets/js.png",
+    "MangoDB, minor, ./assets/mongodb.png",
+    "AWS, minor, ./assets/amazon-aws.png",
+    "Excel, minor, ./assets/excel.png",
+    "HTML5, minor, ./assets/html5.png"
   ]
 }
