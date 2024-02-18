@@ -1,0 +1,327 @@
+1. you want to open account on Cloud.digitalOcean
+2. Create new drop let chose the things according
+     [save the password or copy for use in future]
+3. enabling monitoring , ipv6 
+4. name the server -  
+5. launch droplet 
+6. copy public ip address
+7. go to console use command to ssh to server
+     
+       ssh root@{ copied public ip}
+
+        type yes ,
+          enter pass in console
+
+8. sudo apt-get update update all pakage of system
+
+9.  sudo apt install -y nginx .... in our system
+
+10. install python3 pip
+
+11.virtual env on system
+
+12. start nginx
+
+13. enable nginx
+
+14. sudo systemctl daemon-reload
+
+15. clone the django project from github 
+
+16.go to project dir by cd command 
+
+17. ls and see the manage.py file for confirmation
+
+18.virtual env
+
+19.source env/bin/activate or work on
+
+20. pip install -r requirement.txt
+
+21.pip install django gunicorn 
+
+22.python manage.py malemigrations
+
+23.python manage.py migrate
+
+24.python manage.py collectstatic  which would copy all static file to the staticfiles location
+
+25.pip install whitenoise
+
+26. now we want to configure the gunicorn we should go to the article
+    
+        medium.com/p/4f55ade178d3/edit
+
+ https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWxid3ZYdHpqSnhIZGlTUXg3NEFrbkQyLTFqZ3xBQ3Jtc0trUkpBQXdJZERUY21oZHFJNHhCZXNfekx3dFFmLTBtek1iT0xCSUwwVFdiNTRleFdlUjEzYW1WcFA4VDdvc1dpQlhhQ0M4UWh1b0xJU01lSGYyY1R4elA3VTdLVFMxdmRNQmswTGZkTjRHSmpYZjFaOA&q=https%3A%2F%2Fwww.codewithmuh.com%2Fblog%2Fci-cd-pipeline-for-django-application-using-jenkins-and-digital-ocean&v=fPXRhJPJQOI
+
+27. copy the command and past and also the content and save the files 
+
+25. create gunicorn service file 
+
+26. paste the things according by changing the project name  and path and folder of setting.py file
+
+27. start gunicorn and enable gunicron
+
+28. check the nginx file 
+      eg. cd /etc/nginx/sites-enabled
+
+
+29. rm -f default remove the file 
+
+30. deactivate
+
+31.go through the documentation check the path and folder name is correct by replace the project dir name 
+
+32.enable the nginx replace the blog as we used abhove 
+
+33. sudo gpasswd -a www-data root ---------- username 
+
+34.restart nginx
+
+35. service gunicorn restart
+
+36. service nginx restart
+
+37.go to the droplet and copy public ip and paste to url the project is setup 
+
+
+
+-------------------------------------------------------------------
+           ci      cd 
+--------------------------------------------------------------------
+
+
+..........................................
+create the droplet again 
+
+.
+.......................................
+create pass and copy it for ssh
+
+.
+...................................
+enable ipv6
+
+...........................
+name server - jenknins server 
+......................
+create droplet
+
+
+
+...........................
+open terminal 
+.................
+new tab
+.............
+
+
+copy  public ip 
+---------------------------------
+add ssh root@ {ip}
+------------------------
+password
+----------
+
+SET UP THE JENKINS SERVER DROPLET 
+---------------------------------
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmF1R2xmWmxoNTY1OGVYUERtNTJvN3JuMzZIQXxBQ3Jtc0tsVTlEV0w3R2t4LTlYM3RHck1iaV9tckthVmI5a25OX3hiQVNmR1gxUFllb3l0ZFpRNGhwbU9EQ0NrcS1zTGRUeVhpdWxLcnFvUlRNd2RLTi1rNlZUVUphcHlRVEs1VXVxUmltaDBCc1JCd29SZ1RaVQ&q=https%3A%2F%2Fgithub.com%2Frashiddaha&v=fPXRhJPJQOI
+
+----------------------------------
+
+update all packages
+
+-----------------
+
+install default-jdk
+
+-------------------
+
+java -version to check is there java 
+
+--------------------
+ copy the command 4 fromm github
+
+----------
+ 
+command 
+
+5
+
+6
+
+7 install jenkins 
+
+8.start jenkins
+
+9.enable jenkins 
+
+10.chceck the status of jenkins 
+
+11. go to http:// ip public :8080
+
+12.runthe command to start the password of jenkins in terminal
+     
+    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+ 13. copy the password given out
+
+14.go to jenkin browers and enter and install all plugins 
+
+
+15.creat username ,pass,gmail
+
+16.start using jenkins 
+
+17.chceck github and slack are there or not in the manage plugins 
+
+    select manage plugin 
+
+      slaack notification 
+      download and restart
+
+18. enter user namea and password
+
+19. go in manage plugin and check for github plugin in instelled plugins 
+
+20. open jenkins file in the git hub 
+
+
+21.deploy_prod and change the app server public ip in it 
+chnage all thous things
+
+22.create new item in jenkins  
+             name django 
+
+         click  multi  branch pipeline
+
+
+23. in ci cd pipeline go and add source the git source so that we are using git code 
+
+        if the repo i private then we want to use the password or the cridentials
+24.scan multibranch 
+
+  every 1 min
+
+25.  just Apply and Save it 
+
+
+26. now start new build click on play button
+
+27.if failed go to console  you will see the error according 
+
+28. configure the slack by going on dashboard manage jenkins - configure sytem - go to slack config - below - fill the form - use should have slck channel already -
+
+29. open the URl in new browerser --  https://my.slack.com/services/new/jenkins-ci
+
+
+    make sure the slack account
+    add jenkins ci interation
+
+    select jenkins chennel to recive the notification
+
+
+30. go to token and copy that 
+
+31. go to jenkins add credentials and secret text add that there 
+     add the workspace name in the jenkins 
+
+32.give the default chennel name 
+
+33. check the complete name of workspace and test connections 
+
+34.apply and save the changes
+
+
+35. open the config and master and build again and open console if eror 
+
+36.ssh root@ ip jenkin server 
+
+37.check and ssh to app server 
+
+38.jenkin side - sudo su- jenkins 
+
+39.get public key to use for app server - cat ~/.ssh/id_rsa.pub
+ or ssh-keygen -t rsa 
+
+40.get the ssh key by using 
+
+  cat ~ location.pub
+
+ copy the key 
+
+41.appserver - mkdir - p ~/.ssh 
+  
+ nano ~/.ssh/authorized_keys
+
+and psate the 🗝 key ssh
+
+42.chmod 600 ~/.ssh/copy the loaction above 
+
+
+43.jenkins server -- ssh root@ip address of app server from droplet
+
+44. if we can do ssh the all this are good and done the correct setup before 
+ yes 
+
+45. now build the pipeline and check the mistakaes again go in console 
+
+46.check the virtual env if not then install the virtual env 
+
+        open terminal  ssh to jenkin server
+    ssh root@ip address 
+
+47. install python and virtual env refer from git command
+
+48. build the code or pipeline again on clicking on build now 
+
+
+49. open build and check console again anad agin if source not found chceck the jenkin file and env/bin/activate 
+
+
+50.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
