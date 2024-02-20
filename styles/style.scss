@@ -453,8 +453,9 @@ a {
 ---------------------------------*/
 
 .home-section {
+  height: max-content;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-left: 12rem;
   padding-right: 12rem;
   background-color: rgba(255, 255, 255, 0.96);
