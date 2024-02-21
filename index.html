@@ -96,7 +96,10 @@
           <li>
             <a class="navbar-link" name="blog" href="#blog" onclick="scrollToSection(this),toggleNav()" tabindex="7">Blogs</a>
         </li>
-          <li>
+        <li>
+          <a class="navbar-link" name="videos" href="#videos" onclick="scrollToSection(this),toggleNav()" tabindex="8">Videos</a>
+      </li>
+        <li>
               <a class="navbar-link" name="education" href="#education" onclick="scrollToSection(this),toggleNav()" tabindex="8">Education</a>
           </li>
           <li>
@@ -117,7 +120,7 @@
   <div   id="intro-words" class="d-flex flex-column justify-content-evenly text-center mb-3">
     <p class="name" style="color: black;">Hey, I'm Tejx</p>
     <div>
-      <img style="width: 200px;" src="./assets/about2.gif" alt="Image">
+      <img style="width: 200px;" src="./assets/about4.gif" alt="Image">
     </div>
     <p class="aboutShort" >
       <span  style="color: rgb(5, 193, 5);">Print <p style="color: rgb(184, 28, 28); ">(" _Tejas_Sawant_ ")</p></span>
@@ -515,10 +518,82 @@
           </div>
       </div>
   </section>
+  <section class="section video-section" id="videos" tabindex="20">
+    <div style="width: 100%; align-items: center; display: flex; flex-direction: column;"
+    data-aos="zoom-in-up"
+    data-aos-duration="700"
+    data-aos-once="true"
+>
+      <h1 class="display-3 text-capitalize">Project Videos</h1>
+      <p class="video-intro">
+        Explore videos showcasing the projects we've made.
+        <a href="https://www.youtube.com/watch?v=Dxfbi9vy_AY&list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T&pp=iAQB" class="bn5">See All Videos</a>
+      </p>
+      <br>
+      <img
+      style="width: 300px;"
+      src="./assets/youtube.gif"
+      alt="Project header image"
+    />
+    <br>
+    <div class="video-cards-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;">
+
+      <!-- Video 1: Hiding Information Using Image Steganography in C++ -->
+      <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
+        <div class="blog-post card" style="height: 18em;">
+          <div>
+             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5W4q7VJKDqI?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Hiding Information Using Image Steganography in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="description">
+             <h5>Title:- Hiding Information Using Image Steganography in C++</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Video 2: Virtual Assistant using Python -->
+      <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
+        <div class="blog-post card" style="height: 18em;">
+          <div>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nA2QXO1yySA?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Virtual Assistant using Python" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <h5>Title:- Virtual Assistant using Python</h5>
+        </div>
+      </div>
+      </div>
+  
+      <!-- Video 3: Campus Placement Automation System in PHP using JavaScript, Bootstrap & CSS -->
+      <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
+        <div class="blog-post card" style="height: 18em;">
+          <div>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/k0BjUpJqgxA?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Campus Placement Automation System in PHP using JavaScript, Bootstrap & CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <h5>Title:- Campus Placement Automation System in PHP using JavaScript, Bootstrap & CSS</h5>
+        </div>
+      </div>
+  </div>
+      <!-- Video 4: Car Rental System Using C++ -->
+      <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;" >
+        <div class="blog-post card" style="height: 18em;">
+          <div>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Dxfbi9vy_AY?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Car Rental System Using C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <h5>Title:- Car Rental System Using C++</h5>
+        </div>
+      </div>
+      </div>
+  
+      <!-- Add more video cards as needed -->
+    </div>
+    </div>
+  </section>
+
 <!-----------------------
      EDUCATION SECTION
      ------------------------->
-     <section class="section education-section" id="education" tabindex="23">
+     <section class="section education-section" id="education" tabindex="21">
       <div style="
           width: 100%;
           align-items: center;
@@ -546,7 +621,7 @@
             <p class="instituteName">Zeal College Of Engineering And Research Pune | SPPU</p>  <br>
             <p class="instituteDesc"> <b>Course :-</b>Artificial Intelligence and Data Science </p>
             <br />
-            <p class="status Pursuing">2020-2024| FE - 8.89 , SE - 8.27 ,TE - 9.00 SGPA | Pursuing</p>
+            <p class="status Pursuing">2020-2024| FE - 8.89 , SE - 8.27 ,TE - 9.00,BE - 9.60 SGPA | Pursuing</p>
           </div>
           <div class="card">
             <div class="imgDiv">
@@ -577,7 +652,7 @@
  <!-------------------------
  EXPERIENCE SECTION
  ------------------------->
-<section class="section experience-section" id="experience" class="experience" tabindex="24">
+<section class="section experience-section" id="experience" class="experience" tabindex="22">
   <div
     style="
       width: 100%;
@@ -673,7 +748,9 @@
      ------------------------->
      <footer class="footer" tabindex="35">
       <div class="getInTouch">
-        <h3>Get Connected with Me..</h3>
+        <h3>Get Connected with Me.. <img style="width: 50px;" src="./assets/phone.gif" alt="Image"></h3>
+       
+
         <p>
           Interested in working Together? We should queue up a time to Message.
         </p>
