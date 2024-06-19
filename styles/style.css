@@ -619,8 +619,8 @@ a {
 .home-section {
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 12rem;
-  padding-right: 12rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
   background-color: rgba(255, 255, 255, 0.96);
 }
 
