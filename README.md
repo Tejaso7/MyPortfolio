@@ -2,7 +2,12 @@
 
 Welcome to my personal portfolio website! This repository contains the source code for my portfolio website hosted on Netlify. You can visit the live website [here](https://tejassawant.netlify.app/).
 
-<img src="assets/portfolio.png">
+<img src="demoimg/Screenshot 2024-08-14 154718.png">
+<img src="demoimg/Screenshot 2024-08-14 154736.png">
+<img src="demoimg/Screenshot 2024-08-14 154749.png">
+<img src="demoimg/Screenshot 2024-08-14 154800.png">
+<img src="demoimg/Screenshot 2024-08-14 154824.png">
+
 
 ## About Me
 
