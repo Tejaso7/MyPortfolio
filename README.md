@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! This repository contains the source code for my portfolio website hosted on Netlify. You can visit the live website [here](https://tejassawant.netlify.app/).
 
+<img src="assets/portfolio.png">
+
 ## About Me
 
 I am Tejas Sawant, a passionate web developer with a keen interest in creating responsive and user-friendly web applications. I have experience working with various technologies including HTML, CSS, JavaScript, React, and more. Through my projects showcased on this portfolio, I aim to demonstrate my skills and expertise in web development.
