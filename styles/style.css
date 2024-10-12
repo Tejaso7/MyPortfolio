@@ -628,6 +628,7 @@ a {
 .home-section div {
   width: 50%;
   margin-top: 3rem;
+  margin:auto;
 }
 
 .home-section div h1 {
