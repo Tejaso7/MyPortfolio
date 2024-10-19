@@ -632,10 +632,9 @@ a {
 }
 
 .home-section div h1 {
-  font-size: 6rem;
-  font-weight: 900;
-  text-align: start;
-  margin: 0;
+  
+ 
+  margin: auto;
   line-height: 7rem;
 }
 
