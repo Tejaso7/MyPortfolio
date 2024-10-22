@@ -1,0 +1,10 @@
+# Block all web crawlers from accessing certain directories
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all crawlers to access everything else
+Allow: /
+
+# Specify the location of the sitemap
+Sitemap: https://tejassawant.netlify.app/sitemap.xml
