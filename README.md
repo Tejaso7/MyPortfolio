@@ -24,7 +24,7 @@ I am Tejas Sawant, a passionate web developer with a keen interest in creating r
 - HTML
 - CSS
 - JavaScript
-- React
+ 
 
 ## Getting Started
 
