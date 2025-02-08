@@ -1,990 +1,845 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Keyword Meta Tag for Tejas Sawant -->
-    <meta name="keywords" content="Tejas Sawant, Tejas Sawant Portfolio, Tejas Sawant Developer, Tejas Sawant Full Stack Developer, Tejas Sawant Python Developer, Tejas Sawant AI Engineer, Tejas Sawant Pune, Tejas Sawant Web Developer, Tejas Sawant Freelancer, Hire Tejas Sawant, Full Stack Developer Pune, Python Developer Pune, AI Engineer Pune, Web Developer Pune, Freelance Full Stack Developer, Freelance AI Engineer, Django Developer India, React Developer Pune, Machine Learning Engineer Pune, DevOps Engineer Pune, JavaScript Developer Pune, Data Science Developer Pune, Python Django Expert, AI and Data Science Projects, Python Developer India, JavaScript Developer India, React.js Developer Pune, Django Web Development India, AWS Cloud Developer Pune, DevOps Tools Developer, Docker and Kubernetes Developer, GitLab and GitHub Developer, Full Stack Web Development Pune, Freelance Web Development Pune, Custom Website Development Pune, Web Application Developer Pune, SEO Optimization Pune, AI Consulting Services Pune, Cloud Computing Developer Pune, API Development Pune, ShivNanda TechCoders" />
+    <meta name="keywords" content="Tejas Sawant, Tejas Sawant Portfolio, Tejas Sawant Developer, Tejas Sawant Full Stack Developer, Tejas Sawant Python Developer, Tejas Sawant AI Engineer, Tejas Sawant Pune, Tejas Sawant Web Developer, Tejas Sawant Freelancer, Hire Tejas Sawant, Full Stack Developer Pune, Python Developer Pune, AI Engineer Pune, Web Developer Pune, Freelance Full Stack Developer, Freelance AI Engineer, Django Developer India, React Developer Pune, Machine Learning Engineer Pune, DevOps Engineer Pune, JavaScript Developer Pune, Data Science Developer Pune, Python Django Expert, AI and Data Science Projects, Python Developer India, JavaScript Developer India, React.js Developer Pune, Django Web Development India, AWS Cloud Developer Pune, DevOps Tools Developer, Docker and Kubernetes Developer, GitLab and GitHub Developer, Full Stack Web Development Pune, Freelance Web Development Pune, Custom Website Development Pune, Web Application Developer Pune, SEO Optimization Pune, AI Consulting Services Pune, Cloud Computing Developer Pune, API Development Pune, ShivNanda TechCoders">
     <meta name="description" content="Welcome to Tejas Sawant's website! Explore my portfolio, blog, and services. Let’s collaborate and create something extraordinary. Visit now to learn more!">
-    <meta name="author" content="Tejas Sawant" />
-    <meta property="og:image" content="./assets/fav.png" />
-    <meta property="og:url" content="https://tejassawant.netlify.app/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Tejas Sawant | Portfolio | Web Developer Pune, India" />
-    <meta property="og:description" content="Explore the web development and AI engineering projects of Tejas Sawant. Connect on LinkedIn, Instagram, Twitter, and GitHub to stay updated with his latest work." />
+    <meta name="author" content="Tejas Sawant">
+    <meta property="og:image" content="./assets/fav.png">
+    <meta property="og:url" content="https://tejassawant.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Tejas Sawant | Portfolio | Web Developer Pune, India">
+    <meta property="og:description" content="Explore the web development and AI engineering projects of Tejas Sawant. Connect on LinkedIn, Instagram, Twitter, and GitHub to stay updated with his latest work.">
 
     <title>Tejas Sawant | Portfolio | Web Developer Pune, India</title>
-    <link rel="canonical" href="https://tejassawant.netlify.app/" />
-    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon" />
+    <link rel="canonical" href="https://tejassawant.netlify.app/">
+    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
 
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
 
-    <!-- Include Tailwind CSS (You can download it and host it locally if needed) -->
+    <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
+    <!-- Neurophormis CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neurophormis@1.0.0/dist/neurophormis.min.css">
+
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/loader.css" />
-    <link rel="stylesheet" href="./styles/expre.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/loader.css">
+    <link rel="stylesheet" href="./styles/expre.css">
 
     <!-- CDN's -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./styles/ani.style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="./styles/ani.style.css">
     <link href="https://fonts.cdnfonts.com/css/robo-2" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
-    <!-- remember, jQuery is completely optional -->
 
-    <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
-    <script type="text/javascript" src="scripts/ani_jquery.particleground.js"></script>
-    <script type="text/javascript" src="scripts/ani_demo.js"></script>
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="./scripts/firebaseInit.js"></script>
 
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Tejas Sawant - Full Stack Developer & AI Engineer" />
-<meta name="twitter:description" content="Discover Tejas Sawant's projects in web development, AI, and data science. Connect on LinkedIn, Instagram, and GitHub." />
-<meta name="twitter:image" content="https://tejassawant.netlify.app/assets/about1.jpg" /> <!-- Replace with a profile image -->
-<meta name="twitter:url" content="https://tejassawant.netlify.app/" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tejas Sawant - Full Stack Developer & AI Engineer">
+    <meta name="twitter:description" content="Discover Tejas Sawant's projects in web development, AI, and data science. Connect on LinkedIn, Instagram, and GitHub.">
+    <meta name="twitter:image" content="https://tejassawant.netlify.app/assets/about1.jpg"> <!-- Replace with a profile image -->
+    <meta name="twitter:url" content="https://tejassawant.netlify.app/">
 
-<!-- Optional: Social Media Profile Links -->
-<meta property="og:site_name" content="Tejas Sawant" />
-<meta property="article:author" content="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/" />
-<meta property="article:publisher" content="https://www.instagram.com/_ts_oo7_" />
+    <!-- Optional: Social Media Profile Links -->
+    <meta property="og:site_name" content="Tejas Sawant">
+    <meta property="article:author" content="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/">
+    <meta property="article:publisher" content="https://www.instagram.com/_ts_oo7_">
 
-<!-- Alternative approach using Schema.org for SEO -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Tejas Sawant",
-  "url": "https://tejassawant.netlify.app/",
-  "sameAs": [
-    "https://www.linkedin.com/in/tejas-sawant-3a9b5820b/",
-    "https://www.instagram.com/_ts_oo7_",
-    "https://x.com/i/flow/login?redirect_after_login=%2FTejasSawantoo7",
-    "https://github.com/Tejaso7"
-  ]
-}
-</script>
+    <!-- Alternative approach using Schema.org for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tejas Sawant",
+      "url": "https://tejassawant.netlify.app/",
+      "sameAs": [
+        "https://www.linkedin.com/in/tejas-sawant-3a9b5820b/",
+        "https://www.instagram.com/_ts_oo7_",
+        "https://x.com/i/flow/login?redirect_after_login=%2FTejasSawantoo7",
+        "https://github.com/Tejaso7"
+      ]
+    }
+    </script>
 </head>
-
-<body >
-  <!-- Loader -->
-  
-<div class="loaderDiv">
-  <div class="loader"></div>
-  <p>Loading Tejas Portfolio </p>
-  <svg viewBox="0 0 1280 720">
-      <text text-anchor="middle" x="50%" y="50%" style="fill: url(#text-gradient)">
-          Tejx
-      </text>
-      <defs>
-          <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color: rgb(219, 245, 104)"></stop>
-              <stop offset="35%" style="stop-color: rgb(255, 217, 102)"></stop>
-              <stop offset="100%" style="stop-color: rgba(0, 212, 255, 1)"></stop>
-          </linearGradient>
-      </defs>
-  </svg>
-</div>
-
-<!-- Toaster -->
-<div class="toaster"></div>
-<!-- <div>
-  <div id="particles" style="padding:10px;border-radius: 1px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"></div>
-  <hr style="width: 100%; background-color: #000000; border-color: #000000; border-radius: 1px; box-shadow: 0 0 10px rgb(0, 0, 0); border-width: 2px;">
-</div>
- -->
-
-<!-- <button id="mode-toggle">Dark/Light</button> -->
-<!-- <div class="bg-div"></div> -->
- <!-- HEADER -->
-<header class="header" id="header" >
-  <div class="logo img">
-      <a href="https://github.com/Tejaso7">
-          <img class="logo" src="./assets/My_logo.png" alt="logo" />
-      </a>
-  </div>
-  <p class="logo initials" tabindex="1" href=""></p>
-  <div class="navbar" id="home" >
-      <ul class="navbar-list">
-          <li>
-              <a class="navbar-link" name="home" href="#home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a>
-          </li>
-          <li>
-              <a class="navbar-link" name="about" href="#about" onclick="scrollToSection(this),toggleNav()" tabindex="5">About</a>
-          </li>
-          <li>
-              <a class="navbar-link" name="skills" href="#skills" onclick="scrollToSection(this),toggleNav()" tabindex="6">Skills</a>
-          </li>
-          <li>
-              <a class="navbar-link" name="projects" href="#projects" onclick="scrollToSection(this),toggleNav()" tabindex="7">Projects</a>
-          </li>
-          <li>
-            <a class="navbar-link" name="blog" href="#blog" onclick="scrollToSection(this),toggleNav()" tabindex="7">Blogs</a>
-        </li>
-        <li>
-          <a class="navbar-link" name="videos" href="#videos" onclick="scrollToSection(this),toggleNav()" tabindex="8">Videos</a>
-      </li>
-        <li>
-              <a class="navbar-link" name="education" href="#education" onclick="scrollToSection(this),toggleNav()" tabindex="8">Education</a>
-          </li>
-          <li>
-              <a class="navbar-link" name="experience" href="#experience" onclick="scrollToSection(this),toggleNav()" tabindex="9">Experience</a>
-          </li>
-      </ul>
-      <a class="contactBtn button" name="getInTouch" tabindex="10" href="form.html" target="_self">
-      <img style="width: 40px;" src="./assets/ts.gif" alt="Image">
-      Contact</a>
-      <ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
-  </div>
-  <ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
-  <br>
-  <br>
-</header>
-<!-- HOME SECTION -->
-<div  class="container d-flex  home-section"   style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; margin-top: 100px;border:2px solid red"  tabindex="42">
-  <div   id="intro-words" class="d-flex flex-column justify-content-evenly text-center mb-3">
-    <h1 class="name" style="color: black;font-family: 'ROBO', sans-serif;">I'm Tejas Sawant</h1>
-    <div>
-      <img style="width: 200px;" src="./assets/about4.gif" alt="Image">
+<body>
+    <!-- Loader -->
+    <div class="loaderDiv">
+        <div class="loader"></div>
+        <p>Loading Tejas Portfolio </p>
+        <svg viewBox="0 0 1280 720">
+            <text text-anchor="middle" x="50%" y="50%" style="fill: url(#text-gradient)">Tejx</text>
+            <defs>
+                <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color: rgb(219, 245, 104)"></stop>
+                    <stop offset="35%" style="stop-color: rgb(255, 217, 102)"></stop>
+                    <stop offset="100%" style="stop-color: rgba(0, 212, 255, 1)"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
     </div>
-    <p class="aboutShort" >
-      <span  style="color: rgb(5, 193, 5);">Print <p style="color: rgb(184, 28, 28); ">(" _Tejas_Sawant_ ")</p></span>
-      An India-based Engineer specializing in AI & Data Science Engineering, Full Stack Web Development, and Data Analytics. Open to opportunities in backend development and related fields.
-    </p>
-      <a class="about-me-btn button" name="about" href="#about" onclick="scrollToSection(this),toggleNav()" tabindex="2" style="color: red;">
-        About Me
-        <ion-icon name="chevron-forward-outline"></ion-icon>
-    </a>
-  </div>
-  <div class="d-flex justify-content-center">
-      <div class="imgDiv" >
-          <img src="./assets/mainpi.png"  style="filter:drop-shadow(1px 1px 10px #00ffff4a);" class="profile-image" alt="Profile Image" />
-      </div>
-  </div>
-</div>
-<!-- ABOUT SECTION -->
-<h1 class="display-3  text-capitalize" style="margin:auto;margin-top:120px;margin-bottom:-50px;" >My Intro </h1>
 
-<section id="about" class="section about-section" tabindex="11">
-  <div class="about-ill">
-      <img style="border:2px solid #00FFFF" class="styled-image" src="./assets/about1.jpg" alt="Memoji" />
-  </div>
-  <div  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;border:2px solid #00FFFF;padding: 10px;" class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
-    <h2 class="name title" >Er.Tejas Sawant</h2>
-    
-    <br>
-    <div class="professionContainer">
-      <p class="profession" style="text-align: center;" >Full Stack Web Development</p>
-      <p class="profession">AI Engineer</p>
-      <p class="profession">Django Developer</p>
-      <img style="width: 50px;" src="./assets/robo.gif" alt="Image">
+    <!-- Toaster -->
+    <div class="toaster"></div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="logo img">
+            <a href="https://github.com/Tejaso7">
+                <img class="logo" src="./assets/My_logo.png" alt="logo">
+            </a>
+        </div>
+        <p class="logo initials" tabindex="1" href=""></p>
+        <div class="navbar" id="home">
+            <ul class="navbar-list">
+                <li><a class="navbar-link" name="home" href="#home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a></li>
+                <li><a class="navbar-link" name="about" href="#about" onclick="scrollToSection(this),toggleNav()" tabindex="5">About</a></li>
+                <li><a class="navbar-link" name="skills" href="#skills" onclick="scrollToSection(this),toggleNav()" tabindex="6">Skills</a></li>
+                <li><a class="navbar-link" name="projects" href="#projects" onclick="scrollToSection(this),toggleNav()" tabindex="7">Projects</a></li>
+                <li><a class="navbar-link" name="blog" href="#blog" onclick="scrollToSection(this),toggleNav()" tabindex="7">Blogs</a></li>
+                <li><a class="navbar-link" name="videos" href="#videos" onclick="scrollToSection(this),toggleNav()" tabindex="8">Videos</a></li>
+                <li><a class="navbar-link" name="education" href="#education" onclick="scrollToSection(this),toggleNav()" tabindex="8">Education</a></li>
+                <li><a class="navbar-link" name="experience" href="#experience" onclick="scrollToSection(this),toggleNav()" tabindex="9">Experience</a></li>
+            </ul>
+            <a class="contactBtn button" name="getInTouch" tabindex="10" href="form.html" target="_self">
+                <img style="width: 40px;" src="./assets/ts.gif" alt="Image">
+                Contact
+            </a>
+            <ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+        </div>
+        <ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+        <br><br>
+    </header>
+
+    <!-- HOME SECTION -->
+    <div class="container d-flex home-section" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; margin-top: 100px; border: 2px solid red" tabindex="42">
+        <div id="intro-words" class="d-flex flex-column justify-content-evenly text-center mb-3">
+            <h1 class="name" style="color: black; font-family: 'ROBO', sans-serif;">I'm Tejas Sawant</h1>
+            <div>
+                <img style="width: 200px;" src="./assets/about4.gif" alt="Image">
+            </div>
+            <p class="aboutShort">
+                <span style="color: rgb(5, 193, 5);">Print <p style="color: rgb(184, 28, 28);">(" _Tejas_Sawant_ ")</p></span>
+                An India-based Engineer specializing in AI & Data Science Engineering, Full Stack Web Development, and Data Analytics. Open to opportunities in backend development and related fields.
+            </p>
+            <a class="about-me-btn button" name="about" href="#about" onclick="scrollToSection(this),toggleNav()" tabindex="2" style="color: red;">
+                About Me
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="imgDiv">
+                <img src="./assets/mainpi.png" style="filter: drop-shadow(1px 1px 10px #00ffff4a);" class="profile-image" alt="Profile Image">
+            </div>
+        </div>
     </div>
-    <br />
-    <p class="aboutLong">
-      <p><b>I’m an self-taught Cloud Engineer and Web Developer from Pune, India.</b> With a solid foundation in Web development and Cloud Operation , I have honed my skills through various projects and am now focused on my career as a <b>Django Developer</b>. My passion for working with data has driven me to specialize in Django, where I leverage my experience to build robust and efficient applications.</p>
 
-<p>I am committed to delivering exceptional professionalism, technical proficiency, and customer satisfaction in every aspect of development.</p>
-
-    </p>
-    <br/>
-    <a class="button" href="./assets/Tejas's Resume.pdf" target="_blank" tabindex="12">
-      <img style="width: 50px;" src="./assets/ts.gif" alt="Image">
-      Resume
-          <ion-icon name="document-outline"></ion-icon>
-      </a>
-  </div>
-  <ul  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; border:2px solid #00FFFF ;padding:10px" class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
-      <li id="linkedin">
-          <a href="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/" aria-label="linkedin" class="linkedin" tabindex="13">
-              <i class="fab fa-linkedin-in"></i>
-          </a>
-      </li>
-      <li id="github">
-          <a href="https://github.com/Tejaso7" aria-label="github" class="github" tabindex="14">
-              <i class="fab fa-github"></i>
-          </a>
-      </li>
-      <li id="instagram">
-          <a href="https://instagram.com/_ts_oo7_" aria-label="instagram" class="instagram" tabindex="15">
-              <i class="fab fa-instagram"></i>
-          </a>
-      </li>
-      <li id="twitter">
-          <a href="https://www.twitter.com/TejasSawantoo7" aria-label="twitter" class="twitter" tabindex="16">
-              <i class="fab fa-twitter"></i>
-          </a>
-      </li>
-  </ul>
-</section>
-
-    <!-----------------------
-         SKILLS SECTION
-         ------------------------->
-      <section class="section skill-section" id="skills" tabindex="17">
-          <div style="width: 100%; align-items: center; display: flex; flex-direction: column ;padding: 10px;"
-            data-aos="zoom-in-up"
-            data-aos-duration="700"
-            data-aos-once="true" 
-          >
-          <h1 class="display-3  text-capitalize">My Skills </h1>
-          <br>
-          <p  style="border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border:2px solid #00FFFF ; padding:10px; text-align: center;">Tiles in <span style="color: aqua;">blue</span> are some of my major skills.</p>
-          <br>
-          <img style="width:300px" src="./assets/skill.gif" alt="skills">
-         
-       <!-- Front-end -->
-       <div class="skill-container">
-        <div class="major" style="border:2px solid #00ff9d8a">
-          <img src="./assets/python.png" alt="Skill image" />
-          <p>PYTHON</p>
+    <!-- ABOUT SECTION -->
+    <h1 class="display-3 text-capitalize" style="margin: auto; margin-top: 120px; margin-bottom: -50px;">My Intro</h1>
+    <section id="about" class="section about-section" tabindex="11">
+        <div class="about-ill">
+            <img style="border: 2px solid #00FFFF" class="styled-image" src="./assets/about1.jpg" alt="Memoji">
         </div>
-        <div class="major" style="border:2px solid #00ff9d8a">
-          <img src="./assets/django.png" alt="Skill image" />
-          <p>DJANGO</p>
+        <div style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; border: 2px solid #00FFFF; padding: 10px;" class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+            <h2 class="name title">Er. Tejas Sawant</h2>
+            <br>
+            <div class="professionContainer">
+                <p class="profession" style="text-align: center;">Full Stack Web Development</p>
+                <p class="profession">AI Engineer</p>
+                <p class="profession">Django Developer</p>
+                <img style="width: 50px;" src="./assets/robo.gif" alt="Image">
+            </div>
+            <br>
+            <p class="aboutLong">
+                <p><b>I’m a self-taught Cloud Engineer and Web Developer from Pune, India.</b> With a solid foundation in Web development and Cloud Operation, I have honed my skills through various projects and am now focused on my career as a <b>Django Developer</b>. My passion for working with data has driven me to specialize in Django, where I leverage my experience to build robust and efficient applications.</p>
+                <p>I am committed to delivering exceptional professionalism, technical proficiency, and customer satisfaction in every aspect of development.</p>
+            </p>
+            <br>
+            <a class="button" href="./assets/Tejas's Resume.pdf" target="_blank" tabindex="12">
+                <img style="width: 50px;" src="./assets/ts.gif" alt="Image">
+                Resume
+                <ion-icon name="document-outline"></ion-icon>
+            </a>
         </div>
-        <div class="major" style="border:2px solid #00ff9d8a">
-          <img src="./assets/postgresql.png" alt="Skill image" />
-          <p>POSTGRESQL</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/mysql.png" alt="Skill image" />
-          <p>MYSQL</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/numpy.png" alt="Skill image" />
-          <p>Numpy</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/pandas.jpg" alt="Skill image" />
-          <p>Pandas</p>
-        </div>
-        <!-- <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/scikitlearn.png" alt="Skill image" />
-          <p>Scikit Learn</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/opencv.png" alt="Skill image" />
-          <p>Opencv</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/tensorflow.png" alt="Skill image" />
-          <p>Tensor Flow</p>
-        </div> -->
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/css.png" alt="Skill image" />
-          <p>CSS3</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/cpp.png" alt="Skill image " />
-          <p>C++</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/c.png" alt="Skill image " />
-          <p>C</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/bootstrap.png" alt="Skill image " />
-          <p>Bootstrap</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/power-bi-microsoft-seeklogo.com.svg" alt="Skill image " />
-          <p>PowerBI</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/js.png" alt="Skill image " />
-          <p>JavaScript</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/mongodb.png" alt="Skill image " />
-          <p>MangoDB</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/amazon-aws.png" alt="Skill image " />
-          <p>AWS</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/excel.png" alt="Skill image " />
-          <p>Excel</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/html5.png" alt="Skill image " />
-          <p>HTML5</p>
-        </div>
-        <div class="major" style="border:2px solid #00ff9d8a">
-          <img src="./assets/git.png" alt="Skill image " />
-          <p>Git</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/Docker.png" alt="Skill image " />
-          <p>Docker</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/powerpoint.png" alt="Skill image " />
-          <p>Powerpoint</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/ps.png" alt="Skill image " />
-          <p>PhotoStudio</p>
-        </div>
-        <div class="major" style="border:2px solid #00ff9d8a">
-          <img src="./assets/pythonanywhere.png" alt="Skill image " />
-          <p>PythonAnyWhere</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/arduino.png" alt="Skill image " />
-          <p>Arduino</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/Netlify.png" alt="Skill image " />
-          <p>Netlify</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/Vercel.png" alt="Skill image " />
-          <p>Vercel</p>
-        </div>
-        <div class="minor" style="border:2px solid #00ff9d8a">
-          <img src="./assets/jenkins.png" alt="Skill image " />
-          <p>Jenkins</p>
-        </div>
-        <div class="major" style="border:2px solid #00ff9d8a">
-          <img src="./assets/cicd.png" alt="Skill image " />
-          <p>CI-CD</p>
-        </div>
-        <div class="major" style="border:2px solid #00ff9d8a">
-          <img src="./assets/gitlab.png" alt="Skill image " />
-          <p>GitLab</p>
-        </div>
-        
-        <!-- add new files  -->
-      </div>
-      </div>
+        <ul style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; border: 2px solid #00FFFF; padding: 10px;" class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+            <li id="linkedin">
+                <a href="https://www.linkedin.com/in/tejas-sawant-3a9b5820b/" aria-label="linkedin" class="linkedin" tabindex="13">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li id="github">
+                <a href="https://github.com/Tejaso7" aria-label="github" class="github" tabindex="14">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li id="instagram">
+                <a href="https://instagram.com/_ts_oo7_" aria-label="instagram" class="instagram" tabindex="15">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li id="twitter">
+                <a href="https://www.twitter.com/TejasSawantoo7" aria-label="twitter" class="twitter" tabindex="16">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
     </section>
-  
-     <section class="section main project-section" id="projects" tabindex="18">
-      <div style="width: 100%; align-items: center; display: flex; flex-direction: column;"
-        data-aos="zoom-in-up"
-        data-aos-duration="700"
-        data-aos-once="true"
-        >
-        <div class="section-header">
-          <div class="projecthead">
-            <h1 class="display-3 text-capitalize">Some of My Projects </h1>
-            <br>
-            <p class="sectionDesc"  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;border:2px solid #00FFFF;padding:10px">
-              Here are a few past projects I've worked on. Want to see more?
-            </p>
-            <br>
-          </div>
-          <img
-            style="width: 300px;"
-            src="./assets/work.gif"
-            alt="Project header image"
-          />
-        </div>
-        <div class="project card-container"  >
-          <div class="project card 1" tabindex="0" style="border:2px solid #0d00ff">
-            <div class="imgDiv">
-              <img src="./assets/voicewp.png" alt="Voice Chat WhatsApp AI Bot project image" />
-            </div>
-            <br />
-            <h6>Voice / Chat / WhatsApp </h6>
-            <br />
-            <p class="library">
-              <span> Project Overview </span> - A powerful AI bot with (LLMs), Eleven Labs, Deepgram to customer interaction across voice, chat and WhatsApp.
-            </p>
-            <div class="options">
-              <a class="viewElem" href="https://ai-customer-service.webflow.io/" target="_blank">
-                <ion-icon name="open-outline"></ion-icon>
-              </a>
-             
-            </div>
-          </div>
-        
-          <!-- Third Project: Business Website -->
-          <div class="project card 1" tabindex="0" style="border:2px solid #0d00ff">
-            <div class="imgDiv">
-              <img src="./assets/accessmails.png" alt="Business Website project image" />
-            </div>
-            <br />
-            <h6>Business Website</h6>
-            <br />
-            <p class="library">
-              <span> Project Overview </span> - Created a highly functional and responsive business website for a client as part of a freelance project.
-            </p>
-            <div class="options">
-              <a class="viewElem" href="https://accessmails.in/" target="_blank">
-                <ion-icon name="open-outline"></ion-icon>
-              </a>
-             
-            </div>
-          </div>
-        
-          <!-- Fourth Project: Sarvam.ai Voice Bot -->
-          <div class="project card 1" tabindex="0" style="border:2px solid #0d00ff">
-            <div class="imgDiv">
-              <img src="./assets/sarvam.png" alt="Sarvam.ai Voice Bot project image" />
-            </div>
-            <br />
-            <h6>Sarvam Api Voice Bot</h6>
-            <br />
-            <p class="library">
-              <span> Project Overview </span> - Developed a voice-enabled AI bot using Saarvam, providing accurate and contextually aware responses tailored to Indian linguistic needs.
-            </p>
-            <div class="options">
-              <a class="viewElem" href="https://tejassawantiffort.pythonanywhere.com/" target="_blank">
-                <ion-icon name="open-outline"></ion-icon>
-              </a>
-            </div>
-          </div>
-          <div class="project card 1" tabindex="" style="border:2px solid #0d00ff">
-            <div class="imgDiv">
-              <img src="./assets/fos.png" alt="Project image" />
-            </div>
-            <br />
-            <h6>Food Ordering System -[Django]</h6>
-            <br>
-            <p class="library">
-              <span> Project Working </span> - Django app with models for restaurants, menus, orders, and customers for a food ordering system.
-            <div class="options">
-              <a class="viewElem"
-                href="http://tejassawant.pythonanywhere.com/"
-                target="_blank"
-              >
-                <ion-icon name="open-outline"></ion-icon>
-              </a>
-              <a class="githubElem" href="https://github.com/Tejaso7/Food-Ordering-System---Django" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-              <button class="share">
-                <ion-icon name="link-outline">Copied text!</ion-icon>
-              </button>
-            </div>
-          </div>
-          <div class="project card 1" tabindex=""  style="border:2px solid #0d00ff">
-            <div class="imgDiv">
-              <img src="./assets/hrims.png" alt="Project image" />
-            </div>
-            <br />
-            <h6>Human Resources Management System</h6> <br>
-            <p class="library">
-              <span> Project Working</span> -An HRMS (Human Resource Management System) manages employee data, payroll, attendance, recruitment. </p>
-            <div class="options">
-              <a class="viewElem" href="https://tejassawant.pythonanywhere.com/" target="_blank">
-                <ion-icon name="open-outline"></ion-icon>
-              </a>
-              <a class="githubElem" href="https://github.com/Tejaso7/Employees-Management-System-Django/tree/main/EMS" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-              <button class="share">
-                <ion-icon name="link-outline">Copied text!</ion-icon>
-              </button>
-            </div>
-          </div>
-          <div class="project card 1" tabindex=""  style="border:2px solid #0d00ff">
-            <div class="imgDiv">
-              <img src="./assets/real_estate.png" alt="Project image" />
-            </div>
-            <br>
-            <h6>Real_Estate Bussiness Websites</h6> <br>
-            <p class="library">
-              <span> Project Working </span> - In this project, we created a Bussiness Portfolio websites for Real_Estate.
-            </p>
-            <div class="options">
-              <a
-                class="viewElem"
-                href="https://sprealty.netlify.app/project-filter"
-                target="_blank"
-              >
-                <ion-icon name="open-outline"></ion-icon>
-              </a>
-              <a class="githubElem" href="https://github.com/Tejaso7/Kinetics_Estate-" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-              <button class="share">
-                <ion-icon name="link-outline">Copied text!</ion-icon>
-              </button>
-            </div>
-          </div>
-        </div>
 
-        <div style="margin:auto;margin-top:30px;">
-          <a href="projects.html" class="bn5"  style="color:red;border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;border:2px solid #00FFFF;padding: 5px;">See All</a>
-
-        </div>
-      </div>
-    </section>    
-    <section class="section blog-section" id="blog" tabindex="19">
-      <div style="width: 100%; align-items: center; display: flex; flex-direction: column;"
-          data-aos="zoom-in-up"
-          data-aos-duration="700"
-          data-aos-once="true"
-      >
-          <h1 class="display-3 text-capitalize">Latest Blog Posts</h1>
-          <br>
-          <p style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;border:2px solid #00FFFF;padding:10px">
-              Stay updated with my latest blog posts.
-            </p>
+    <!-- SKILLS SECTION -->
+    <section class="section skill-section" id="skills" tabindex="17">
+        <div style="width: 100%; align-items: center; display: flex; flex-direction: column; padding: 10px;" data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+            <h1 class="display-3 text-capitalize">My Skills</h1>
             <br>
-            <img
-            style="width: 300px;"
-            src="./assets/blog1.gif"
-            alt="Project header image"
-          />
-          <br>
-          <!-- Example Blog Post -->
-          <div class="blog-post card-container" >
-              <div class="blog-post card" style="border:2px solid #ff0ff3d1;padding:10px" >
-                  <div class="imgDiv">
-                      <!-- Add an image for your blog post -->
-                      <img src="./assets/blogs/django-blog.png" alt="Blog Post Image" />
-                  </div>
-                  <br />
-                  <h6>Deploying an existing Django project on PythonAnywhere</h6>
-                  <br>
-                  <p class="blog-content">
-                      <!-- Add your blog post content here -->
-                     Deploying an existing Django project on PythonAnywhere involves the process of making your Django web application accessible on the internet through the PythonAnywhere platform.            
-                   </p>
-                  <div class="options">
-                    <br> <!-- Add links or buttons for reading the full blog post -->
-                      <a class="read-more" href="./assets/blogs/Blog_on_django_pyanywhere.docx" target="_blank">
-                          Download
-                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                      </a>
-                  </div>
-              </div>
-              <div class="blog-post card-container">
-                <div class="blog-post card" style="border:2px solid #ff0ff3d1;padding:10px">
+            <p style="border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border: 2px solid #00FFFF; padding: 10px; text-align: center;">Tiles in <span style="color: aqua;">blue</span> are some of my major skills.</p>
+            <br>
+            <img style="width: 300px;" src="./assets/skill.gif" alt="skills">
+            <!-- Front-end -->
+            <div class="skill-container">
+                <div class="major" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/python.png" alt="Skill image">
+                    <p>PYTHON</p>
+                </div>
+                <div class="major" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/django.png" alt="Skill image">
+                    <p>DJANGO</p>
+                </div>
+                <div class="major" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/postgresql.png" alt="Skill image">
+                    <p>POSTGRESQL</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/mysql.png" alt="Skill image">
+                    <p>MYSQL</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/numpy.png" alt="Skill image">
+                    <p>Numpy</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/pandas.jpg" alt="Skill image">
+                    <p>Pandas</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/css.png" alt="Skill image">
+                    <p>CSS3</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/cpp.png" alt="Skill image">
+                    <p>C++</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/c.png" alt="Skill image">
+                    <p>C</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/bootstrap.png" alt="Skill image">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/power-bi-microsoft-seeklogo.com.svg" alt="Skill image">
+                    <p>PowerBI</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/js.png" alt="Skill image">
+                    <p>JavaScript</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/mongodb.png" alt="Skill image">
+                    <p>MangoDB</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/amazon-aws.png" alt="Skill image">
+                    <p>AWS</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/excel.png" alt="Skill image">
+                    <p>Excel</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/html5.png" alt="Skill image">
+                    <p>HTML5</p>
+                </div>
+                <div class="major" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/git.png" alt="Skill image">
+                    <p>Git</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/Docker.png" alt="Skill image">
+                    <p>Docker</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/powerpoint.png" alt="Skill image">
+                    <p>Powerpoint</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/ps.png" alt="Skill image">
+                    <p>PhotoStudio</p>
+                </div>
+                <div class="major" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/pythonanywhere.png" alt="Skill image">
+                    <p>PythonAnyWhere</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/arduino.png" alt="Skill image">
+                    <p>Arduino</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/Netlify.png" alt="Skill image">
+                    <p>Netlify</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/Vercel.png" alt="Skill image">
+                    <p>Vercel</p>
+                </div>
+                <div class="minor" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/jenkins.png" alt="Skill image">
+                    <p>Jenkins</p>
+                </div>
+                <div class="major" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/cicd.png" alt="Skill image">
+                    <p>CI-CD</p>
+                </div>
+                <div class="major" style="border: 2px solid #00ff9d8a">
+                    <img src="./assets/gitlab.png" alt="Skill image">
+                    <p>GitLab</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section main project-section" id="projects" tabindex="18">
+        <div style="width: 100%; align-items: center; display: flex; flex-direction: column;" data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+            <div class="section-header">
+                <div class="projecthead">
+                    <h1 class="display-3 text-capitalize">Some of My Projects</h1>
+                    <br>
+                    <p class="sectionDesc" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; border: 2px solid #00FFFF; padding: 10px">
+                        Here are a few past projects I've worked on. Want to see more?
+                    </p>
+                    <br>
+                </div>
+                <img style="width: 300px;" src="./assets/work.gif" alt="Project header image">
+            </div>
+            <div class="project card-container">
+                <div class="project card 1" tabindex="0" style="border: 2px solid #0d00ff">
                     <div class="imgDiv">
-                        <!-- Add an image for your blog post -->
-                        <img src="./assets/blogs/gitlab-blog.png" alt="Blog Post Image" />
+                        <img src="./assets/voicewp.png" alt="Voice Chat WhatsApp AI Bot project image">
                     </div>
-                    <br />
-                    <h6>Setting up gitlab account</h6>
+                    <br>
+                    <h6>Voice / Chat / WhatsApp</h6>
+                    <br>
+                    <p class="library">
+                        <span>Project Overview</span> - A powerful AI bot with (LLMs), Eleven Labs, Deepgram to customer interaction across voice, chat and WhatsApp.
+                    </p>
+                    <div class="options">
+                        <a class="viewElem" href="https://ai-customer-service.webflow.io/" target="_blank">
+                            <ion-icon name="open-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="project card 1" tabindex="0" style="border: 2px solid #0d00ff">
+                    <div class="imgDiv">
+                        <img src="./assets/accessmails.png" alt="Business Website project image">
+                    </div>
+                    <br>
+                    <h6>Business Website</h6>
+                    <br>
+                    <p class="library">
+                        <span>Project Overview</span> - Created a highly functional and responsive business website for a client as part of a freelance project.
+                    </p>
+                    <div class="options">
+                        <a class="viewElem" href="https://accessmails.in/" target="_blank">
+                            <ion-icon name="open-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="project card 1" tabindex="0" style="border: 2px solid #0d00ff">
+                    <div class="imgDiv">
+                        <img src="./assets/sarvam.png" alt="Sarvam.ai Voice Bot project image">
+                    </div>
+                    <br>
+                    <h6>Sarvam Api Voice Bot</h6>
+                    <br>
+                    <p class="library">
+                        <span>Project Overview</span> - Developed a voice-enabled AI bot using Saarvam, providing accurate and contextually aware responses tailored to Indian linguistic needs.
+                    </p>
+                    <div class="options">
+                        <a class="viewElem" href="https://tejassawantiffort.pythonanywhere.com/" target="_blank">
+                            <ion-icon name="open-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="project card 1" tabindex="" style="border: 2px solid #0d00ff">
+                    <div class="imgDiv">
+                        <img src="./assets/fos.png" alt="Project image">
+                    </div>
+                    <br>
+                    <h6>Food Ordering System -[Django]</h6>
+                    <br>
+                    <p class="library">
+                        <span>Project Working</span> - Django app with models for restaurants, menus, orders, and customers for a food ordering system.
+                    </p>
+                    <div class="options">
+                        <a class="viewElem" href="http://tejassawant.pythonanywhere.com/" target="_blank">
+                            <ion-icon name="open-outline"></ion-icon>
+                        </a>
+                        <a class="githubElem" href="https://github.com/Tejaso7/Food-Ordering-System---Django" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <button class="share">
+                            <ion-icon name="link-outline">Copied text!</ion-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="project card 1" tabindex="" style="border: 2px solid #0d00ff">
+                    <div class="imgDiv">
+                        <img src="./assets/hrims.png" alt="Project image">
+                    </div>
+                    <br>
+                    <h6>Human Resources Management System</h6>
+                    <br>
+                    <p class="library">
+                        <span>Project Working</span> - An HRMS (Human Resource Management System) manages employee data, payroll, attendance, recruitment.
+                    </p>
+                    <div class="options">
+                        <a class="viewElem" href="https://tejassawant.pythonanywhere.com/" target="_blank">
+                            <ion-icon name="open-outline"></ion-icon>
+                        </a>
+                        <a class="githubElem" href="https://github.com/Tejaso7/Employees-Management-System-Django/tree/main/EMS" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <button class="share">
+                            <ion-icon name="link-outline">Copied text!</ion-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="project card 1" tabindex="" style="border: 2px solid #0d00ff">
+                    <div class="imgDiv">
+                        <img src="./assets/real_estate.png" alt="Project image">
+                    </div>
+                    <br>
+                    <h6>Real_Estate Business Websites</h6>
+                    <br>
+                    <p class="library">
+                        <span>Project Working</span> - In this project, we created a Business Portfolio websites for Real_Estate.
+                    </p>
+                    <div class="options">
+                        <a class="viewElem" href="https://sprealty.netlify.app/project-filter" target="_blank">
+                            <ion-icon name="open-outline"></ion-icon>
+                        </a>
+                        <a class="githubElem" href="https://github.com/Tejaso7/Kinetics_Estate-" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <button class="share">
+                            <ion-icon name="link-outline">Copied text!</ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: auto; margin-top: 30px;">
+                <a href="projects.html" class="bn5" style="color: red; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; border: 2px solid #00FFFF; padding: 5px;">See All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="section blog-section" id="blog" tabindex="19">
+        <div style="width: 100%; align-items: center; display: flex; flex-direction: column;" data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+            <h1 class="display-3 text-capitalize">Latest Blog Posts</h1>
+            <br>
+            <p style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; border: 2px solid #00FFFF; padding: 10px">
+                Stay updated with my latest blog posts.
+            </p>
+            <br>
+            <img style="width: 300px;" src="./assets/blog1.gif" alt="Project header image">
+            <br>
+            <!-- Example Blog Post -->
+            <div class="blog-post card-container">
+                <div class="blog-post card" style="border: 2px solid #ff0ff3d1; padding: 10px">
+                    <div class="imgDiv">
+                        <img src="./assets/blogs/django-blog.png" alt="Blog Post Image">
+                    </div>
+                    <br>
+                    <h6>Deploying an existing Django project on PythonAnywhere</h6>
                     <br>
                     <p class="blog-content">
-                        <!-- Add your blog post content here -->
-
-                        Setting up a GitLab account involves creating an account on the GitLab platform, configuring basic account settings, and potentially creating or joining projects for collaborative software development. Here's a concise guide on setting up a GitLab account                     </p>
+                        Deploying an existing Django project on PythonAnywhere involves the process of making your Django web application accessible on the internet through the PythonAnywhere platform.
+                    </p>
                     <div class="options">
-                      <br><!-- Add links or buttons for reading the full blog post -->
-                        <a class="read-more" href="./assets/blogs/Setting up an GitLab.docx" target="_blank">
+                        <br>
+                        <a class="read-more" href="./assets/blogs/Blog_on_django_pyanywhere.docx" target="_blank">
                             Download
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </a>
                     </div>
                 </div>
-                <div class="blog-post card-container" >
-                  <div class="blog-post card" style="border:2px solid #ff0ff3d1;padding:10px">
-                      <div class="imgDiv">
-                          <!-- Add an image for your blog post -->
-                          <img src="./assets/blogs/python-blog.png" alt="Blog Post Image" />
-                      </div>
-                      <br />
-                      <h6>Blog on Python - PPT</h6>
-                      <br>
-                      <p class="blog-content">
-                          <!-- Add your blog post content here -->
-
-                          Creating a blog about Python in a PowerPoint (PPT) format involves summarizing key points about Python's features, applications, and significance. Here's a structure for your Python blog in a PowerPoint presentation:                       </p>
-                      <div class="options">
-                        <br>  <!-- Add links or buttons for reading the full blog post -->
-                          <a class="read-more" href="./assets/blogs/PYTHON_Tejas_sawant.pptx" target="_blank">
-                              Download
-                              <ion-icon name="chevron-forward-outline"></ion-icon>
-                          </a>
-                      </div>
-                  </div>
-              <!-- Add more blog posts as needed -->
-              <div style="margin:auto;">
-                <a href="https://github.com/Tejaso7/Blogs" class="bn5"  style="color:red;border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;padding:5px">See All</a>
-      
-              </div>
-          </div>
-      </div>
-  </section>
-  <section class="section video-section" id="videos" tabindex="20">
-    <div style="width: 100%; align-items: center; display: flex; flex-direction: column;"
-    data-aos="zoom-in-up"
-    data-aos-duration="700"
-    data-aos-once="true"
->
-      <h1 class="display-3 text-capitalize">Project Videos</h1>
-      <p class="video-intro" style="border:2px solid #00FFFF;padding:10px" >
-        Explore videos showcasing the projects we've made.
-        <a href="https://www.youtube.com/watch?v=Dxfbi9vy_AY&list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T&pp=iAQB" class="bn5">See All Videos</a>
-      </p>
-      <br>
-      <img
-      style="width: 300px;"
-      src="./assets/youtube.gif"
-      alt="Project header image"
-    />
-    <br>
-    <div class="video-cards-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;">
-
-      
-      <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
-        <div class="blog-post card" style="height: 18em;border:2px solid rgba(255, 0, 0, 0.899);padding:10px">
-          <div>
-             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5W4q7VJKDqI?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Hiding Information Using Image Steganography in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="description">
-             <h5>Hiding Information Using Image Steganography in C++</h5>
-          </div>
-        </div>
-      </div>
-  
-   
-      <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
-        <div class="blog-post card" style="height: 18em;border:2px solid rgba(255, 0, 0, 0.899);padding:10px">
-          <div>
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nA2QXO1yySA?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Virtual Assistant using Python" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="description">
-          <h5>Virtual Assistant using Python</h5>
-        </div>
-      </div>
-      </div>
-  
-     
-      <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
-        <div class="blog-post card" style="height: 18em;border:2px solid rgba(255, 0, 0, 0.899);padding:10px">
-          <div>
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/k0BjUpJqgxA?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Campus Placement Automation System in PHP using JavaScript, Bootstrap & CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="description">
-          <h5>Campus Placement Automation System in PHP using JavaScript, Bootstrap & CSS</h5>
-        </div>
-      </div>
-  </div>
-      
-      <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;" >
-        <div class="blog-post card" style="height: 18em;border:2px solid rgba(255, 0, 0, 0.899);padding:10px">
-          <div>
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Dxfbi9vy_AY?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Car Rental System Using C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="description">
-          <h5>Car Rental System Using C++</h5>
-        </div>
-      </div>
-      </div>
-  
-
-    </div>
-    </div>
-  </section> 
-
- 
-     <section class="section education-section" id="education" tabindex="21">
-      <div style="
-          width: 100%;
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-        "
-        data-aos="zoom-in-up"
-        data-aos-duration="700"
-        data-aos-once="true"
-      >
-      
-      <h1 class="display-3 text-capitalize title"">Education </h1>
-      <br>
-      <p  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;border:2px solid #00FFFF;padding:10px">These are some of my Qualifications.</p>
-      <br>
-      <img style="width: 350px;" src="./assets/edu.gif" alt="Image">
-    
-        <div class="card-container">
-          <div class="card" style="border:2px solid hsl(155, 100%, 50%);padding:10px">
-            <div class="imgDiv">
-              <img src="./assets/zeal.jpg" alt="Institute image" />
+                <div class="blog-post card-container">
+                    <div class="blog-post card" style="border: 2px solid #ff0ff3d1; padding: 10px">
+                        <div class="imgDiv">
+                            <img src="./assets/blogs/gitlab-blog.png" alt="Blog Post Image">
+                        </div>
+                        <br>
+                        <h6>Setting up gitlab account</h6>
+                        <br>
+                        <p class="blog-content">
+                            Setting up a GitLab account involves creating an account on the GitLab platform, configuring basic account settings, and potentially creating or joining projects for collaborative software development. Here's a concise guide on setting up a GitLab account
+                        </p>
+                        <div class="options">
+                            <br>
+                            <a class="read-more" href="./assets/blogs/Setting up an GitLab.docx" target="_blank">
+                                Download
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post card-container">
+                        <div class="blog-post card" style="border: 2px solid #ff0ff3d1; padding: 10px">
+                            <div class="imgDiv">
+                                <img src="./assets/blogs/python-blog.png" alt="Blog Post Image">
+                            </div>
+                            <br>
+                            <h6>Blog on Python - PPT</h6>
+                            <br>
+                            <p class="blog-content">
+                                Creating a blog about Python in a PowerPoint (PPT) format involves summarizing key points about Python's features, applications, and significance. Here's a structure for your Python blog in a PowerPoint presentation:
+                            </p>
+                            <div class="options">
+                                <br>
+                                <a class="read-more" href="./assets/blogs/PYTHON_Tejas_sawant.pptx" target="_blank">
+                                    Download
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="margin: auto;">
+                            <a href="https://github.com/Tejaso7/Blogs" class="bn5" style="color: red; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; padding: 5px">See All</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br />
-            <h6 class="courseName">Bachelor Of Engineering  </h6> <br>
-            <p class="instituteName">Zeal College Of Engineering And Research Pune | SPPU</p>  <br>
-            <p class="instituteDesc"> <b>Course :-</b>Artificial Intelligence and Data Science </p>
-            <br />
-            <p class="status Completed">2020-2024| CGPA-8.94 | Completed</p>
-          </div>
-          <div class="card" style="border:2px solid hsl(155, 100%, 50%);padding:10px">
-            <div class="imgDiv">
-              <img src="./assets/MMhs.jpeg" alt="Institute image" />
-            </div>
-            <br />
-            <h6 class="courseName">HSC</h6> <br>
-            <p class="instituteName">Mary Matha High School & jr.Collage Mhaswad</p> <br>
-            <p class="instituteDesc"><b>Course :-</b>Science</p>
-            <br />
-            <p class="status Completed">2019-2020| 68.31% | Completed
-            </p>
-          </div>
-          <div class="card" style="border:2px solid hsl(155, 100%, 50%);padding:10px">
-            <div class="imgDiv">
-              <img src="./assets/MMhs.jpeg" alt="Institute image" />
-            </div>
-            <br />
-            <h6 class="courseName">SSC</h6> <br>
-            <p class="instituteName">Mary Matha High School & jr.Collage Mhaswad</p> <br>
-            <p class="instituteDesc"><b>Course :-</b>Science</p>
-            <br />
-            <p class="status Completed">2017-2018| 84.20 % | Completed</p>
-          </div>
         </div>
-      </div>
     </section>
- 
-<section class="section experience-section" id="experience" class="experience" tabindex="22">
-  <div
-    style="
-      width: 100%;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-    "
-    data-aos="zoom-in-up"
-    data-aos-duration="700"
-    data-aos-once="true"
-  >
-    <h1 class="title">
-      Experiences
-    </h1>
-    <br>
-    <p  style="color: red;border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;border:2px solid #00FFFF;padding:10px">These are the companies where I've previously worked.</p>
-    <br>
-    <img style="width: 300px;" src="./assets/ufo4.gif" alt="Image">
 
-    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
-          START SECTION 8 - EXPERIENCE
-         /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-         
-    <section id="experience" class="experience">
-      <div class="container">
-        <br><br>
-        <div class="row text-center">
-          <h1 class="display-3 fw-bold text-capitalize">My Journey</h1>
-          <div class="heading-line"></div>
+    <!-- VIDEO SECTION -->
+    <section class="section video-section" id="videos" tabindex="20">
+        <div style="width: 100%; align-items: center; display: flex; flex-direction: column;" data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+            <h1 class="display-3 text-capitalize">Project Videos</h1>
+            <p class="video-intro" style="border: 2px solid #00FFFF; padding: 10px">
+                Explore videos showcasing the projects we've made.
+                <a href="https://www.youtube.com/watch?v=Dxfbi9vy_AY&list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T&pp=iAQB" class="bn5">See All Videos</a>
+            </p>
+            <br>
+            <img style="width: 300px;" src="./assets/youtube.gif" alt="Project header image">
+            <br>
+            <div class="video-cards-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;">
+                <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
+                    <div class="blog-post card" style="height: 18em; border: 2px solid rgba(255, 0, 0, 0.899); padding: 10px">
+                        <div>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5W4q7VJKDqI?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Hiding Information Using Image Steganography in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="description">
+                            <h5>Hiding Information Using Image Steganography in C++</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
+                    <div class="blog-post card" style="height: 18em; border: 2px solid rgba(255, 0, 0, 0.899); padding: 10px">
+                        <div>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nA2QXO1yySA?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Virtual Assistant using Python" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="description">
+                            <h5>Virtual Assistant using Python</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
+                    <div class="blog-post card" style="height: 18em; border: 2px solid rgba(255, 0, 0, 0.899); padding: 10px">
+                        <div>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/k0BjUpJqgxA?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Campus Placement Automation System in PHP using JavaScript, Bootstrap & CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="description">
+                            <h5>Campus Placement Automation System in PHP using JavaScript, Bootstrap & CSS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-post card-container" style="flex-basis: calc(25% - 10px); box-sizing: border-box;">
+                    <div class="blog-post card" style="height: 18em; border: 2px solid rgba(255, 0, 0, 0.899); padding: 10px">
+                        <div>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Dxfbi9vy_AY?list=PL8Wh-ReWGovlYOu3gnwY6mM4K_aNrjh8T" title="Car Rental System Using C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="description">
+                            <h5>Car Rental System Using C++</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-         <div class="timeline">
-          <div class="timeline-item left wow slideInRight" data-wow-delay="0.1s">
-            <div class="timeline-text" style="border: 2px solid #00FFFF;padding:10px;">
-              <div class="timeline-date">Sep 2024 - <span style="color:green;">Present</span></div>
-              <h2>Iffort.AI</h2>
-              <br>
-              <img style="width: 200px;" src="./assets/iffort.png" alt="Image">
+    </section>
 
-              <h4>Associate Software Engineer</h4>
-
-              <br>
-              <p>
-                I am a proficient Backend Developer with extensive experience in creating and maintaining high-quality websites. At Iffort , I collaborate with GenAI and development teams to deliver exceptional AI/web solutions for our clients.
-              </p>
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education" tabindex="21">
+        <div style="width: 100%; align-items: center; display: flex; flex-direction: column;" data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+            <h1 class="display-3 text-capitalize title">Education</h1>
+            <br>
+            <p style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; border: 2px solid #00FFFF; padding: 10px">These are some of my Qualifications.</p>
+            <br>
+            <img style="width: 350px;" src="./assets/edu.gif" alt="Image">
+            <div class="card-container">
+                <div class="card" style="border: 2px solid hsl(155, 100%, 50%); padding: 10px">
+                    <div class="imgDiv">
+                        <img src="./assets/zeal.jpg" alt="Institute image">
+                    </div>
+                    <br>
+                    <h6 class="courseName">Bachelor Of Engineering</h6>
+                    <br>
+                    <p class="instituteName">Zeal College Of Engineering And Research Pune | SPPU</p>
+                    <br>
+                    <p class="instituteDesc"><b>Course :-</b>Artificial Intelligence and Data Science</p>
+                    <br>
+                    <p class="status Completed">2020-2024| CGPA-8.94 | Completed</p>
+                </div>
+                <div class="card" style="border: 2px solid hsl(155, 100%, 50%); padding: 10px">
+                    <div class="imgDiv">
+                        <img src="./assets/MMhs.jpeg" alt="Institute image">
+                    </div>
+                    <br>
+                    <h6 class="courseName">HSC</h6>
+                    <br>
+                    <p class="instituteName">Mary Matha High School & jr.Collage Mhaswad</p>
+                    <br>
+                    <p class="instituteDesc"><b>Course :-</b>Science</p>
+                    <br>
+                    <p class="status Completed">2019-2020| 68.31% | Completed</p>
+                </div>
+                <div class="card" style="border: 2px solid hsl(155, 100%, 50%); padding: 10px">
+                    <div class="imgDiv">
+                        <img src="./assets/MMhs.jpeg" alt="Institute image">
+                    </div>
+                    <br>
+                    <h6 class="courseName">SSC</h6>
+                    <br>
+                    <p class="instituteName">Mary Matha High School & jr.Collage Mhaswad</p>
+                    <br>
+                    <p class="instituteDesc"><b>Course :-</b>Science</p>
+                    <br>
+                    <p class="status Completed">2017-2018| 84.20 % | Completed</p>
+                </div>
             </div>
-          </div> 
-         <div class="timeline">
-          <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-            <div class="timeline-text" style="border: 2px solid #00FFFF;padding:10px;">
-              <div class="timeline-date">June 2024 - July 2024</div>
-              <h2>Fulcrum Resources Infinity Pvt. Ltd</h2>
-              <br>
-              <img style="width: 200px;" src="./assets/fulcrum_resources_pvt_ltd_logo.jpeg" alt="Image">
-
-              <h4>Wordpress Developer Intern</h4>
-
-              <br>
-              <p>
-                I was a learner as well as WordPress Developer Intern with  in creating and maintaining high-quality websites. At Fulcrum Resources Infinity Pvt. Ltd., I collaborate with design and development teams to deliver exceptional web solutions for our clients.
-              </p>
-            </div>
-          </div> 
-        <div class="timeline">
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-            <div class="timeline-text" style="border: 2px solid #00FFFF;padding:10px;">
-              <div class="timeline-date">Sep 2023 - May 2024 [ 9 months]</div>
-              <h2>COGNATECH PRIVATE LIMITED</h2>
-              <br>
-              <img style="width: 200px;" src="./assets/cognatech.png" alt="Image">
-
-              <h4>Python Full Stack Developer Intern</h4>
-
-              <br>
-              <p>
-                I was improving my coding skills & developing applications & websites with the help of DJANGO.
-                Working for myself to improve my skills. Love to build Full-Stack clones.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-            <div class="timeline-text" style="border: 2px solid #00FFFF;padding:10px;">
-              <div class="timeline-date">Apr 2023- May 2023 [1 months]</div>
-              <h2>Technical Coding and Research Innovation</h2>
-              <br>
-              <img style="width: 200px;" src="./assets/tcr.jpg" alt="Image">
-
-              <h4>Frontend Web Development Intern</h4>
-              <br>
-
-              <p>
-                Learned more about Frontend development and built one major and one minor project.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-            <div class="timeline-text" style="border: 2px solid #00FFFF;padding:10px;">
-              <div class="timeline-date">Feb 2023 - Mar 2023 [1 months]</div>
-              <h2>GENIOBITS PRIVATE LIMITED</h2>
-             <br> 
-             <img style="width: 200px;" src="./assets/geno.jpg" alt="Image">
-             <br> 
-             <br> 
-
-              <h4>Web Development Intern</h4>
-              <br>
-              <p>
-                As a fresher, I got an idea of how web development works and hence I built multiple websites.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- Job Experience End -->
-  </div>
-</section>
-</section>
-<!-----------------------
-     CONTACT FORM
-     ------------------------->
-     
-<!-----------------------
-     FOOTER SECTION
-     ------------------------->
-     <footer class="footer" tabindex="35">
-      <div class="getInTouch">
-        <h3>Get Connected with Me.. <img style="width: 50px;" src="./assets/phone.gif" alt="Image"></h3>
-       
+    </section>
 
-        <p>
-          Interested in working Together? We should queue up a time to Message.
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience" class="experience" tabindex="22">
+        <div style="width: 100%; align-items: center; display: flex; flex-direction: column;" data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+            <h1 class="title">Experiences</h1>
+            <br>
+            <p style="color: red; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; border: 2px solid #00FFFF; padding: 10px">These are the companies where I've previously worked.</p>
+            <br>
+            <img style="width: 300px;" src="./assets/ufo4.gif" alt="Image">
+            <section id="experience" class="experience">
+                <div class="container">
+                    <br><br>
+                    <div class="row text-center">
+                        <h1 class="display-3 fw-bold text-capitalize">My Journey</h1>
+                        <div class="heading-line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item left wow slideInRight" data-wow-delay="0.1s">
+                            <div class="timeline-text" style="border: 2px solid #00FFFF; padding: 10px;">
+                                <div class="timeline-date">Sep 2024 - <span style="color: green;">Present</span></div>
+                                <h2>Iffort.AI</h2>
+                                <br>
+                                <img style="width: 200px;" src="./assets/iffort.png" alt="Image">
+                                <h4>Associate Software Engineer</h4>
+                                <br>
+                                <p>
+                                    I am a proficient Backend Developer with extensive experience in creating and maintaining high-quality websites. At Iffort, I collaborate with GenAI and development teams to deliver exceptional AI/web solutions for our clients.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                            <div class="timeline-text" style="border: 2px solid #00FFFF; padding: 10px;">
+                                <div class="timeline-date">June 2024 - July 2024</div>
+                                <h2>Fulcrum Resources Infinity Pvt. Ltd</h2>
+                                <br>
+                                <img style="width: 200px;" src="./assets/fulcrum_resources_pvt_ltd_logo.jpeg" alt="Image">
+                                <h4>Wordpress Developer Intern</h4>
+                                <br>
+                                <p>
+                                    I was a learner as well as WordPress Developer Intern with in creating and maintaining high-quality websites. At Fulcrum Resources Infinity Pvt. Ltd., I collaborate with design and development teams to deliver exceptional web solutions for our clients.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                            <div class="timeline-text" style="border: 2px solid #00FFFF; padding: 10px;">
+                                <div class="timeline-date">Sep 2023 - May 2024 [9 months]</div>
+                                <h2>COGNATECH PRIVATE LIMITED</h2>
+                                <br>
+                                <img style="width: 200px;" src="./assets/cognatech.png" alt="Image">
+                                <h4>Python Full Stack Developer Intern</h4>
+                                <br>
+                                <p>
+                                    I was improving my coding skills & developing applications & websites with the help of DJANGO. Working for myself to improve my skills. Love to build Full-Stack clones.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                            <div class="timeline-text" style="border: 2px solid #00FFFF; padding: 10px;">
+                                <div class="timeline-date">Apr 2023 - May 2023 [1 month]</div>
+                                <h2>Technical Coding and Research Innovation</h2>
+                                <br>
+                                <img style="width: 200px;" src="./assets/tcr.jpg" alt="Image">
+                                <h4>Frontend Web Development Intern</h4>
+                                <br>
+                                <p>
+                                    Learned more about Frontend development and built one major and one minor project.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                            <div class="timeline-text" style="border: 2px solid #00FFFF; padding: 10px;">
+                                <div class="timeline-date">Feb 2023 - Mar 2023 [1 month]</div>
+                                <h2>GENIOBITS PRIVATE LIMITED</h2>
+                                <br>
+                                <img style="width: 200px;" src="./assets/geno.jpg" alt="Image">
+                                <h4>Web Development Intern</h4>
+                                <br>
+                                <p>
+                                    As a fresher, I got an idea of how web development works and hence I built multiple websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer" tabindex="35">
+        <div class="getInTouch">
+            <h3>Get Connected with Me.. <img style="width: 50px;" src="./assets/phone.gif" alt="Image"></h3>
+            <p>
+                Interested in working Together? We should queue up a time to Message.
+            </p>
+            <a class="getInTouchBtn button" href="https://api.whatsapp.com/send?phone=+917447679060&text=Hi,%20I%20want%20to%20connect%20with%20you" tabindex="36" target="_blank">
+                <img style="width: 50px;" src="./assets/ts.gif" alt="Image">
+                Connect on WhatsApp
+            </a>
+        </div>
+        <br>
+        <div class="footerParent">
+            <div class="profInfo">
+                <div class="imgDiv">
+                    <img style="width: 50px;" src="./assets/ts.gif" alt="Image">
+                </div>
+                <div>
+                    <p style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Connect with me over Socials.</p>
+                    <p style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Mail me at: <a href="mailto:tejusawant302@gmail.com" tabindex="37">Tejusawant302@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="reachMeOut">
+                <h3 style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Reach me out on</h3>
+                <ul class="social-menu">
+                    <li id="linkedin">
+                        <a href="https://www.linkedin.com/in/tejassawantoo7/" class="linkedin" tabindex="38" aria-label="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li id="github">
+                        <a href="https://github.com/Tejaso7" aria-label="github" class="github" tabindex="39">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li id="instagram">
+                        <a href="https://instagram.com/_ts_oo7_" aria-label="instagram" class="instagram" tabindex="40">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li id="twitter">
+                        <a href="https://www.twitter.com/TejasSawantoo7" aria-label="twitter" class="twitter" tabindex="41">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <img style="width: 200px;" src="./assets/codeing.gif" alt="Image">
+        </div>
+        <p class="developerInfo">
+            Designed With ❤️ by
+            <a href="https://instagram.com/_ts_oo7_" tabindex="50">Tejas Sawant</a>
         </p>
-        <a class="getInTouchBtn button" href="https://api.whatsapp.com/send?phone=+917447679060&text=Hi,%20I%20want%20to%20connect%20with%20you" tabindex="36" target="_blank">
-      <img style="width: 50px;" src="./assets/ts.gif" alt="Image">
-      Connect on WhatsApp</a>
-      </div>
-      <br>
-      <div class="footerParent">
-        <div class="profInfo">
-          <div class="imgDiv">
-            <img style="width: 50px;" src="./assets/ts.gif" alt="Image">
-          </div>
-          <div>
-            <p  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Connect with me over Socials.</p>
-            <p  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">Mail me at: <a href="mailto:tejusawant302@gmail.com" tabindex="37">Tejusawant302@gmail.com</a></p>
-          </div>
-        </div>
-        <div class="reachMeOut">
-          <h3  style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;" >Reach me out on</h3>
-          <ul class="social-menu">
-            <li id="linkedin">
-              <a href="https://www.linkedin.com/in/tejassawantoo7/" class="linkedin" tabindex="38" aria-label="linkedin">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li id="github">
-              <a href="https://github.com/Tejaso7" aria-label="github" class="github" tabindex="39">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li id="instagram">
-              <a href="https://instagram.com/_ts_oo7_" aria-label="instagram" class="instagram" tabindex="40">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li id="twitter">
-              <a href="https://www.twitter.com/TejasSawantoo7" aria-label="twitter" class="twitter" tabindex="41">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <img style="width: 200px;" src="./assets/codeing.gif" alt="Image">
-      </div>
-
-      <p class="developerInfo">
-        Designed With ❤️ by
-        <a href="https://instagram.com/_ts_oo7_" tabindex="50">Tejas Sawant</a>
-      </p>
     </footer>
+
     <!-- Scripts -->
-<script src="./scripts/firebase.js"></script>
-<script src="./scripts/commonScript.js"></script>
-<script src="./scripts/script.js"></script>
-
-<!-- External scripts -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-<!-- JavaScript for particles -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("ts", {
-      particles: {
-          number: {
-              value: 80, // Adjust the number of particles
-              density: {
-                  enable: true,
-                  value_area: 800,
-              },
-          },
-          color: {
-              value: ["#FF5733", "#33FF6A", "#3333FF", "#FF33EC"], // Specify the colors
-          },
-          shape: {
-              type: "circle",
-          },
-          opacity: {
-              value: 0.9,
-              random: false,
-              anim: {
-                  enable: false,
-              },
-          },
-          size: {
-              value: 3,
-              random: true,
-          },
-          move: {
-              enable: true,
-              speed: 2,
-          },
-      },
-      interactivity: {
-          events: {
-              onhover: {
-                  enable: true,
-                  mode: "repulse",
-              },
-          },
-      },
-  });
-</script>
+    <script src="./scripts/firebase.js"></script>
+    <script src="./scripts/commonScript.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("ts", {
+            particles: {
+                number: {
+                    value: 80, // Adjust the number of particles
+                    density: {
+                        enable: true,
+                        value_area: 800,
+                    },
+                },
+                color: {
+                    value: ["#FF5733", "#33FF6A", "#3333FF", "#FF33EC"], // Specify the colors
+                },
+                shape: {
+                    type: "circle",
+                },
+                opacity: {
+                    value: 0.9,
+                    random: false,
+                    anim: {
+                        enable: false,
+                    },
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                },
+            },
+            interactivity: {
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "repulse",
+                    },
+                },
+            },
+        });
+    </script>
 </body>
 </html>
